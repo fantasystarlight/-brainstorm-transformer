@@ -22,9 +22,22 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
+        continue-on-error: true          # 失败也继续，先把真实原因打印出来
         with:
           python-version: "3.10"
           cache: pip
+
+      - name: 诊断 setup-python 为什么失败
+        if: always()
+        run: |
+          echo "### setup-python 诊断" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          echo "runner os:      ${RUNNER_OS} ${RUNNER_ARCH}" >> "$GITHUB_STEP_SUMMARY"
+          echo "runner image:   ${ImageOS:-?}  ${ImageVersion:-?}" >> "$GITHUB_STEP_SUMMARY"
+          echo "python3 default: $(command -v python3) $(python3 --version 2>&1)" >> "$GITHUB_STEP_SUMMARY"
+          echo "python  default: $(command -v python || echo 无) $(python --version 2>&1 || true)" >> "$GITHUB_STEP_SUMMARY"
+          ls /opt/hostedtoolcache 2>&1 | head -5 >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
 
       - name: 安装依赖（full）
         if: matrix.variant == 'full'

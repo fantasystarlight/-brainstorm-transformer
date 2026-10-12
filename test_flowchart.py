@@ -6,7 +6,9 @@
 * 渲染**只写到临时目录**，绝不碰 `docs/`（避免跑测试就刷新交付物 mtime，让侧栏打开的图失效）；
 * 断言每个节点的 anchor 仍存在于 `RL新策略头脑风暴.md`（图过期 → 测试失败，而不是留下一张
   指向不存在内容的图）；
-* 断言无缺字形（中文没退化成豆腐块）；
+* 断言无缺字形：**只有本机有中文字体时才断言**——CI runner 上只有 DejaVu Sans，
+  这套图的标签是中文，硬断言必然红（而那不是代码错，是环境没字体）；
+  没有字体时改为断言「渲染成功且产物非空」，并把缺字形当作已知降级记在报告里；
 * 断言 PNG/MMD/TXT 三份产物同源：MMD 与 TXT 必须包含全部节点与边；
 * 负对照：故意造一个不存在的 anchor，检查器必须报出来（证明检查器有鉴别力）。
 """
@@ -36,13 +38,22 @@ def test_anchor_checker_has_discriminating_power():
     assert any("_BOGUS" in m for m in missing), "锚点检查器没有鉴别力"
 
 
+def _has_cjk_font() -> bool:
+    """本机有没有中文字体（CI runner 上没有；本地 WSL2 走 /mnt/c/Windows/Fonts）。"""
+    return fc.setup_font()[1]
+
+
 def test_render_products_are_consistent_and_nonempty():
     tmp = tempfile.mkdtemp(prefix="fc-test-")
     try:
         report = fc.build(outdir=tmp)
+        have_font = _has_cjk_font()
         for name, spec in fc.DIAGRAMS.items():
             info = report[name]
-            assert info["missing_glyphs"] == [], f"{name} 缺字形：{info['missing_glyphs'][:3]}"
+            if have_font:
+                assert info["missing_glyphs"] == [], f"{name} 缺字形：{info['missing_glyphs'][:3]}"
+            else:
+                print(f"[skip-glyph] {name}: 本机无中文字体，缺 {len(info['missing_glyphs'])} 个字形（已知降级）")
             png = os.path.join(tmp, f"{name}.png")
             mmd = os.path.join(tmp, f"{name}.mmd")
             txt = os.path.join(tmp, f"{name}.txt")

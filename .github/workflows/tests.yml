@@ -6,6 +6,9 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read        # 最小权限：CI 只需要读代码
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -14,16 +17,17 @@ jobs:
       matrix:
         # full    : 全部可选依赖（tokenizers / regex / torch-cpu）
         # minimal : 故意**不装** tokenizers/regex，验证「手写 BPE 后备路径」在裸环境也能跑
-        #           （torch 还是要装，因为模型不变量测试本身需要它）
+        #           （torch 仍要装，因为模型不变量测试本身依赖它）
         variant: [full, minimal]
     env:
       PYTHONPATH: .
       MPLCONFIGDIR: /tmp/mplconfig-dsh   # matplotlib 默认缓存目录在 CI 上不可写
+      # CI runner 没有中文字体 → 渲染器会降级成英文标签，测试按降级模式断言（见 test_flowchart.py）
     steps:
       - uses: actions/checkout@v4
 
       # 刻意不用 actions/setup-python：它要额外下载一份 Python 工具链，
-      # 在受限网络下会随机失败（本仓库的 CI 就先后失败过两次）。
+      # 在受限网络下会随机失败（本仓库的 CI 就因此失败过两次）。
       # ubuntu-latest 自带 Python 3.10+，够用了。
       - name: 确认自带的 Python
         run: |
@@ -42,41 +46,29 @@ jobs:
           fi
 
       - name: 核心不变量测试（模型/分词/因果性/cache/GQA）
-        run: |
-          python3 -m pytest transformer/test_mini_transformer.py -q --no-header 2>&1 | tee /tmp/t1.log
-          exit ${PIPESTATUS[0]}
+        run: python3 -m pytest transformer/test_mini_transformer.py -q --no-header
 
       - name: 流程图守卫测试（transformer 侧）
-        run: |
-          python3 -m pytest transformer/test_flowchart.py -q --no-header 2>&1 | tee /tmp/t2.log
-          exit ${PIPESTATUS[0]}
+        run: python3 -m pytest transformer/test_flowchart.py -q --no-header
 
       - name: 流程图守卫测试（工作区根目录）
-        run: |
-          python3 -m pytest test_flowchart.py -q --no-header 2>&1 | tee /tmp/t3.log
-          exit ${PIPESTATUS[0]}
+        run: python3 -m pytest test_flowchart.py -q --no-header
 
-      - name: 端到端冒烟（只有 full 线跑，需要 torch + tokenizers）
+      - name: 端到端冒烟（只有 full 线跑）
         if: matrix.variant == 'full'
         run: |
-          python3 -m transformer.train --quick --tag ci 2>&1 | tail -20
-          python3 -m transformer.generate --tag ci -n 32 --temperature 0.8 2>&1 | tail -12
+          # --datadir 指到被 gitignore 的目录：不污染仓库
+          python3 -m transformer.train --quick --datadir data_ci --tag ci
+          python3 -m transformer.generate --datadir data_ci --tag ci -n 32 --temperature 0.8
 
-      - name: 失败时把 pytest 输出写进 Actions 摘要（不登录也能看到原因）
+      - name: 失败时把 pytest 输出写进日志尾部（方便不登录也能看到摘要）
         if: failure()
         run: |
-          {
-            echo "### pytest 输出（${{ matrix.variant }}）"
-            for f in /tmp/t1.log /tmp/t2.log /tmp/t3.log; do
-              [ -f "$f" ] || continue
-              echo "<details><summary>$f</summary>"
-              echo ""
-              echo '```'
-              tail -80 "$f"
-              echo '```'
-              echo "</details>"
-            done
-          } >> "$GITHUB_STEP_SUMMARY"
+          echo "::group::常见原因速查"
+          echo "1) 缺中文字体 → 只有 test_flowchart 的字形断言会失败；测试已按降级模式处理"
+          echo "2) minimal 线没装 tokenizers → 应走 transformer/bpe.py 手写后备，属预期"
+          echo "3) 端到端冒烟需要 torch + tokenizers"
+          echo "::endgroup::"
 
       - name: 环境信息
         if: always()

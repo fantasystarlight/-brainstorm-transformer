@@ -12,8 +12,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # 一条线装全部可选依赖，一条线**故意不装** torch/tokenizers，
-        # 用来证明「手写 BPE 后备路径」在裸环境里也能跑通（这是本仓库的设计承诺之一）。
+        # full    : 全部可选依赖（tokenizers / regex / torch-cpu）
+        # minimal : 故意**不装** tokenizers/regex，验证「手写 BPE 后备路径」在裸环境也能跑
+        #           （torch 还是要装，因为模型不变量测试本身需要它）
         variant: [full, minimal]
     env:
       PYTHONPATH: .
@@ -22,51 +23,63 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
-        continue-on-error: true          # 失败也继续，先把真实原因打印出来
         with:
           python-version: "3.10"
           cache: pip
 
-      - name: 诊断 setup-python 为什么失败
-        if: always()
-        run: |
-          echo "### setup-python 诊断" >> "$GITHUB_STEP_SUMMARY"
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
-          echo "runner os:      ${RUNNER_OS} ${RUNNER_ARCH}" >> "$GITHUB_STEP_SUMMARY"
-          echo "runner image:   ${ImageOS:-?}  ${ImageVersion:-?}" >> "$GITHUB_STEP_SUMMARY"
-          echo "python3 default: $(command -v python3) $(python3 --version 2>&1)" >> "$GITHUB_STEP_SUMMARY"
-          echo "python  default: $(command -v python || echo 无) $(python --version 2>&1 || true)" >> "$GITHUB_STEP_SUMMARY"
-          ls /opt/hostedtoolcache 2>&1 | head -5 >> "$GITHUB_STEP_SUMMARY"
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
-
-      - name: 安装依赖（full）
-        if: matrix.variant == 'full'
+      - name: 安装依赖
         run: |
           python -m pip install --upgrade pip
           pip install torch --index-url https://download.pytorch.org/whl/cpu
-          pip install numpy pytest matplotlib tokenizers regex
-
-      - name: 安装依赖（minimal：只留 numpy/pytest/matplotlib）
-        if: matrix.variant == 'minimal'
-        run: |
-          python -m pip install --upgrade pip
           pip install numpy pytest matplotlib
+          if [ "${{ matrix.variant }}" = "full" ]; then
+            pip install tokenizers regex
+          else
+            echo "minimal 线：故意不装 tokenizers / regex"
+          fi
 
-      - name: 核心不变量测试（不需要 GPU / 不需要 data/）
-        run: pytest transformer/test_mini_transformer.py -q
+      - name: 核心不变量测试（模型/分词/因果性/cache/GQA）
+        run: |
+          pytest transformer/test_mini_transformer.py -q --no-header 2>&1 | tee /tmp/t1.log
+          exit ${PIPESTATUS[0]}
 
-      - name: 流程图守卫测试（锚点必须仍存在于源码）
-        run: pytest transformer/test_flowchart.py test_flowchart.py -q
+      - name: 流程图守卫测试（transformer 侧）
+        run: |
+          pytest transformer/test_flowchart.py -q --no-header 2>&1 | tee /tmp/t2.log
+          exit ${PIPESTATUS[0]}
 
-      - name: 只有 full 才做端到端冒烟（要 torch）
+      - name: 流程图守卫测试（工作区根目录）
+        run: |
+          pytest test_flowchart.py -q --no-header 2>&1 | tee /tmp/t3.log
+          exit ${PIPESTATUS[0]}
+
+      - name: 端到端冒烟（只有 full 线跑，需要 torch + tokenizers）
         if: matrix.variant == 'full'
         run: |
-          python -m transformer.train --quick --tag ci
-          python -m transformer.generate --tag ci -n 32 --temperature 0.8
+          python -m transformer.train --quick --tag ci 2>&1 | tail -20
+          python -m transformer.generate --tag ci -n 32 --temperature 0.8 2>&1 | tail -12
 
-      - name: 环境信息（出问题时好排查）
+      - name: 失败时把 pytest 输出写进 Actions 摘要（不登录也能看到原因）
+        if: failure()
+        run: |
+          {
+            echo "### pytest 输出（${{ matrix.variant }}）"
+            for f in /tmp/t1.log /tmp/t2.log /tmp/t3.log; do
+              [ -f "$f" ] || continue
+              echo "<details><summary>$f</summary>"
+              echo ""
+              echo '```'
+              tail -60 "$f"
+              echo '```'
+              echo "</details>"
+            done
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: 环境信息
         if: always()
         run: |
           python -c "import sys; print(sys.version)"
           python -c "import numpy; print('numpy', numpy.__version__)"
-          python -c "import torch; print('torch', torch.__version__)" 2>/dev/null || echo "torch 未安装（minimal 线，符合预期）"
+          python -c "import torch; print('torch', torch.__version__)"
+          python -c "import tokenizers; print('tokenizers', tokenizers.__version__)" 2>/dev/null || echo "tokenizers: 未安装（minimal 线，符合预期）"
+          python -c "import regex; print('regex', regex.__version__)" 2>/dev/null || echo "regex: 未安装（minimal 线，符合预期）"

@@ -31,14 +31,21 @@ mt = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(mt)
 
 
-def _font_mode() -> bool:
-    """CI（ubuntu-latest）没有中文字体，渲染器会**降级成英文标签**。
-
-    测试要跟着这个事实走：有中文字体就断言中文图无缺字形，没有就断言英文图无缺字形。
-    否则「本地绿、CI 红」，而真正的信息只是「这台机器没装中文字体」。
-    """
+def _has_cjk_font() -> bool:
+    """本机有没有可用的中文字体（CI runner 上没有）。"""
     _, cn = fc.setup_font()
     return cn
+
+
+ASCII_RE = re.compile(r"^[\x00-\x7f]*$")
+
+
+def _assert_labels_are_ascii(spec: dict) -> None:
+    """英文标签必须是纯 ASCII——否则「英文降级」根本挡不住缺字形。"""
+    for node in spec["nodes"]:
+        label = node.get("en") or node["label"]
+        assert ASCII_RE.match(label), f"{spec['title'][:14]} 的英文标签含非 ASCII：{label!r}"
+    assert ASCII_RE.match(spec.get("en_title", "")), spec.get("en_title")
 
 
 def test_anchors_exist_in_src():
@@ -60,9 +67,20 @@ def test_anchor_checker_has_discriminating_power():
     assert any("_BOGUS" in m for m in missing), "锚点检查器没有鉴别力"
 
 
+def test_english_labels_are_ascii():
+    """守住「无中文字体时降级为英文」这条路：英文标签里不能混进任何非 ASCII 字符。
+
+    这条是**纯逻辑检查**，不依赖本机字体，所以 CI 和本地结果一致——
+    它就是用来替代「靠字体检测猜 CI 行为」的。
+    """
+    for spec in mt.DIAGRAMS.values():
+        _assert_labels_are_ascii(spec)
+
+
 def test_render_products_are_consistent_and_nonempty():
     outdir = tempfile.mkdtemp(prefix="mt-flow-")
-    report = mt.build(outdir, force_cn=_font_mode())
+    # 用英文模式做守卫：纯 ASCII 标签 + DejaVu Sans，任何机器上都不该缺字形
+    report = mt.build(outdir, force_cn=False)
     for name, spec in mt.DIAGRAMS.items():
         for ext in ("png", "mmd", "txt"):
             path = os.path.join(outdir, f"{name}.{ext}")
@@ -83,8 +101,8 @@ def test_render_products_are_consistent_and_nonempty():
 def test_rebuild_is_idempotent():
     """同样输入重复渲染，第二次必须报告「无变化」（否则侧栏打开的图会反复失效）。"""
     outdir = tempfile.mkdtemp(prefix="mt-flow-idem-")
-    mt.build(outdir, force_cn=_font_mode())
-    second = mt.build(outdir, force_cn=_font_mode())
+    mt.build(outdir, force_cn=False)
+    second = mt.build(outdir, force_cn=False)
     changed = [k for k, v in second.items() if v["changed"]]
     import shutil
     shutil.rmtree(outdir)
@@ -105,7 +123,7 @@ def test_dep_graph_matches_imports():
 def test_mermaid_and_png_share_same_edges():
     """PNG 与 Mermaid 必须来自同一份 edges（图与文本不能各写一套）。"""
     outdir = tempfile.mkdtemp(prefix="mt-flow-src-")
-    mt.build(outdir, force_cn=_font_mode())
+    mt.build(outdir, force_cn=False)
     for name, spec in mt.DIAGRAMS.items():
         with open(os.path.join(outdir, f"{name}.mmd"), encoding="utf-8") as fh:
             mmd = fh.read()
@@ -114,5 +132,18 @@ def test_mermaid_and_png_share_same_edges():
         assert len(arrow_lines) == len(spec["edges"]), (name, arrow_lines)
         for src, dst, *rest in spec["edges"]:
             assert re.search(rf"\b{src}\b.*-->.*\b{dst}\b", mmd), (name, src, dst)
+    import shutil
+    shutil.rmtree(outdir)
+
+
+def test_chinese_mode_has_no_missing_glyphs_when_font_available():
+    """有中文字体时，中文图也不许出豆腐块；没字体就跳过（CI 属于这种）。"""
+    import pytest
+    if not _has_cjk_font():
+        pytest.skip("本机没有中文字体（如 CI runner），中文标签会降级为英文")
+    outdir = tempfile.mkdtemp(prefix="mt-flow-cn-")
+    report = mt.build(outdir, force_cn=True)
+    bad = {k: v["missing_glyphs"] for k, v in report.items() if v["missing_glyphs"]}
+    assert bad == {}, bad
     import shutil
     shutil.rmtree(outdir)

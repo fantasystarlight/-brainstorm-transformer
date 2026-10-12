@@ -1,0 +1,71 @@
+%% 知识图谱·全景
+flowchart LR
+  subgraph GAPS[缺口]
+    G1["G1 没有尺子"]
+    G2["G2 无梯度被当垃圾"]
+    G3["G3 静态超参 vs 可测状态"]
+    G4["G4 hack 没有预算"]
+    G5["G5 裁判激励不相容"]
+    G6["G6 覆盖率被牺牲"]
+  end
+  subgraph PROPS[提案]
+    P1["P1 CreditBench 尺子"]
+    P2["P2 零方差=后验证据"]
+    P3["P3 DriftAudit"]
+    P4["P4 奖励投资组合"]
+    P5["P5 激励相容裁判"]
+    P6["P6 档案馆/MAP-Elites"]
+    P7["P7 可核查性预算"]
+    P8["P8 算力兑换率"]
+    P9["P9 梯度方差设计"]
+    P10["P10 能力分区正交"]
+    P11["P11 世界模型反事实"]
+  end
+  subgraph DOMS[知识域]
+    K_OPT["优化目标与信任域<br/>(K-OPT)"]
+    K_CREDIT["信用分配<br/>(K-CREDIT)"]
+    K_REWARD["奖励与验证<br/>(K-REWARD)"]
+    K_EXPLORE["探索与覆盖<br/>(K-EXPLORE)"]
+    K_SYS["系统与漂移<br/>(K-SYS)"]
+    K_THEORY["理论与诊断<br/>(K-THEORY)"]
+    K_METHOD["方法论<br/>(K-METHOD)"]
+    K_XFER["跨域迁移源<br/>(K-XFER)"]
+  end
+  G1 --> P1
+  G1 --> P7
+  G1 --> P9
+  G2 --> P2
+  G2 --> P6
+  G3 --> P3
+  G3 --> P8
+  G4 --> P4
+  G4 --> P7
+  G5 --> P5
+  G5 --> P4
+  G6 --> P6
+  G6 --> P10
+  G6 --> P11
+  P1 -.-> K_CREDIT
+  P1 -.-> K_METHOD
+  P1 -.-> K_THEORY
+  P2 -.-> K_EXPLORE
+  P2 -.-> K_XFER
+  P3 -.-> K_SYS
+  P3 -.-> K_OPT
+  P4 -.-> K_REWARD
+  P4 -.-> K_XFER
+  P5 -.-> K_REWARD
+  P5 -.-> K_XFER
+  P6 -.-> K_EXPLORE
+  P6 -.-> K_METHOD
+  P7 -.-> K_CREDIT
+  P7 -.-> K_REWARD
+  P7 -.-> K_METHOD
+  P8 -.-> K_SYS
+  P8 -.-> K_EXPLORE
+  P9 -.-> K_METHOD
+  P9 -.-> K_CREDIT
+  P10 -.-> K_THEORY
+  P10 -.-> K_XFER
+  P11 -.-> K_REWARD
+  P11 -.-> K_SYS

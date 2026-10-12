@@ -1,0 +1,37 @@
+知识点图谱 B
+
+[探索与覆盖（K-EXPLORE）]
+  - c_zero: 组内奖励方差与零梯度组  P2 P6 P7
+  - c_collapse: 熵坍缩  P6
+  - c_passk: pass@k 与覆盖率  P6 P8
+  - c_qd: 质量-多样性 QD / MAP-Elites  P6
+  - c_ts: Thompson 采样与信息增益  P2 P8
+  - c_curr: 难度后验与课程  P2
+
+[系统与漂移（K-SYS）]
+  - c_tim: 训练-推理失配 TIM 与 drift  P3 P8
+  - c_off: 离策略校正与重要性重加权  P3
+  - c_stale: staleness 与异步  P3
+  - c_kv: 显存墙与 KV 压缩  P3 P8
+  - c_tail: rollout 吞吐与长尾调度  P8
+  - c_order: 蒸馏-然后-RL 的顺序性  P8
+
+[理论与诊断（K-THEORY）]
+  - c_conv: 收敛率与策略改进下界  P3
+  - c_land: 损失景观（自旋玻璃映射）  P1
+  - c_sub: 主子空间几何与正交投影  P10
+  - c_param: 参数漂移 ≠ 功能变化  P10
+  - c_sae: 机制可解释性与 SAE  P4
+
+[关系]  depend=基于/细化（实线）  oppose=对立（红虚线）  transfer=跨域迁移（绿点线）
+  c_zero --depend--> c_ts
+  c_zero --depend--> c_curr
+  c_passk --depend--> c_qd
+  c_passk --oppose--> c_collapse
+  c_tim --depend--> c_off
+  c_tim --depend--> c_stale
+  c_kv --depend--> c_off
+  c_tail --depend--> c_tim
+  c_land --depend--> c_conv
+  c_sub --depend--> c_param
+  c_sae --depend--> c_param

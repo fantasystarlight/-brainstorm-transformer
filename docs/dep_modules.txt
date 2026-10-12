@@ -1,0 +1,24 @@
+模块依赖图（由源码 import 自动解析）
+======================
+
+[叶子（无项目内依赖）]
+  - bpe: bpe.py
+  - corpus: corpus.py
+  - model: model.py
+
+[中层]
+  - data: data.py
+
+[入口脚本]
+  - generate: generate.py
+  - train: train.py
+
+[边]
+  bpe -> data   []
+  corpus -> data   []
+  data -> generate   []
+  data -> train   []
+  model -> generate   []
+  model -> train   []
+
+[注] bpe/model 是叶子（零项目内依赖）；data 依赖 bpe+corpus；train/generate 在顶层。

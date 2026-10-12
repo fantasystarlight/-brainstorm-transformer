@@ -1,0 +1,36 @@
+%% 知识点图谱 B
+flowchart LR
+  subgraph K_EXPLORE["探索与覆盖"]
+    c_zero["组内奖励方差与零梯度组"]
+    c_collapse["熵坍缩"]
+    c_passk["pass@k 与覆盖率"]
+    c_qd["质量-多样性 QD / MAP-Elites"]
+    c_ts["Thompson 采样与信息增益"]
+    c_curr["难度后验与课程"]
+  end
+  subgraph K_SYS["系统与漂移"]
+    c_tim["训练-推理失配 TIM 与 drift"]
+    c_off["离策略校正与重要性重加权"]
+    c_stale["staleness 与异步"]
+    c_kv["显存墙与 KV 压缩"]
+    c_tail["rollout 吞吐与长尾调度"]
+    c_order["蒸馏-然后-RL 的顺序性"]
+  end
+  subgraph K_THEORY["理论与诊断"]
+    c_conv["收敛率与策略改进下界"]
+    c_land["损失景观（自旋玻璃映射）"]
+    c_sub["主子空间几何与正交投影"]
+    c_param["参数漂移 ≠ 功能变化"]
+    c_sae["机制可解释性与 SAE"]
+  end
+  c_zero --> c_ts
+  c_zero --> c_curr
+  c_passk --> c_qd
+  c_passk -.->|对立| c_collapse
+  c_tim --> c_off
+  c_tim --> c_stale
+  c_kv --> c_off
+  c_tail --> c_tim
+  c_land --> c_conv
+  c_sub --> c_param
+  c_sae --> c_param

@@ -1,0 +1,27 @@
+%% 模型本体：token 序列 → 下一个 token 概率
+flowchart LR
+  subgraph L0[输入]
+    E1["ids [B,T]<br/>词表查表 Embedding"]
+  end
+  subgraph L1[注意力]
+    A1["RMSNorm<br/>（Pre-Norm，先归一化再进子层）"]
+    A2["因果自注意力 + RoPE<br/>[B,T,C]→[B,H,T,hd]（GQA 可省 KV）"]
+    R1["残差相加<br/>x = x + attn(...)"]
+  end
+  subgraph L2[前馈]
+    F1["RMSNorm → SwiGLU 前馈<br/>存知识的主力，参数占大头"]
+    R2["残差相加<br/>x = x + ffn(...)"]
+  end
+  subgraph L3[输出]
+    O1["最后 RMSNorm<br/>+ lm_head 线性层（分块算 loss）"]
+    O2["只返回最后一步 logits [B,1,V]<br/>省掉 [B,T,V] 常驻张量"]
+  end
+  E1 --> A1
+  A1 --> A2
+  A2 --> R1
+  R1 --> F1
+  F1 --> R2
+  R2 --> O1
+  O1 --> O2
+  R1 -->|重复 n_layers 次| F1
+  %% note: 4 层就是把这套 block 堆 4 次；每层都有两条残差旁路，梯度才能回流到最底层。

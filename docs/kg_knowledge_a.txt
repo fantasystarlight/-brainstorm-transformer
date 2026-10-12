@@ -1,0 +1,51 @@
+知识点图谱 A
+
+[优化目标与信任域（K-OPT）]
+  - c_pg: 策略梯度定理  P1 P9 P10
+  - c_is: 重要性采样比  P3 P9
+  - c_tr: 信任域与 KL 约束  P3 P8
+  - c_clip: clip 死区  P3
+  - c_ent: 熵正则与熵预算  P2 P6
+  - c_rkl: 反向 KL 与模式覆盖  P6
+  - c_md: 镜像下降 / Bregman 散度  P1
+
+[信用分配（K-CREDIT）]
+  - c_adv: 优势函数 A=Q−V  P1
+  - c_gae: 广义优势估计 GAE  P1 P9
+  - c_group: 组相对基线（RLOO/GRPO）  P1 P2 P6
+  - c_axiom: 信用分配三公理  P1
+  - c_prm: 过程奖励与不可验证性  P7
+  - c_graph: 轨迹图与图上 Bellman 反传  P1 P9
+  - c_bv: 偏差-方差权衡  P1 P9
+
+[奖励与验证（K-REWARD）]
+  - c_rlvr: 可验证奖励 RLVR  P4 P7
+  - c_shape: 奖励塑形与有界饱和  P4
+  - c_rubric: Rubric-as-Reward  P4 P5
+  - c_hack: 奖励黑客  P4 P5
+  - c_agg: 多奖励聚合与投影  P4
+  - c_grm: 生成式奖励模型 GRM  P11
+  - c_settle: 校准与密封结算流  P4 P5
+  - c_psr: 严格 proper scoring rule  P5
+
+[关系]  depend=基于/细化（实线）  oppose=对立（红虚线）  transfer=跨域迁移（绿点线）
+  c_pg --depend--> c_adv
+  c_adv --depend--> c_gae
+  c_gae --depend--> c_group
+  c_group --depend--> c_axiom
+  c_axiom --depend--> c_prm
+  c_graph --depend--> c_axiom
+  c_bv --depend--> c_gae
+  c_bv --oppose--> c_prm
+  c_is --depend--> c_tr
+  c_tr --oppose--> c_clip
+  c_tr --depend--> c_md
+  c_ent --oppose--> c_rkl
+  c_rlvr --oppose--> c_hack
+  c_shape --oppose--> c_hack
+  c_rubric --oppose--> c_hack
+  c_agg --depend--> c_hack
+  c_grm --oppose--> c_hack
+  c_psr --oppose--> c_hack
+  c_settle --depend--> c_hack
+  c_settle --depend--> c_psr

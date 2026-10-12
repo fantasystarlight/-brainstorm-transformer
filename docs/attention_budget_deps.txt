@@ -1,0 +1,20 @@
+# 注意力预算探针：依赖与数据流
+
+  [P] attention_budget_probe.py
+  [J] docs/attention_budget_probe.json
+  [F] attention_budget_figs.py
+  [M] docs/*.mmd
+  [G] docs/*.png
+  [T] docs/*.txt
+  [R] Qwen2.5-Math-1.5B-Instruct（本地全权重）
+  [W] 只读 HF 缓存 / 无网络（已绕过）
+
+边：
+  P -> J
+  J -> F
+  R -> P
+  W -> P
+  F -> M
+  F -> G
+  F -> T
+  M -> G

@@ -1,0 +1,1209 @@
+{
+  "domains": [
+    {
+      "id": "K-OPT",
+      "name": "优化目标与信任域",
+      "en": "objective & trust region",
+      "color": "#e8f0fb"
+    },
+    {
+      "id": "K-CREDIT",
+      "name": "信用分配",
+      "en": "credit assignment",
+      "color": "#fdf1e3"
+    },
+    {
+      "id": "K-REWARD",
+      "name": "奖励与验证",
+      "en": "reward & verification",
+      "color": "#fdeaea"
+    },
+    {
+      "id": "K-EXPLORE",
+      "name": "探索与覆盖",
+      "en": "exploration & coverage",
+      "color": "#e9f7ef"
+    },
+    {
+      "id": "K-SYS",
+      "name": "系统与漂移",
+      "en": "systems & drift",
+      "color": "#eef2f5"
+    },
+    {
+      "id": "K-THEORY",
+      "name": "理论与诊断",
+      "en": "theory & diagnostics",
+      "color": "#f6e9f7"
+    },
+    {
+      "id": "K-METHOD",
+      "name": "方法论",
+      "en": "methodology",
+      "color": "#fff8e1"
+    },
+    {
+      "id": "K-XFER",
+      "name": "跨域迁移源",
+      "en": "transfer sources",
+      "color": "#eae4f7"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "c_pg",
+      "domain": "K-OPT",
+      "label": "策略梯度定理",
+      "anchor": "策略梯度定理",
+      "en": "policy gradient thm",
+      "extra": "P1 P9 P10"
+    },
+    {
+      "id": "c_is",
+      "domain": "K-OPT",
+      "label": "重要性采样比",
+      "anchor": "重要性采样比",
+      "en": "importance ratio",
+      "extra": "P3 P9"
+    },
+    {
+      "id": "c_tr",
+      "domain": "K-OPT",
+      "label": "信任域与 KL 约束",
+      "anchor": "信任域与 KL 约束",
+      "en": "trust region / KL",
+      "extra": "P3 P8"
+    },
+    {
+      "id": "c_clip",
+      "domain": "K-OPT",
+      "label": "clip 死区",
+      "anchor": "clip 死区",
+      "en": "clip dead zone",
+      "extra": "P3"
+    },
+    {
+      "id": "c_ent",
+      "domain": "K-OPT",
+      "label": "熵正则与熵预算",
+      "anchor": "熵正则与熵预算",
+      "en": "entropy budget",
+      "extra": "P2 P6"
+    },
+    {
+      "id": "c_rkl",
+      "domain": "K-OPT",
+      "label": "反向 KL 与模式覆盖",
+      "anchor": "反向 KL 与模式覆盖",
+      "en": "reverse KL",
+      "extra": "P6"
+    },
+    {
+      "id": "c_md",
+      "domain": "K-OPT",
+      "label": "镜像下降 / Bregman 散度",
+      "anchor": "镜像下降 / Bregman 散度",
+      "en": "mirror descent",
+      "extra": "P1"
+    },
+    {
+      "id": "c_adv",
+      "domain": "K-CREDIT",
+      "label": "优势函数 A=Q−V",
+      "anchor": "优势函数 A=Q−V",
+      "en": "advantage A=Q-V",
+      "extra": "P1"
+    },
+    {
+      "id": "c_gae",
+      "domain": "K-CREDIT",
+      "label": "广义优势估计 GAE",
+      "anchor": "广义优势估计 GAE",
+      "en": "GAE",
+      "extra": "P1 P9"
+    },
+    {
+      "id": "c_group",
+      "domain": "K-CREDIT",
+      "label": "组相对基线（RLOO/GRPO）",
+      "anchor": "组相对基线（RLOO/GRPO）",
+      "en": "group baseline",
+      "extra": "P1 P2 P6"
+    },
+    {
+      "id": "c_axiom",
+      "domain": "K-CREDIT",
+      "label": "信用分配三公理",
+      "anchor": "信用分配三公理",
+      "en": "credit axioms",
+      "extra": "P1"
+    },
+    {
+      "id": "c_prm",
+      "domain": "K-CREDIT",
+      "label": "过程奖励与不可验证性",
+      "anchor": "过程奖励与不可验证性",
+      "en": "process reward",
+      "extra": "P7"
+    },
+    {
+      "id": "c_graph",
+      "domain": "K-CREDIT",
+      "label": "轨迹图与图上 Bellman 反传",
+      "anchor": "轨迹图与图上 Bellman 反传",
+      "en": "trajectory graph",
+      "extra": "P1 P9"
+    },
+    {
+      "id": "c_bv",
+      "domain": "K-CREDIT",
+      "label": "偏差-方差权衡",
+      "anchor": "偏差-方差权衡",
+      "en": "bias-variance",
+      "extra": "P1 P9"
+    },
+    {
+      "id": "c_rlvr",
+      "domain": "K-REWARD",
+      "label": "可验证奖励 RLVR",
+      "anchor": "可验证奖励 RLVR",
+      "en": "verifiable reward",
+      "extra": "P4 P7"
+    },
+    {
+      "id": "c_shape",
+      "domain": "K-REWARD",
+      "label": "奖励塑形与有界饱和",
+      "anchor": "奖励塑形与有界饱和",
+      "en": "reward shaping",
+      "extra": "P4"
+    },
+    {
+      "id": "c_rubric",
+      "domain": "K-REWARD",
+      "label": "Rubric-as-Reward",
+      "anchor": "Rubric-as-Reward",
+      "en": "rubric-as-reward",
+      "extra": "P4 P5"
+    },
+    {
+      "id": "c_hack",
+      "domain": "K-REWARD",
+      "label": "奖励黑客",
+      "anchor": "奖励黑客",
+      "en": "reward hacking",
+      "extra": "P4 P5"
+    },
+    {
+      "id": "c_agg",
+      "domain": "K-REWARD",
+      "label": "多奖励聚合与投影",
+      "anchor": "多奖励聚合与投影",
+      "en": "multi-reward aggregation",
+      "extra": "P4"
+    },
+    {
+      "id": "c_grm",
+      "domain": "K-REWARD",
+      "label": "生成式奖励模型 GRM",
+      "anchor": "生成式奖励模型 GRM",
+      "en": "generative RM",
+      "extra": "P11"
+    },
+    {
+      "id": "c_settle",
+      "domain": "K-REWARD",
+      "label": "校准与密封结算流",
+      "anchor": "校准与密封结算流",
+      "en": "sealed settlement",
+      "extra": "P4 P5"
+    },
+    {
+      "id": "c_psr",
+      "domain": "K-REWARD",
+      "label": "严格 proper scoring rule",
+      "anchor": "严格 proper scoring rule",
+      "en": "proper scoring rule",
+      "extra": "P5"
+    },
+    {
+      "id": "c_zero",
+      "domain": "K-EXPLORE",
+      "label": "组内奖励方差与零梯度组",
+      "anchor": "组内奖励方差与零梯度组",
+      "en": "zero-variance group",
+      "extra": "P2 P6 P7"
+    },
+    {
+      "id": "c_collapse",
+      "domain": "K-EXPLORE",
+      "label": "熵坍缩",
+      "anchor": "熵坍缩",
+      "en": "entropy collapse",
+      "extra": "P6"
+    },
+    {
+      "id": "c_passk",
+      "domain": "K-EXPLORE",
+      "label": "pass@k 与覆盖率",
+      "anchor": "pass@k 与覆盖率",
+      "en": "pass@k & coverage",
+      "extra": "P6 P8"
+    },
+    {
+      "id": "c_qd",
+      "domain": "K-EXPLORE",
+      "label": "质量-多样性 QD / MAP-Elites",
+      "anchor": "质量-多样性 QD / MAP-Elites",
+      "en": "quality-diversity",
+      "extra": "P6"
+    },
+    {
+      "id": "c_ts",
+      "domain": "K-EXPLORE",
+      "label": "Thompson 采样与信息增益",
+      "anchor": "Thompson 采样与信息增益",
+      "en": "Thompson sampling",
+      "extra": "P2 P8"
+    },
+    {
+      "id": "c_curr",
+      "domain": "K-EXPLORE",
+      "label": "难度后验与课程",
+      "anchor": "难度后验与课程",
+      "en": "difficulty posterior",
+      "extra": "P2"
+    },
+    {
+      "id": "c_tim",
+      "domain": "K-SYS",
+      "label": "训练-推理失配 TIM 与 drift",
+      "anchor": "训练-推理失配 TIM 与 drift",
+      "en": "TIM & drift",
+      "extra": "P3 P8"
+    },
+    {
+      "id": "c_off",
+      "domain": "K-SYS",
+      "label": "离策略校正与重要性重加权",
+      "anchor": "离策略校正与重要性重加权",
+      "en": "off-policy correction",
+      "extra": "P3"
+    },
+    {
+      "id": "c_stale",
+      "domain": "K-SYS",
+      "label": "staleness 与异步",
+      "anchor": "staleness 与异步",
+      "en": "staleness",
+      "extra": "P3"
+    },
+    {
+      "id": "c_kv",
+      "domain": "K-SYS",
+      "label": "显存墙与 KV 压缩",
+      "anchor": "显存墙与 KV 压缩",
+      "en": "memory wall & KV",
+      "extra": "P3 P8"
+    },
+    {
+      "id": "c_tail",
+      "domain": "K-SYS",
+      "label": "rollout 吞吐与长尾调度",
+      "anchor": "rollout 吞吐与长尾调度",
+      "en": "rollout tail",
+      "extra": "P8"
+    },
+    {
+      "id": "c_order",
+      "domain": "K-SYS",
+      "label": "蒸馏-然后-RL 的顺序性",
+      "anchor": "蒸馏-然后-RL 的顺序性",
+      "en": "distill-then-RL",
+      "extra": "P8"
+    },
+    {
+      "id": "c_conv",
+      "domain": "K-THEORY",
+      "label": "收敛率与策略改进下界",
+      "anchor": "收敛率与策略改进下界",
+      "en": "convergence rate",
+      "extra": "P3"
+    },
+    {
+      "id": "c_land",
+      "domain": "K-THEORY",
+      "label": "损失景观（自旋玻璃映射）",
+      "anchor": "损失景观（自旋玻璃映射）",
+      "en": "loss landscape",
+      "extra": "P1"
+    },
+    {
+      "id": "c_sub",
+      "domain": "K-THEORY",
+      "label": "主子空间几何与正交投影",
+      "anchor": "主子空间几何与正交投影",
+      "en": "subspace geometry",
+      "extra": "P10"
+    },
+    {
+      "id": "c_param",
+      "domain": "K-THEORY",
+      "label": "参数漂移 ≠ 功能变化",
+      "anchor": "参数漂移 ≠ 功能变化",
+      "en": "param drift != function",
+      "extra": "P10"
+    },
+    {
+      "id": "c_sae",
+      "domain": "K-THEORY",
+      "label": "机制可解释性与 SAE",
+      "anchor": "机制可解释性与 SAE",
+      "en": "mechanistic interp / SAE",
+      "extra": "P4"
+    },
+    {
+      "id": "c_pre",
+      "domain": "K-METHOD",
+      "label": "预注册与判决判据",
+      "anchor": "预注册与判决判据",
+      "en": "preregistration",
+      "extra": "全部"
+    },
+    {
+      "id": "c_ctrl",
+      "domain": "K-METHOD",
+      "label": "负对照与鉴别力",
+      "anchor": "负对照与鉴别力",
+      "en": "negative control",
+      "extra": "全部"
+    },
+    {
+      "id": "c_iso",
+      "domain": "K-METHOD",
+      "label": "等算力对比",
+      "anchor": "等算力对比",
+      "en": "iso-compute",
+      "extra": "全部"
+    },
+    {
+      "id": "c_seed",
+      "domain": "K-METHOD",
+      "label": "多种子与配对随机数",
+      "anchor": "多种子与配对随机数",
+      "en": "seeds & CRN",
+      "extra": "P9"
+    },
+    {
+      "id": "c_curve",
+      "domain": "K-METHOD",
+      "label": "可监控性曲线",
+      "anchor": "可监控性曲线",
+      "en": "monitorability curves",
+      "extra": "全部"
+    },
+    {
+      "id": "c_x_cql",
+      "domain": "K-XFER",
+      "label": "离线 RL 悲观价值（CQL/IQL）",
+      "anchor": "离线 RL 悲观价值（CQL/IQL）",
+      "en": "offline RL pessimism",
+      "extra": "→P2"
+    },
+    {
+      "id": "c_x_stop",
+      "domain": "K-XFER",
+      "label": "最优停止与运筹调度",
+      "anchor": "最优停止与运筹调度",
+      "en": "optimal stopping",
+      "extra": "→P1 P8"
+    },
+    {
+      "id": "c_x_tmle",
+      "domain": "K-XFER",
+      "label": "因果推断双重稳健估计",
+      "anchor": "因果推断双重稳健估计",
+      "en": "TMLE / doubly robust",
+      "extra": "→P1 P7"
+    },
+    {
+      "id": "c_x_dp",
+      "domain": "K-XFER",
+      "label": "差分隐私与噪声会计",
+      "anchor": "差分隐私与噪声会计",
+      "en": "DP accounting",
+      "extra": "→P4"
+    },
+    {
+      "id": "c_x_audit",
+      "domain": "K-XFER",
+      "label": "审计抽样与 materiality",
+      "anchor": "审计抽样与 materiality",
+      "en": "audit sampling",
+      "extra": "→P4"
+    },
+    {
+      "id": "c_x_vcg",
+      "domain": "K-XFER",
+      "label": "机制设计与拍卖（VCG）",
+      "anchor": "机制设计与拍卖（VCG）",
+      "en": "mechanism design",
+      "extra": "→P5"
+    },
+    {
+      "id": "c_x_orth",
+      "domain": "K-XFER",
+      "label": "持续学习正交梯度（PCGrad/OGD）",
+      "anchor": "持续学习正交梯度（PCGrad/OGD）",
+      "en": "orthogonal gradients",
+      "extra": "→P10"
+    },
+    {
+      "id": "c_x_queue",
+      "domain": "K-XFER",
+      "label": "排队论与物化视图",
+      "anchor": "排队论与物化视图",
+      "en": "queueing & matview",
+      "extra": "→P8"
+    }
+  ],
+  "concept_edges": [
+    {
+      "from": "c_pg",
+      "to": "c_adv",
+      "kind": "depend"
+    },
+    {
+      "from": "c_adv",
+      "to": "c_gae",
+      "kind": "depend"
+    },
+    {
+      "from": "c_gae",
+      "to": "c_group",
+      "kind": "depend"
+    },
+    {
+      "from": "c_group",
+      "to": "c_axiom",
+      "kind": "depend"
+    },
+    {
+      "from": "c_axiom",
+      "to": "c_prm",
+      "kind": "depend"
+    },
+    {
+      "from": "c_graph",
+      "to": "c_axiom",
+      "kind": "depend"
+    },
+    {
+      "from": "c_bv",
+      "to": "c_gae",
+      "kind": "depend"
+    },
+    {
+      "from": "c_bv",
+      "to": "c_prm",
+      "kind": "oppose"
+    },
+    {
+      "from": "c_is",
+      "to": "c_tr",
+      "kind": "depend"
+    },
+    {
+      "from": "c_tr",
+      "to": "c_clip",
+      "kind": "oppose"
+    },
+    {
+      "from": "c_tr",
+      "to": "c_md",
+      "kind": "depend"
+    },
+    {
+      "from": "c_ent",
+      "to": "c_rkl",
+      "kind": "oppose"
+    },
+    {
+      "from": "c_ent",
+      "to": "c_collapse",
+      "kind": "depend"
+    },
+    {
+      "from": "c_rlvr",
+      "to": "c_hack",
+      "kind": "oppose"
+    },
+    {
+      "from": "c_shape",
+      "to": "c_hack",
+      "kind": "oppose"
+    },
+    {
+      "from": "c_rubric",
+      "to": "c_hack",
+      "kind": "oppose"
+    },
+    {
+      "from": "c_agg",
+      "to": "c_hack",
+      "kind": "depend"
+    },
+    {
+      "from": "c_grm",
+      "to": "c_hack",
+      "kind": "oppose"
+    },
+    {
+      "from": "c_psr",
+      "to": "c_hack",
+      "kind": "oppose"
+    },
+    {
+      "from": "c_settle",
+      "to": "c_hack",
+      "kind": "depend"
+    },
+    {
+      "from": "c_settle",
+      "to": "c_psr",
+      "kind": "depend"
+    },
+    {
+      "from": "c_zero",
+      "to": "c_ts",
+      "kind": "depend"
+    },
+    {
+      "from": "c_zero",
+      "to": "c_curr",
+      "kind": "depend"
+    },
+    {
+      "from": "c_passk",
+      "to": "c_qd",
+      "kind": "depend"
+    },
+    {
+      "from": "c_passk",
+      "to": "c_collapse",
+      "kind": "oppose"
+    },
+    {
+      "from": "c_group",
+      "to": "c_zero",
+      "kind": "depend"
+    },
+    {
+      "from": "c_rkl",
+      "to": "c_qd",
+      "kind": "depend"
+    },
+    {
+      "from": "c_tim",
+      "to": "c_off",
+      "kind": "depend"
+    },
+    {
+      "from": "c_tim",
+      "to": "c_stale",
+      "kind": "depend"
+    },
+    {
+      "from": "c_kv",
+      "to": "c_off",
+      "kind": "depend"
+    },
+    {
+      "from": "c_tail",
+      "to": "c_tim",
+      "kind": "depend"
+    },
+    {
+      "from": "c_order",
+      "to": "c_rlvr",
+      "kind": "depend"
+    },
+    {
+      "from": "c_land",
+      "to": "c_conv",
+      "kind": "depend"
+    },
+    {
+      "from": "c_sub",
+      "to": "c_param",
+      "kind": "depend"
+    },
+    {
+      "from": "c_sae",
+      "to": "c_param",
+      "kind": "depend"
+    },
+    {
+      "from": "c_sub",
+      "to": "c_x_orth",
+      "kind": "depend"
+    },
+    {
+      "from": "c_pre",
+      "to": "c_iso",
+      "kind": "depend"
+    },
+    {
+      "from": "c_pre",
+      "to": "c_ctrl",
+      "kind": "depend"
+    },
+    {
+      "from": "c_seed",
+      "to": "c_iso",
+      "kind": "depend"
+    },
+    {
+      "from": "c_ctrl",
+      "to": "c_curve",
+      "kind": "depend"
+    },
+    {
+      "from": "c_x_cql",
+      "to": "c_zero",
+      "kind": "transfer"
+    },
+    {
+      "from": "c_x_stop",
+      "to": "c_prm",
+      "kind": "transfer"
+    },
+    {
+      "from": "c_x_tmle",
+      "to": "c_prm",
+      "kind": "transfer"
+    },
+    {
+      "from": "c_x_dp",
+      "to": "c_hack",
+      "kind": "transfer"
+    },
+    {
+      "from": "c_x_audit",
+      "to": "c_hack",
+      "kind": "transfer"
+    },
+    {
+      "from": "c_x_vcg",
+      "to": "c_psr",
+      "kind": "transfer"
+    },
+    {
+      "from": "c_x_orth",
+      "to": "c_sub",
+      "kind": "transfer"
+    },
+    {
+      "from": "c_x_queue",
+      "to": "c_order",
+      "kind": "transfer"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G1",
+      "label": "G1 没有尺子",
+      "anchor": "G1 没有尺子"
+    },
+    {
+      "id": "G2",
+      "label": "G2 无梯度被当垃圾",
+      "anchor": "G2 无梯度被当垃圾"
+    },
+    {
+      "id": "G3",
+      "label": "G3 静态超参 vs 可测状态",
+      "anchor": "G3 静态超参 vs 可测状态"
+    },
+    {
+      "id": "G4",
+      "label": "G4 hack 没有预算",
+      "anchor": "G4 奖励是固定代理，hack 没有预算"
+    },
+    {
+      "id": "G5",
+      "label": "G5 裁判激励不相容",
+      "anchor": "G5 裁判既当运动员又当裁判"
+    },
+    {
+      "id": "G6",
+      "label": "G6 覆盖率被牺牲",
+      "anchor": "G6 单目标最大化 vs 覆盖率"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "P1",
+      "label": "P1 CreditBench 尺子",
+      "anchor": "P1　给信用分配造一把尺子",
+      "domains": [
+        "K-CREDIT",
+        "K-METHOD",
+        "K-THEORY"
+      ]
+    },
+    {
+      "id": "P2",
+      "label": "P2 零方差=后验证据",
+      "anchor": "P2　把\"全对/全错\"当作后验证据",
+      "domains": [
+        "K-EXPLORE",
+        "K-XFER"
+      ]
+    },
+    {
+      "id": "P3",
+      "label": "P3 DriftAudit",
+      "anchor": "P3　`DriftAudit`",
+      "domains": [
+        "K-SYS",
+        "K-OPT"
+      ]
+    },
+    {
+      "id": "P4",
+      "label": "P4 奖励投资组合",
+      "anchor": "P4　奖励组合的在线投资组合",
+      "domains": [
+        "K-REWARD",
+        "K-XFER"
+      ]
+    },
+    {
+      "id": "P5",
+      "label": "P5 激励相容裁判",
+      "anchor": "P5　激励相容的裁判",
+      "domains": [
+        "K-REWARD",
+        "K-XFER"
+      ]
+    },
+    {
+      "id": "P6",
+      "label": "P6 档案馆/MAP-Elites",
+      "anchor": "P6　把档案馆搬进 LLM RL",
+      "domains": [
+        "K-EXPLORE",
+        "K-METHOD"
+      ]
+    },
+    {
+      "id": "P7",
+      "label": "P7 可核查性预算",
+      "anchor": "P7　可核查性预算",
+      "domains": [
+        "K-CREDIT",
+        "K-REWARD",
+        "K-METHOD"
+      ]
+    },
+    {
+      "id": "P8",
+      "label": "P8 算力兑换率",
+      "anchor": "P8　训练 ↔ 推理的算力兑换率调度器",
+      "domains": [
+        "K-SYS",
+        "K-EXPLORE"
+      ]
+    },
+    {
+      "id": "P9",
+      "label": "P9 梯度方差设计",
+      "anchor": "P9　把 rollout 当对照实验来设计",
+      "domains": [
+        "K-METHOD",
+        "K-CREDIT"
+      ]
+    },
+    {
+      "id": "P10",
+      "label": "P10 能力分区正交",
+      "anchor": "P10　RL 的持续学习",
+      "domains": [
+        "K-THEORY",
+        "K-XFER"
+      ]
+    },
+    {
+      "id": "P11",
+      "label": "P11 世界模型反事实",
+      "anchor": "P11　用世界模型做反事实过程奖励",
+      "domains": [
+        "K-REWARD",
+        "K-SYS"
+      ]
+    }
+  ],
+  "gap_to_proposal": [
+    {
+      "gap": "G1",
+      "proposal": "P1"
+    },
+    {
+      "gap": "G1",
+      "proposal": "P7"
+    },
+    {
+      "gap": "G1",
+      "proposal": "P9"
+    },
+    {
+      "gap": "G2",
+      "proposal": "P2"
+    },
+    {
+      "gap": "G2",
+      "proposal": "P6"
+    },
+    {
+      "gap": "G3",
+      "proposal": "P3"
+    },
+    {
+      "gap": "G3",
+      "proposal": "P8"
+    },
+    {
+      "gap": "G4",
+      "proposal": "P4"
+    },
+    {
+      "gap": "G4",
+      "proposal": "P7"
+    },
+    {
+      "gap": "G5",
+      "proposal": "P5"
+    },
+    {
+      "gap": "G5",
+      "proposal": "P4"
+    },
+    {
+      "gap": "G6",
+      "proposal": "P6"
+    },
+    {
+      "gap": "G6",
+      "proposal": "P10"
+    },
+    {
+      "gap": "G6",
+      "proposal": "P11"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "C1",
+      "question": "要不要 critic？",
+      "anchor": "critic 该不该有",
+      "left": "BPCO：每 prompt 只采 1 次\n就追平 group 基线",
+      "right": "主流默认 critic 不划算\nSP³O：失败是实现问题\n（value flattening）",
+      "test": "同一硬件、同模型上比\nGPU-小时 / 达到同等 Pass@K",
+      "status": "未判决"
+    },
+    {
+      "id": "C2",
+      "question": "细粒度信用真有用？",
+      "anchor": "细粒度信用是否真有用",
+      "left": "HISPO：段级优于\ntoken / 序列级",
+      "right": "PACT：RLOO 粗粒度在期望\n梯度上与 token 级一致\nRLDS：2/4 基准无显著增益",
+      "test": "P1：在真实信用已知的环境\n对拍所有估计器",
+      "status": "有反证"
+    },
+    {
+      "id": "C3",
+      "question": "熵该涨还是该降？",
+      "anchor": "熵该涨还是该降",
+      "left": "正确轨迹熵降更快\n（ERR+：该奖励消解）",
+      "right": "熵坍缩→大 k pass@k 崩\n须保高熵护覆盖",
+      "test": "固定熵轨迹的干预实验\n+ 熵/长度/pass@k 三曲线",
+      "status": "可调和"
+    },
+    {
+      "id": "C4",
+      "question": "过程奖励的收益从哪来？",
+      "anchor": "过程奖励的收益从哪来",
+      "left": "局部性：首个错误位置\n（Cliff）／密集性：每步都给",
+      "right": "教师信息：特权解\n仅终局奖励也能 +10 点\n（三因素从未分离）",
+      "test": "P7：真 V vs 随机 V\n的 2×2 判决实验",
+      "status": "判决实验优先"
+    }
+  ],
+  "methods": [
+    {
+      "id": "m_pact",
+      "domain": "K-CREDIT",
+      "label": "PACT 2609.26355",
+      "status": "conflict"
+    },
+    {
+      "id": "m_graft",
+      "domain": "K-CREDIT",
+      "label": "GRAFT 2609.28963",
+      "status": "open"
+    },
+    {
+      "id": "m_hispo",
+      "domain": "K-CREDIT",
+      "label": "HISPO 2609.15471",
+      "status": "conflict"
+    },
+    {
+      "id": "m_slca",
+      "domain": "K-CREDIT",
+      "label": "SLCA-GRPO 2609.29050",
+      "status": "consensus"
+    },
+    {
+      "id": "m_rlds",
+      "domain": "K-CREDIT",
+      "label": "RLDS 2609.27035",
+      "status": "conflict"
+    },
+    {
+      "id": "m_basis",
+      "domain": "K-CREDIT",
+      "label": "BASIS 2605.27293",
+      "status": "open"
+    },
+    {
+      "id": "m_cliff",
+      "domain": "K-CREDIT",
+      "label": "Cliff 2609.02817",
+      "status": "open"
+    },
+    {
+      "id": "m_crest",
+      "domain": "K-CREDIT",
+      "label": "CrEST 2608.13179",
+      "status": "open"
+    },
+    {
+      "id": "m_ano",
+      "domain": "K-OPT",
+      "label": "ANO 2605.02320",
+      "status": "open"
+    },
+    {
+      "id": "m_quatro",
+      "domain": "K-OPT",
+      "label": "QUATRO 2602.04620",
+      "status": "open"
+    },
+    {
+      "id": "m_infoppo",
+      "domain": "K-OPT",
+      "label": "InfoPPO 2609.24380",
+      "status": "open"
+    },
+    {
+      "id": "m_conspo",
+      "domain": "K-OPT",
+      "label": "ConSPO 2605.12969",
+      "status": "open"
+    },
+    {
+      "id": "m_bpo",
+      "domain": "K-OPT",
+      "label": "BPO 2609.15987",
+      "status": "open"
+    },
+    {
+      "id": "m_gcpo",
+      "domain": "K-OPT",
+      "label": "GCPO 2608.11674",
+      "status": "consensus"
+    },
+    {
+      "id": "m_gmts",
+      "domain": "K-OPT",
+      "label": "GMTS 2608.30632",
+      "status": "conflict"
+    },
+    {
+      "id": "m_par",
+      "domain": "K-REWARD",
+      "label": "PAR 2502.18770",
+      "status": "consensus"
+    },
+    {
+      "id": "m_amrp",
+      "domain": "K-REWARD",
+      "label": "AMRP 2609.00213",
+      "status": "open"
+    },
+    {
+      "id": "m_drop",
+      "domain": "K-REWARD",
+      "label": "Rubric Dropout 2608.11669",
+      "status": "consensus"
+    },
+    {
+      "id": "m_debate",
+      "domain": "K-REWARD",
+      "label": "Debate 2608.17776",
+      "status": "open"
+    },
+    {
+      "id": "m_flare",
+      "domain": "K-REWARD",
+      "label": "FLARE 2609.23808",
+      "status": "open"
+    },
+    {
+      "id": "m_pcc",
+      "domain": "K-REWARD",
+      "label": "Proof-Carrying 2609.09776",
+      "status": "open"
+    },
+    {
+      "id": "m_bts",
+      "domain": "K-REWARD",
+      "label": "Bayesian Truth Serum 2608.25267",
+      "status": "open"
+    },
+    {
+      "id": "m_paw",
+      "domain": "K-REWARD",
+      "label": "PaW 2606.02388",
+      "status": "open"
+    },
+    {
+      "id": "m_cge",
+      "domain": "K-EXPLORE",
+      "label": "CGE 2609.25773",
+      "status": "open"
+    },
+    {
+      "id": "m_deepo",
+      "domain": "K-EXPLORE",
+      "label": "DEEPO 2609.28570",
+      "status": "open"
+    },
+    {
+      "id": "m_zppo",
+      "domain": "K-EXPLORE",
+      "label": "ZPPO 2606.18216",
+      "status": "conflict"
+    },
+    {
+      "id": "m_moda",
+      "domain": "K-EXPLORE",
+      "label": "MoDA 2609.14896",
+      "status": "consensus"
+    },
+    {
+      "id": "m_es",
+      "domain": "K-EXPLORE",
+      "label": "ES vs GRPO 2608.27351",
+      "status": "consensus"
+    },
+    {
+      "id": "m_epig",
+      "domain": "K-EXPLORE",
+      "label": "EPIG-Tree 2609.20004",
+      "status": "open"
+    },
+    {
+      "id": "m_cent",
+      "domain": "K-SYS",
+      "label": "Score Centering 2609.20807",
+      "status": "consensus"
+    },
+    {
+      "id": "m_shadow",
+      "domain": "K-SYS",
+      "label": "Shadow Mask 2605.06850",
+      "status": "open"
+    },
+    {
+      "id": "m_brace",
+      "domain": "K-SYS",
+      "label": "BRACE 2609.09783",
+      "status": "open"
+    },
+    {
+      "id": "m_opd",
+      "domain": "K-SYS",
+      "label": "OPD-then-RL 2609.04108",
+      "status": "consensus"
+    },
+    {
+      "id": "m_boptr",
+      "domain": "K-SYS",
+      "label": "BOPTR 2609.01274",
+      "status": "consensus"
+    },
+    {
+      "id": "m_rtpo",
+      "domain": "K-SYS",
+      "label": "RTPO 2608.18682",
+      "status": "consensus"
+    },
+    {
+      "id": "m_luck",
+      "domain": "K-METHOD",
+      "label": "Luck Is Not Skill 2609.24144",
+      "status": "consensus"
+    },
+    {
+      "id": "m_spin",
+      "domain": "K-THEORY",
+      "label": "Spin-glass RLVR 2609.28625",
+      "status": "open"
+    },
+    {
+      "id": "m_sae",
+      "domain": "K-THEORY",
+      "label": "Fixed-SAE Track 2609.15064",
+      "status": "open"
+    },
+    {
+      "id": "m_tame",
+      "domain": "K-THEORY",
+      "label": "TAME 2609.24243",
+      "status": "consensus"
+    },
+    {
+      "id": "m_geom",
+      "domain": "K-THEORY",
+      "label": "Refusal Geometry 2609.06934",
+      "status": "open"
+    },
+    {
+      "id": "m_poem",
+      "domain": "K-METHOD",
+      "label": "PoEM 2609.30226",
+      "status": "open"
+    },
+    {
+      "id": "m_dutch",
+      "domain": "K-METHOD",
+      "label": "Dutch Books for LMs 2609.02797",
+      "status": "open"
+    },
+    {
+      "id": "m_crlhf",
+      "domain": "K-XFER",
+      "label": "Offline Constrained RLHF 2604.00200",
+      "status": "open"
+    },
+    {
+      "id": "m_bandit",
+      "domain": "K-XFER",
+      "label": "Compositional Bandits 2608.21993",
+      "status": "open"
+    }
+  ]
+}

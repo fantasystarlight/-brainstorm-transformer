@@ -1,0 +1,21 @@
+%% 模块依赖图（由源码 import 自动解析）
+flowchart LR
+  subgraph L0[叶子（无项目内依赖）]
+    bpe["bpe.py"]
+    corpus["corpus.py"]
+    model["model.py"]
+  end
+  subgraph L1[中层]
+    data["data.py"]
+  end
+  subgraph L2[入口脚本]
+    generate["generate.py"]
+    train["train.py"]
+  end
+  bpe -->|| data
+  corpus -->|| data
+  data -->|| generate
+  data -->|| train
+  model -->|| generate
+  model -->|| train
+  %% note: bpe/model 是叶子（零项目内依赖）；data 依赖 bpe+corpus；train/generate 在顶层。

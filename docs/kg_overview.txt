@@ -1,0 +1,28 @@
+知识图谱·全景：缺口 → 提案 → 知识域
+
+[G1 没有尺子]
+  - P1 CreditBench 尺子  ⇒ 知识域: K-CREDIT, K-METHOD, K-THEORY
+  - P7 可核查性预算  ⇒ 知识域: K-CREDIT, K-REWARD, K-METHOD
+  - P9 梯度方差设计  ⇒ 知识域: K-METHOD, K-CREDIT
+
+[G2 无梯度被当垃圾]
+  - P2 零方差=后验证据  ⇒ 知识域: K-EXPLORE, K-XFER
+  - P6 档案馆/MAP-Elites  ⇒ 知识域: K-EXPLORE, K-METHOD
+
+[G3 静态超参 vs 可测状态]
+  - P3 DriftAudit  ⇒ 知识域: K-SYS, K-OPT
+  - P8 算力兑换率  ⇒ 知识域: K-SYS, K-EXPLORE
+
+[G4 hack 没有预算]
+  - P4 奖励投资组合  ⇒ 知识域: K-REWARD, K-XFER
+  - P7 可核查性预算  ⇒ 知识域: K-CREDIT, K-REWARD, K-METHOD
+
+[G5 裁判激励不相容]
+  - P4 奖励投资组合  ⇒ 知识域: K-REWARD, K-XFER
+  - P5 激励相容裁判  ⇒ 知识域: K-REWARD, K-XFER
+
+[G6 覆盖率被牺牲]
+  - P6 档案馆/MAP-Elites  ⇒ 知识域: K-EXPLORE, K-METHOD
+  - P10 能力分区正交  ⇒ 知识域: K-THEORY, K-XFER
+  - P11 世界模型反事实  ⇒ 知识域: K-REWARD, K-SYS
+

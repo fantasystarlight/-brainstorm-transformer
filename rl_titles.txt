@@ -1,0 +1,1166 @@
+ 47 2026-08-21 2608.19842 SAPO: Single-Rollout Autoregressive Policy Optimization for Agentic Reinforcement Learning
+ 46 2026-09-21 2502.18770 Reward Shaping to Mitigate Reward Hacking in RLHF
+ 44 2026-09-03 2609.02817 Cliff: Learning Process Rewards from the First Mistake
+ 43 2026-09-23 2609.26355 PACT: From Credit Assignment to Critic Alignment
+ 40 2026-09-25 2609.28963 Back to the Definition: Estimating Step-Level Advantages via Trajectory Graphs for Agentic Reinforcement Learning
+ 40 2026-09-15 2609.15471 HISPO: Hierarchical Importance-Sampling Policy Optimization with Entropy-Derived Segments
+ 37 2026-09-25 2609.29050 SLCA-GRPO: Resolving Cross-Segment Credit Misattribution in Tool-Calling RL
+ 37 2026-08-19 2608.17301 SignalReasoner: Assessing the Upper Bound of 3B Models for Signal Mathematical Reasoning
+ 36 2026-08-28 2608.27046 Performance Foundations of Parallel & Distributed Reasoning Language Models
+ 36 2026-08-14 2608.13179 Teach the Magnitude, Not the Direction: Verifier-Bounded Credit Assignment for Multi-Turn Multi-step LLM Agents
+ 35 2026-08-19 2608.17776 Debate Training Reduces Reward Hacking in RLAIF
+ 34 2026-09-19 2605.12969 Revisiting Reinforcement Learning with Verifiable Rewards from a Contrastive Perspective
+ 34 2026-09-24 2606.18216 Zone of Proximal Policy Optimization: Teacher in Prompts, Not Gradients
+ 34 2026-09-04 2609.03342 Gradients Know What Outcomes Don't: Unlocking Reinforcement Learning for LLM Reasoning with Gradient-Aligned Rewards
+ 34 2026-09-02 2609.00213 Uncovering and Mitigating Aggregation-Induced Reward Hacking in Multi-Reward Reinforcement Learning
+ 33 2026-09-04 2609.03324 DE-Venus: A Data-Efficient RLVR Framework for Large Language Models
+ 33 2026-09-17 2609.18057 Anchoring What Matters: A Dual-Level Learning Framework for Visually-Grounded Multimodal Reasoning
+ 32 2026-09-18 2609.19659 EmbodiedMind: Adaptive Data Curation and Prefix-Tree Reinforcement Learning for Efficient Embodied Intelligence
+ 32 2026-09-23 2609.25773 Video-HopChain: Multi-Hop Questions and Confidence-Gated Exploration for Video Reasoning Models
+ 32 2026-09-16 2605.27293 BASIS: Batchwise Advantage Estimation from Single-Rollout Information Sharing for LLM Reasoning
+ 32 2026-09-17 2605.06850 How to Compress KV Cache in RL Post-Training? Shadow Mask Distillation for Memory-Efficient Alignment
+ 31 2026-09-02 2609.01274 From Base Rollouts to RL Reasoning: A Budgeted Search Perspective
+ 31 2026-09-04 2609.04108 Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR
+ 31 2026-08-20 2608.18682 RTPO: Reverse-Turn Policy Optimization for Stabilizing Agentic RL Training
+ 30 2026-09-24 2609.27035 Reinforcement Learning with Decomposed Subtasks
+ 30 2026-09-18 2609.20004 EPIG-Tree: Compute-Optimal Branching for Gradient-Efficient Reinforcement Learning
+ 29 2026-09-23-补充 2609.23808 FLARE: A Full-Lifecycle Dense Supervision Paradigm for Long-Horizon Coding Agents via Generative Reward Model
+ 29 2026-09-23-补充 2609.24380 Information-Time Proximal Policy Optimization
+ 29 2026-08-27 2608.25350 Beyond Pairwise Feedback: Listwise Vision-Language Supervision for Preference-Based Reward Learning
+ 28 2026-09-01 2608.30528 PAC: Progress-Augmented Advantage Curriculum for Multi-Task Reinforcement Learning of LLMs
+ 28 2026-09-01 2608.31035 When Does Predictor-Based RL Align with Human Perception? A Study of Subjective Rewards in Codec-Based Speech Language Models
+ 28 2026-08-13 2608.11669 Rubric Dropout: A Simple Way to Mitigate Reward Hacking in Rubric-as-Reward RL
+ 28 2026-08-19 2608.17289 PlanPO: Group Planning-Aware Policy Optimization for Multi-Turn Agentic LLMs
+ 28 2026-08-13 2608.11674 GCPO: Diagnosing and Constraining Subspace Geometry in Rollout RL for LLMs
+ 28 2026-09-25 2609.28570 DEEPO: Dual-Entropy Enhanced Policy Optimization for Hallucination in MLLMs
+ 27 2026-09-15 2603.11321 Hindsight-Anchored Policy Optimization: Learning Through Hindsight with Thompson Sampling-Inspired Adaptive Gating
+ 27 2026-08-25 2608.23311 Beyond the Stability-Exploration Dilemma: Environmental Regularization for LLM Policy Optimization
+ 27 2026-08-13 2608.12220 SCOUT: Unlocking Enhanced Spatial Reasoning via Structured Chain-of-Thought and Multi-Objective Process Reward
+ 27 2026-08-19 2608.17941 Efficient RLVR Scheduling via Graph-Structured Online Difficulty Estimation
+ 27 2026-08-28 2608.27420 Boosting LLM Exploration via Weak-Model Guidance in RLVR
+ 27 2026-09-19 2609.21650 SynthDemo-RL: Breaking the Zero-Reward Barrier in VLA Adaptation with LLM-Guided Synthetic Demonstrations
+ 27 2026-08-21 2608.20161 DARS: Dual-Level Credit Assignment RL with Structured Reasoning for Instruction-Based Image Editing
+ 27 2026-08-25 2608.23566 How to Train a Critic Stably and Efficiently
+ 27 2026-09-23 2603.29608 Learning Diagnostic Reasoning for Decision Support in Toxicology
+ 27 2026-08-19 2608.17393 LEGO-RL: Harness-Native Reinforcement Learning for Coding Agents
+ 27 2026-09-04 2609.03383 TIGPO: Temporal Instance-Graph Policy Optimization for Long-Horizon LLM Agents
+ 26 2026-08-18 2608.16072 Learn What's Left, Not What's Mastered: Saturation Aware Advantage Reweighting for Multi-Reward Policy Optimization
+ 26 2026-09-23 2609.06100 VERPO: Verified Evidence Regularized Policy Optimization
+ 26 2026-09-10 2609.09764 SocialRL: Refining LLMs' Social Intelligence through Multi-turn Reinforcement Learning and Reward Design
+ 26 2026-09-15 2609.15987 Bellman Policy Optimization
+ 26 2026-08-19 2608.17310 Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements
+ 26 2026-09-03 2609.02236 PGPO: Potential-Guided Policy Optimization for Multi-Turn Agentic Tasks
+ 25 2026-09-09 2609.06893 Towards Bridging the Gap Between Offline and Iterative Alignment via Preference Distillation
+ 25 2026-09-24 2605.02320 ANO: Robust Policy Optimization via Bounded, Redescending Gain Fields
+ 24 2026-09-04 2609.04066 Subspace Inference Enables Efficient Active Reward Learning from Preferences
+ 24 2026-08-21 2608.19803 MileGPO: Milestone Inference with Local Evidence for Graph-Based Policy Optimization of Long-Horizon LLM Agents
+ 24 2026-09-25 2609.29444 IterSynth: Rethinking Deep Search Agents via Role-Decoupled Iterative Synthesis
+ 24 2026-09-24 2609.27572 DCRL: Decoupling and Coupling Reinforcement Learning via Policy-Reward Manifold Alignment
+ 24 2026-08-31 2608.28421 Program Learning with Verifiable Rewards: Symbolic Backpropagation for Post-Training LLMs
+ 24 2026-09-07 2609.05221 A Verifier-Guided Explainable Reasoning Framework with Gold-Anchored QLoRA, Task-Aware Mixture-of-Experts, and Group-Relative RLVR
+ 24 2026-09-17 2607.28077 LEEPS: Latent-Guided Explore-Exploit Prompt Sampling for Efficient RLVR in Large Language Models
+ 24 2026-08-18 2608.16710 The Ethical Decision Head: Operationalizing Normative Ethics in Autonomous Vehicles via Reinforcement Learning from Human Feedback
+ 24 2026-09-18 2609.20715 Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL
+ 23 2026-08-25 2608.22479 GTA-RAG: Graph-Trajectory-Augmented Reinforcement Learning for Multi-Turn Retrieval-Augmented Reasoning
+ 23 2026-08-31 2608.28476 ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL
+ 23 2026-09-24 2609.27156 Giving Credit Where It's Due: Redundancy-Aware Learning for Efficient Reasoning
+ 23 2026-09-23-补充 2606.20002 Connect the Dots: Training LLMs for Long-Lifecycle Agents with Cross-Domain Generalization Via Reinforcement Learning
+ 23 2026-09-17 2609.18708 Rethinking Critic Learning in PPO: Understanding and Mitigating Value Flattening
+ 23 2026-08-18 2608.16739 Le Critique: Privileged Value Functions for LLM Reinforcement Learning
+ 23 2026-09-15 2609.15544 Specifying Reward Functions for RL Without Environment Sampling
+ 23 2026-09-25 2608.18574 Beyond Forgetting: Diagnosing and Harnessing Shared Reasoning in Continual RLVR
+ 22 2026-09-01 2608.30632 GMTS: Gradient Magnitude-based Token Selection Improves RLVR Training for LLM Reasoning
+ 22 2026-09-25 2606.31825 Breaking Failure Cascades: Step-Aware Reinforcement Learning for Medical Multimodal Reasoning
+ 22 2026-08-14 2608.13505 Intern-S2-Preview: Scientific Agentic Foundation Model
+ 22 2026-09-23-补充 2608.18531 Pairwise Ranking Outperforms Single-Action RL for Offline Explanation Selection: A Practical Lesson
+ 22 2026-08-25 2608.22847 GSAR: Goal-State-Anchor Rewards for Mobile GUI Agents with Self-Evolving Data Synthesis
+ 22 2026-09-04 2609.04159 SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center
+ 22 2026-09-25 2609.30226 PoEM: Predicting RL Outcomes from Existing Policies
+ 22 2026-09-03 2609.02170 DMRL: Document-Mediated Reinforcement Learning for Skill Optimization in Advertising Recommendation
+ 22 2026-09-23-补充 2609.24243 Taming CoT Obfuscation in VLMs: From Mechanistic Evidence to Activation Enforcement
+ 22 2026-08-28 2608.26329 Neuro-symbolic PRM: Enhancing Scientific Reasoning via Structured Traces and Symbolic Verification
+ 22 2026-09-10 2609.10315 TRACE: Training Reasoning Agents for Causal Exploration with Synthesized Rewards
+ 21 2026-09-09 2609.08025 Eliciting Self-Verification in Multimodal Reasoning Agents with Reinforcement Learning
+ 21 2026-09-25 2609.29230 EAGER: Enhancing Generative Event Extraction via Reinforcement Learning with Verifiable Rewards
+ 21 2026-09-03 2609.01947 On-Policy Distillation Meets Off-Policy GRPO: Training Compact Instruction-Following Rerankers
+ 21 2026-08-19 2608.17253 Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL
+ 21 2026-09-21 2605.09134 BoostAPR: Boosting Automated Program Repair via Execution-Grounded Reinforcement Learning with Dual Reward Models
+ 21 2026-09-02 2609.01325 VerTox: Verifiable Reward-Guided Corpus Poisoning Against Neural Ranking Models
+ 21 2026-09-15 2609.15066 Salesforce Koa: An Enterprise Language Model for Agentic Tool Use
+ 21 2026-09-21 2609.21432 GVPO++: Group Variance Policy Optimization for LLM Post-Training and On-Policy Distillation
+ 21 2026-09-25 2608.04317 Trident : How to Break Deep Reinforcement Learning Cyber Defenses (Agentic)
+ 21 2026-09-18 2609.20082 MATCH: Model-Aware Tool Learning with Curriculum Scheduling and Hierarchically Gated Rewards
+ 21 2026-09-25 2609.28554 Pistis Technical Report
+ 21 2026-08-18 2608.16156 TRCA: Transition-wise Rubric Credit Assignment for Long-horizon LLM Agents
+ 21 2026-09-11 2609.09957 Beyond Verified Answers: Solver-Informed Self-Distillation for Bootstrapping Operations Research Language Models
+ 21 2026-08-19 2608.17528 Agent Lightning v1.0: Towards Harnessed Agentic RL
+ 21 2026-09-09 2609.07111 From LLM-Generated Specifications to Learned Quadruped Locomotion
+ 21 2026-09-25 2608.22631 Learning Generalizable Behaviors for Terminal Agents
+ 21 2026-08-25 2608.23256 Is Next-Chunk Reasoning RL Really Better than SFT? Revisiting Training Strategies under no-CoT Data
+ 21 2026-09-25 2609.29983 From Interests to Semantic IDs: Retrieval-Grounded Credit Assignment for Generative Recommendation
+ 20 2026-09-04 2609.04194 Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning
+ 20 2026-08-13 2608.12253 One Frozen Simulator Is Not Enough: Simulator Collapse in Multi-Agent RL
+ 20 2026-09-23 2609.25356 TelecomGPT-R1: Unified Post-Training for Reasoning Across Heterogeneous Telecom Tasks
+ 20 2026-08-27 2608.25243 From Memorization to Absorption: Mixed-Policy RL for Continual Knowledge Injection
+ 20 2026-08-28 2608.27448 TTPO: Test-Time Policy Optimization
+ 20 2026-09-11 2609.11061 Fork Where the Model Changes Its Mind: Belief-Shift Branching for Tree-Structured Reinforcement Learning
+ 20 2026-09-09 2609.07137 Flow3D-OPD: Multi-Teacher On-Policy Distillation for 3D Geometry Generation with Flow-Matching Diffusion Transformer
+ 20 2026-08-20 2608.19181 Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning
+ 20 2026-09-23 2609.26536 Transcribe, Translate, and Optimize: Joint Reward Learning for Speech Translation
+ 20 2026-08-28 2608.27351 Understanding Evolution Strategies for LLM Reasoning: Broader Reasoning Coverage than GRPO
+ 20 2026-09-25 2609.28625 RLVR landscapes for iterated multiplications can be benign: Insights from spin-glass theory
+ 20 2026-08-31 2608.28447 Learning to Use Tools: Reinforcement Learning for Tool-Integrated Mathematical Reasoning
+ 20 2026-09-10 2609.09783 BRACE: Anchored Bellman-Residual Correction for Stale Critics in Asynchronous RL
+ 20 2026-08-18 2608.15530 Why Summaries Turn Neutral: Policy Attribution for Sentiment Drift in Reinforcement Learning from Human Feedback
+ 20 2026-08-28 2608.26550 SPEAR: Distilling Domain-Adaptive Reasoning Skeletons via Sequential Symbolic Alignment in Reinforcement Learning
+ 19 2026-08-25 2608.23493 SRPO: Self-Reflective Policy Optimization for Long-Horizon Reasoning
+ 19 2026-09-17 2607.15740 Debiasing Text-to-Image Evaluation via Implicit Cultural Alignment Reward Modeling
+ 19 2026-09-02 2609.01567 Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers
+ 19 2026-09-01 2608.30395 When LLM Meets Tree Search: A Systematic View of Inference as Search in Large Language Models
+ 19 2026-09-24 2508.06165 UR$^2$: Unify RAG and Reasoning through Reinforcement Learning
+ 19 2026-09-09 2609.08404 Environments as Scaffold: Enriching Feedback to Bootstrap Self-Evolving Agents in Long-Horizon Tasks
+ 19 2026-09-19 2608.27409 Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms
+ 19 2026-09-02 2609.01245 Explore More, Drift Less: Outcome-Only Reinforcement Learning Can Suffice for Long-Horizon Interactive Agents
+ 19 2026-09-15 2609.15606 VideoScout: Learning Agentic Active Exploration with Adaptive Reasoning Pacing for Long Video Understanding
+ 19 2026-09-19 2607.08837 Prompt-Driven Exploration: Language as an Exploration Space for VLA Reinforcement Learning
+ 19 2026-08-28 2608.26432 SpeechGym: An Audio-Native Gym for Training Voice Agents via Reinforcement Learning
+ 19 2026-09-10 2609.09776 Proof-Carrying Cognition: Closing the Verification Gap with Reality-Settled Reward
+ 19 2026-09-25 2609.30177 Search-Aware Reinforcement Learning for Multi-Component Query Understanding in Roblox Game Search
+ 19 2026-09-18 2602.04620 QUATRO: Query-Adaptive Trust Region Policy Optimization for LLM Fine-tuning
+ 19 2026-08-27 2608.25358 Where vs What: Decomposing Structural and Content Failures in LLM-Generated Structured Outputs
+ 18 2026-09-15 2609.15051 Not All Prompts Are Equal: Exploration-Guided Prompt Scaffolding for Multimodal Reinforcement Post-Training
+ 18 2026-09-15 2606.02388 Policy and World Modeling Co-Training for Language Agents
+ 18 2026-09-01 2608.30005 Small Language Models as Judges for Rubric-Based Reinforcement Learning
+ 18 2026-09-17 2606.03077 Libra: Efficient Resource Management for Agentic RL Post-Training
+ 18 2026-08-27 2608.25267 Mitigating LLM sycophancy with RL-based fine-tuning: Bayesian Truth Serum approach
+ 18 2026-08-13 2608.11787 GRPO for Financial Advice Generation: Outperforming Commercial LLMs under CATE Evaluation
+ 18 2026-09-03 2609.02786 SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment
+ 18 2026-09-15 2609.14896 Forty Shades of Blue: Quality-Diversity Alignment via Mode-Conditioned Reinforcement Learning
+ 18 2026-09-16 2505.24846 MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning
+ 18 2026-09-15 2609.15182 VisInteract: Towards Dynamic Interactive Text-to-Visualization under Imperfect Queries
+ 18 2026-08-13 2608.11715 When the API Speaks the Wrong Language: Revisiting Post-Training for Multilingual Tool Use
+ 18 2026-09-23-补充 2608.28771 ERR+: Sequential Entropy Resolution for Efficient and Decisive LLM Reasoning
+ 18 2026-09-16 2609.16748 TIAO: Token Importance-Aware Policy Optimization for Text Summarization
+ 18 2026-08-25 2608.22429 Think with Structured Grounding: Perceptual Reinforcement Learning for Chart and Visual-Tabular Understanding
+ 17 2026-09-23 2504.20106 Adaptive Helpfulness-Harmlessness Alignment with Preference Vectors
+ 17 2026-09-01 2608.29616 JPO: Juris Policy Optimization for Structured Legal Reasoning in Criminal Judgment Prediction
+ 17 2026-09-15 2609.15296 Reason What Matters: Retrieval-Grounded Reasoning for Universal Multimodal Embeddings
+ 17 2026-08-20 2608.19197 SPADE: Self-Play in Adaptive Synthetic Executable Environments
+ 17 2026-08-27 2608.25580 V-Rubrics: Visual Faithfulness via Rubric-Based Reinforcement Learning
+ 17 2026-09-18 2602.04663 Rethinking the Design Space of Reinforcement Learning for Diffusion Models: On the Importance of Likelihood Estimation Beyond Loss Design
+ 17 2026-09-01 2608.30952 One Policy Is Enough: Single-Agent Reinforcement Learning Outperforms Tree Search for Chemistry Tool Learning
+ 17 2026-09-25 2609.28690 Beyond Surface Style: Aligning Multi-Turn User Simulators with Behavioral Consistency
+ 17 2026-09-02 2609.00590 CRAFT: Fine-Tuning Pre-hoc Explainability in AI-native 6G RAN
+ 17 2026-08-21 2608.20099 Reward-Guided Autoregressive Graph Generation for Efficient Multi-Agent Communication Topology Design
+ 17 2026-08-19 2608.17411 GUPO: Gradient Uncertainty-aware Policy Optimization for Post-Training Large Language Models
+ 17 2026-08-19 2608.18008 Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents
+ 17 2026-09-01 2608.29357 LiteSearch-VL: Small Multimodal Search Agents via Trajectory Distillation and Synthetic Step-DPO
+ 17 2026-09-09 2609.08452 SRPO: Setwise Relative Policy Optimization for Multi-Agent LLMs
+ 17 2026-09-23-补充 2609.24144 Luck Is Not Skill: When Do Paired Rollouts Help Group-Relative RL of LLM Agents?
+ 16 2026-09-15 2609.14860 One Example Is Enough to Pass Fairness Benchmarks: Rethinking Fairness Evaluation for Aligned LLMs
+ 16 2026-09-19 2608.30719 Mind the Gap: Theory-of-Mind-Grounded Friction for Epistemic Alignment
+ 16 2026-09-17 2609.19101 Monitoring and Discovering Reward Hacking with Internal Representations during LLM Evaluations
+ 16 2026-09-24 2609.27511 NV-Reason-CT: 3D Visual Language Model for CT Analysis
+ 16 2026-08-28 2608.26324 Privacy Without Regret: Differentially Private Inference-Time Alignment
+ 16 2026-09-23-补充 2606.15080 AdaMame: A Training Recipe for Adaptive Multilingual Reasoning
+ 16 2026-09-24 2609.27987 PCQC: Privileged Counterfactual Question Credit for Multi-Turn Medical Dialogue
+ 16 2026-09-17 2602.11220 Patch the Distribution Mismatch: RL Rewriting Agent for Stable Off-Policy SFT
+ 16 2026-08-17 2608.14498 Rollplex: Cross-Phase GPU Spatial Sharing for Vision Language Model Post-Training
+ 16 2026-09-04 2609.03960 FiMI Banking: A Sovereign Model for Indian Retail Banking
+ 16 2026-09-07 2609.05295 RISE: Recursive Improvement via Self-Extrapolating Policy Distillation
+ 16 2026-09-25 2609.29109 CounterRoute: Self-Routed Reasoning via Hierarchical Counterfactual Credit Assignment
+ 16 2026-08-21 2608.20129 Multi-Agent Orchestration with the Common-Sense Reasoning Capabilities of LLMs for Autonomous Driving
+ 16 2026-09-18 2609.19820 Steering Equilibrium Selection in Regularized Self-Play via the Reference Policy
+ 16 2026-09-23 2609.25463 Rollout Efficiency in Reinforcement Learning for Reasoning Large Language Models: A Taxonomy and Future Directions
+ 16 2026-08-13 2608.11980 HCGRec: Hint-Conditioned Generative Recommendation with Semantic IDs
+ 16 2026-09-19 2609.21208 Information-Gain Rewards over Diversity-Pruned Tests: GT-Anchored Verifier Co-Training for Reliable Code Generation
+ 16 2026-09-09 2609.08576 Which Forms of Caregiver Feedback Support Grammar Learning? A Reinforcement-Learning Study of Child-Like Language Models
+ 16 2026-09-15 2609.15800 Navigating Sparse Evidence: Agentic Visual RAG via Explicit Context Selection and Consolidation
+ 15 2026-08-18 2608.16386 Mint-Agent: Introducing Finance-Native Agentic Foundation Models
+ 15 2026-09-01 2608.29622 AgenticRag-R1: Agentic Reinforcement Learning with Stack Memory for Multi-Step Reasoning, Retrieval and Memorizing
+ 15 2026-09-01 2608.30702 An Agentic Retrobiosynthesis Framework with Learned Frontier Selection
+ 15 2026-08-20 2608.18827 MLREF: Efficient Module Reuse for Reward Design in Reinforcement Learning via Large Language Models
+ 15 2026-09-23 2609.25442 WeightBridge: An Efficient Weight Transfer Library for Reinforcement Learning
+ 15 2026-08-18 2608.16622 HarmTrace: Anchor-Calibrated Decoupled Optimization for Fine-Grained Target Identification in Harmful Memes
+ 15 2026-09-02 2609.00813 One Policy, Any Budget: Internalizing Budget-Aware Search via Reinforcement Learning
+ 15 2026-08-27 2608.26013 VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following
+ 15 2026-09-25 2609.29892 Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents
+ 15 2026-09-16 2609.16937 Beyond Token-Local Imitation: Reward-Compatible Temporal Credit Assignment for On-Policy Distillation
+ 15 2026-09-25 2609.29421 Rufus-Air: An Open LLM Post-Training Recipe
+ 15 2026-08-18 2608.16831 Policy Iteration with Human Feedback: Bringing Post-Training RL to In-context Learning
+ 15 2026-08-18 2608.16553 STAGE: Controlled Objective Admission for Multi-Preference LLM Alignment
+ 15 2026-09-16 2609.16760 Turn-level Multiscale Density Ratio Estimation for LLM Agents
+ 15 2026-09-19 2609.21550 OneBid: A Unified Auto-Bidding Foundation Model for Diverse oCPX Advertising Scenarios
+ 15 2026-09-09 2609.09059 PlayTrain: An Efficient Reinforcement Learning Framework for LLM-Generated Adaptable JavaScript Games
+ 15 2026-09-11 2609.11355 SEAR: Segment-Evidence-Aware Routing for Weak-to-Strong Multilingual Speech MCQ
+ 15 2026-09-04 2609.03241 FlowBalance: Verifier-Grounded Self-Improvement from On-Policy Reasoning Experience
+ 14 2026-09-23-补充 2601.12538 A Survey of Agentic Reasoning for Large Language Models: Towards Recursively Self-Improving and Collective Agents
+ 14 2026-09-17 2609.18677 Voice of Reason: Reinforcement Learning for Spoken Math
+ 14 2026-09-11 2609.10901 SearchAtlas: Analyzing Agentic Search Strategies via Evidential Query Graphs
+ 14 2026-08-18 2608.16539 Listen, Reason, and Segment: Aligning LALMs with Editorial Judgment for Media Chapterization
+ 14 2026-09-23 2606.24369 Accelerating Disaggregated RL for Visual Generative LLMs with Diffusion-Based Parallelism and Trainer-Assisted Generation
+ 14 2026-09-15 2609.15393 CodeTS: Verifiable Text-to-Time Series Generation via Executable Code
+ 14 2026-09-23 2609.26667 MAGIC: Mixed-Granularity Agent Graphs via Incremental Construction with Dense-Reward Reinforcement Learning
+ 14 2026-09-07 2609.05401 Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models
+ 14 2026-08-25 2608.22788 TailSieve: Partial-Rollout-Guided Tail Routing for LLM Rollouts
+ 14 2026-09-17 2607.19190 Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents
+ 14 2026-09-25 2609.28614 Reward Hacking Challenges Oversight of Autonomous Research Agents
+ 14 2026-08-13 2608.11573 Reinforcing Step-level Reasoning for Effective Self-Correction in LLMs
+ 14 2026-08-21 2608.20256 Learning When to Think: Adaptive Reasoning for Test-Time Compute Allocation
+ 14 2026-08-27 2608.25543 Goodput Maximization for Large Language Model Edge Inference: A Two-Phase Maskable PPO Approach
+ 14 2026-09-02 2609.00925 Context-Grounding Gains Are Mediated by Pre-existing Machinery: Auditing GRPO, SFT, and DPO
+ 14 2026-09-18 2609.20124 Multi-Dimensional Prosody Judgment For Live Streaming Speech Synthesis
+ 14 2026-09-23-补充 2605.02626 Gradient-Gated DPO: Stabilizing Preference Optimization in Language Models
+ 14 2026-08-14 2608.12888 When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory
+ 14 2026-09-09 2609.06970 CantoneseLLM v2: Reasoning in a Low-Resource Language
+ 14 2026-09-16 2609.07529 CoER: Defending against Adaptive Indirect Prompt Injection via Adversarial Co-Evolution and Refinement
+ 14 2026-09-01 2608.30325 Sequential Trajectories and Simultaneous Blending: Multi-Emotion Modeling for Instruction-Following TTS
+ 13 2026-09-01 2608.29999 TEMPO: Temporally-grounded Multi-task Post-training for Large Audio-Language Models
+ 13 2026-08-24 2608.21305 Re$^3$Cap: Retrieval-Guided Refinement for Image Captioning Enhancement via Reinforcement Learning
+ 13 2026-09-15 2609.14739 Building Legal Reward Models for Grounding and Abstention
+ 13 2026-09-16 2505.13388 R3: Robust Rubric-Agnostic Reward Models
+ 13 2026-09-18 2606.03116 AnyAudio-Judge: A Dynamic Rubric-Based Benchmark and Evaluator for Audio Instruction Following
+ 13 2026-09-25 2609.29802 Learning to Ideate for Scientific Impact
+ 13 2026-08-21 2608.19598 PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment
+ 13 2026-09-11 2609.11028 BenchShield: Formal Model-Backed Instrumentation for Reward Integrity in LLM-Agent Evaluation Infrastructure
+ 13 2026-09-17 2508.16129 Bridging the Gap in Ophthalmic AI: MM-Retinal-Reason Dataset and OphthaReason Model toward Dynamic Multimodal Reasoning
+ 13 2026-09-09 2609.07148 Stable-MM-R1: Anchoring Multimodal Reasoning Dynamics via Entropy-Guided Stratification
+ 13 2026-08-28 2608.27260 What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents
+ 13 2026-09-15 2609.14412 Question's Gambit: The First Move Matters in Agentic Deep Search
+ 13 2026-09-23 2609.24259 MemCalib: Benchmarking and Optimizing Memory Use in LLM Agents
+ 13 2026-09-02 2609.01591 StudentSim: Training LLM-based Student Simulators
+ 13 2026-09-18 2604.25154 Model-Aware Data Cleaning for Tabular Foundation Models
+ 13 2026-08-18 2608.16045 Walk Before You Run: The Importance of Data Exploration for Data Analysis Agents
+ 13 2026-08-27 2608.24954 AFDBench: A Reasoning-First AI Scientist for NationalWeather Service Forecast Discussions
+ 13 2026-09-09 2609.08082 Inference-Time Nash Alignment
+ 13 2026-08-14 2608.12486 DIVE: Unlocking Self-Improvement in Frozen Language Models Through Diversity-Driven Skill Evolution
+ 13 2026-09-09 2609.08071 Automated Design of Inventory Policy with Large Language Models: An Exploratory Study
+ 13 2026-09-23 2609.25575 Direct Optimization of Generators for Search in Automated Theorem Proving
+ 13 2026-08-27 2608.25518 Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models
+ 13 2026-09-01 2608.29326 StageWell: A Process-Aligned Chinese Corpus for Positive-Psychology Support Dialogue
+ 13 2026-09-15 2606.11709 RLCSD: Reinforcement Learning with Contrastive On-Policy Self-Distillation
+ 13 2026-09-18 2609.19830 Dual-Axis Policy Optimization for LLM Agents: Bayesian Feedback Attribution and Trajectory Mass Normalization
+ 13 2026-09-19 2609.21378 ArenaFlow: From Trajectory Ranking to Hierarchical Credit Propagation for Open-Ended Agent RL
+ 13 2026-09-25 2609.30157 Learning and interpreting policies for simultaneous entanglement requests in quantum networks
+ 13 2026-09-15 2609.15721 Assembling the CREW: A Collaborative Multi-agent Reinforcement Learning Framework for Automated Related Work Generation
+ 13 2026-09-23 2609.25176 Qwen-Audio-3.1-Realtime: Towards Reliable Agentic Voice Interaction
+ 13 2026-09-01 2608.30676 MedAgent-R1: Faithfulness-Aware Reinforcement Learning for Evidence-Grounded Medical Reasoning
+ 13 2026-09-18 2608.01717 Beyond On-Policy Exploration: Integrating External Policy Rollouts for Reinforcement Learning in Diffusion Language Models
+ 13 2026-09-23-补充 2609.24194 When Residualization Helps an Audit: Format Effects, Slice Gains, and Their Limits
+ 12 2026-08-18 2608.15445 Measuring Reward Hacking and Reasoning-Answer Decoupling Under Position-Confounded Optimization
+ 12 2026-09-03 2609.02042 Act More, Decide Less: Skill-Guided Adaptive Action Chunking for Long-Horizon LLM Agents
+ 12 2026-08-28 2608.26950 From Atomic to Agentic: Towards Interpretable Evaluation of LLMs' Agentic Mathematical Capabilities
+ 12 2026-09-23-补充 2410.23912 RL-STaR: Theoretical Analysis of Reinforcement Learning Frameworks for Self-Taught Reasoner
+ 12 2026-08-13 2608.11616 MBA: Multimodal Benchmark and Agents for Real-World Business Ideation
+ 12 2026-09-15 2609.14615 Open-UniMo: Towards Unified Motion-Language Understanding and Generation in the Open World
+ 12 2026-08-18 2608.15949 Ask to Be Sure: Informative Interactions for Confident Multi-Turn LLM Recommendation
+ 12 2026-09-07 2609.05314 Large Language Models for HVAC Operations in Building Energy Systems: A Critical Review of Methods, Applications, and Deployment Readiness
+ 12 2026-09-24 2609.27421 Counterfactual Constraint-Conditioned On-Policy Distillation for Multi-Constraint Instruction Following
+ 12 2026-08-13 2608.11660 Hybrid-Policy Self-Editing for Composable Unstructured Knowledge Editing
+ 12 2026-09-09 2609.08936 AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing
+ 12 2026-08-28 2608.26747 AgentFold: Closed-Loop Agentic Search for Protein Folding Model Design
+ 12 2026-09-02 2609.00638 It Takes Two to Match: Co-Evolving Generative Retriever with Reinforcement Learning
+ 12 2026-09-09 2609.08919 Experience Funnel: A State-Policy Alternating Loop for Self-Evolving Agents
+ 12 2026-09-09 2609.08156 When Metrics Reward the Worst Translations: Internalizing Cultural Reasoning for Social Media Translation Evaluation
+ 12 2026-09-23-补充 2609.13356 ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search
+ 12 2026-09-25 2609.28940 Calibrated Decision Models for Autonomous Penetration-Testing Harnesses: JEV and Laya as System One Decision Layers for LLM-Driven Pentest Agents
+ 12 2026-08-18 2608.16837 HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL
+ 12 2026-08-27 2608.25215 Federation Is Nearly Free, Reasoning Is Not: Tradeoffs for AI Co-Scientists in Protein Characterization Workflows
+ 12 2026-08-27 2608.26105 VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning
+ 12 2026-09-03 2609.02548 Learn from Whoever Is Right: Answer-Verified Multi-Teacher Distillation for Multi-Domain LLMs
+ 12 2026-09-21 2609.21276 Beyond Exact Match: Task-Aware GRPO for Cross-Domain PCBA Visual Question Answering
+ 12 2026-09-16 2609.16532 Style-Debiased DPO: Updating LLM Knowledge with Factuality-Aware Synthetic Preference Data
+ 12 2026-08-13 2608.11631 CLAIM: Leading Open-domain Active Clarification of Large Language Models with Uncertainty Measurement
+ 12 2026-09-01 2608.29378 Arabic Safety Alignment as Selective Refusal: An Empirical Study of SFT, DPO, and Guard Calibration
+ 12 2026-09-23 2609.25738 OmniFysics-Nano-V2 Technical Report: Understanding the Physical World Across Modalities
+ 12 2026-08-25 2608.22992 Channel-Token Attention for Reliable Dynamic Spectrum Access under Bursty Primary-User Traffic
+ 12 2026-09-23-补充 2609.23775 Statistical Convergence of Transformer Encoder-Accelerated Robust Reinforcement Learning
+ 11 2026-09-25 2609.28757 Small yet Assistive: Spatially-Aware Post-Training for Low Vision
+ 11 2026-09-01 2608.30067 How do World Models and Policies Compose in LLM Agents? A Joint Spectral and Behavioral Account
+ 11 2026-09-02 2609.00457 Can LLMs Use Relational Transformer Embeddings?
+ 11 2026-09-23-补充 2509.08494 HumanAgencyBench: Scalable Evaluation of Human Agency Support in AI Assistants
+ 11 2026-09-02 2609.01573 Scaling Near-Optimal SFT-RL Annotation Budget Allocation from Small to Large LLMs
+ 11 2026-08-25 2608.22806 DIAG: Diagnostic Iterative Alignment and Generation for Data-Efficient Mathematical Preference Distillation
+ 11 2026-08-19 2608.17524 Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents
+ 11 2026-09-02 2609.00791 Instella-MoE Technical Report
+ 11 2026-08-20 2608.18931 Test-Time Scaling in the Wild: Why Exploitation, Not Exploration, Is the Bottleneck
+ 11 2026-09-01 2608.30399 SemPOI-RL: Aligning LLM Semantic Reasoning for Interpretable Out-of-Town POI Sequential Generation
+ 11 2026-09-09 2609.08188 Bridging the Semantic-Utility Gap in Multimodal RAG via Generator-in-the-Loop Alignment
+ 11 2026-08-19 2608.17220 PACE: Policy-Attested Contract Execution for Safe AI Agents in Decentralized Finance
+ 11 2026-08-21 2608.19669 Scaffolding Minds: Optimizing Latent Visual Target Representations for Multimodal Reasoning
+ 11 2026-09-02 2609.01045 AgentFactory: Towards Automated Agentic System Design and Optimization
+ 11 2026-08-18 2608.15546 ATLAS: Scaffold-Free Algorithm Synthesis by LLMs via Embedding-Guided Quality-Diversity Search
+ 11 2026-09-23 2603.29492 Calibrated Confidence Expression for Radiology Report Generation
+ 11 2026-08-13 2608.12313 AVA-Encoder: Towards Agent-Native Video Representation Learning
+ 11 2026-09-21 2608.13430 Are You Sure You're Sure? On the Impact of Instruction Tuning on Confidence and Lexical Diversity
+ 11 2026-09-11 2609.11042 T1: Terminal Agent Reinforcement Learning for Long-Horizon Tasks
+ 11 2026-09-16 2609.16268 Spurious Tool Use: When RL Agents Learn the Wrong Reason to Act
+ 11 2026-09-25 2609.30063 Self-Play Pretraining with Zero Data
+ 11 2026-09-25 2602.11700 TabSieve: Explicit In-Table Evidence Selection for Tabular Prediction
+ 11 2026-08-21 2608.19861 PolicyGuide: From Guarding One Action to Guiding the Whole Workflow for Policy-Compliant LLM Agents
+ 11 2026-08-25 2608.22167 MCP-Universe RL: A Framework for Training MCP Tool-Use Agents via Reinforcement Learning
+ 11 2026-09-01 2608.30188 GPAgentBench-2K: Benchmarking Large Language Model Agents in Complex Clinical Action Space
+ 11 2026-09-23-补充 2603.18532 Scaling Sim-to-Real VLA Reinforcement Learning with Generative 3D Worlds
+ 11 2026-09-02 2609.00859 Reinforcement Learning Enhanced LLM Agents for Complex Vehicle Routing Problems
+ 11 2026-08-14 2608.13221 TsuGO: Probing Search Efficiency in LLM Reasoning via Go Life-and-Death Problems
+ 11 2026-09-01 2608.30724 BAITBENCH: Measuring Agent Reward Hacking with Optional Shortcuts Planted in ML Tasks
+ 11 2026-09-15 2609.15064 What Does an LLM Learn from Reinforcement Learning? A Mechanistic Interpretability Perspective with Fixed-SAE Track
+ 11 2026-09-23 2609.25618 Reasoning-Preserving Fine-Tuning of Post-RL LLMs with Null-Basis LoRA
+ 11 2026-08-21 2608.19408 Beyond Imitation: Filtering On-Policy Distillation by Reasoning Progress
+ 11 2026-08-25 2608.22930 Concepts for Securing Agentic AI Coding and the Terok Environment
+ 11 2026-09-01 2608.30685 ATLAS: Dual-Horizon Diagnostic Evaluation for Industrial Tool-Use Agents
+ 11 2026-08-25 2608.22103 Hack-Verifiable Terminal Bench: Evaluating Reward Hacking in Terminal Tasks
+ 11 2026-09-02 2609.00879 Towards reliable multimodal disaster severity assessment through preference optimization and explainable vision-language reasoning
+ 11 2026-08-19 2608.17744 Thinking in a Low-Resource Language: What SFT Builds, What RL Fixes, What Accuracy Cannot See
+ 11 2026-08-28 2608.27032 Disentangling Optimization Scale from Preference Scale in DPO
+ 11 2026-09-23 2609.25760 The Limits of Simulated Societies: How Post-Training and Survey Fine-Tuning Erase Cross-Cultural Variance
+ 11 2026-09-01 2608.29897 When History Is Multimodal: Rethinking Context Management for Long-Horizon Agents
+ 11 2026-09-16 2609.17180 MOCC-R1: Reinforcing Reasoning-Response Consistency for Multimodal Counselor Response Generation
+ 10 2026-08-14 2608.12626 LLMs Are Not Good Strategists, Yet Memory-Enhanced Agency Boosts Reasoning
+ 10 2026-09-23 2609.06563 MARBO: Relational Belief Grounding for LLM Agents in Social Deduction Games
+ 10 2026-08-28 2608.26596 Not Just Reason, Not Just Scan: Reinforcement Learning for Proactive Scientific Error Verification over Academic Paper
+ 10 2026-09-01 2608.30345 Answer Probing-Guided Search for Diverse Solution Exploration of LLMs
+ 10 2026-09-01 2608.30841 HSRM: Hidden-State Reward Models for Test-Time Verification
+ 10 2026-08-18 2608.15673 PL-Guard: Probabilistic Logic Reasoning for LLM Guardrails
+ 10 2026-09-24 2609.28416 Agent-Editing World Model: Rethinking World Modeling for LLM Agents
+ 10 2026-09-25 2609.29429 Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures
+ 10 2026-08-25 2608.22842 FinixDoc: Rethinking Financial Document Parsing Beyond Saturated Benchmarks
+ 10 2026-08-13 2608.11967 LoongReflect: Boosting Long-Horizon Reflection in Search Agents via Global Perspective Distillation
+ 10 2026-08-18 2608.16419 PertMind: Eliciting Emergent Biological Reasoning in LLM via Reinforcement Learning on Cellular Perturbation Data
+ 10 2026-08-19 2608.17268 Understanding Curriculum Learning in Large Language Models via Cross-Difficulty Optimization Dynamics
+ 10 2026-09-25 2609.28778 Reward-Tilted On-Policy Distillation for Acoustic Grounding in Audio-Language Models
+ 10 2026-08-28 2608.26982 JudgeStealer: Extracting LLM Judging Capabilities across Evaluation Protocols
+ 10 2026-09-01 2608.29814 FRAMEWORKERS: A Dynamic Multi-Agent Framework for AI-Generated Video Production
+ 10 2026-09-15 2609.15094 Generate to Explore, Select to Exploit: Aligning LLM-based Headline Generation with Personalized Recommendation
+ 10 2026-09-04 2609.03553 GPS-Bench: A Governance Policy Benchmark for Automating Policy Analysis
+ 10 2026-09-04 2609.03493 Making Every Tool Call Count: Necessary Tool-Evidence Path Rewards for Agentic Vision-Language Models
+ 10 2026-09-03 2609.02677 Eliciting ESG Preferences for Reinforcement Learning-Based Portfolio Optimization
+ 10 2026-09-17 2609.18642 STRETCH the Boundaries: A Unified Self-Taught Framework for Progressive LLM Evolution
+ 10 2026-09-01 2608.29564 TACS: Trajectory-Aware Candidate Selection for LLM Jailbreak Suffix Optimization
+ 10 2026-08-19 2608.17804 An Empirical Study of Reward Specification and Benchmark Reliability in GRPO-based LLM Unlearning
+ 10 2026-09-01 2608.31079 Sycophantic Agreement Transfers with Neutral Data via Contrastive Preference Optimization
+ 10 2026-09-02 2609.01161 CopyShield: A Cross-Level Benchmark of Copyright Defenses in LLMs
+ 10 2026-09-02 2609.00618 Towards Effective Structured Context Modeling for Conversational Recommender Systems via Dual-node Monte Carlo Tree Search
+ 10 2026-08-17 2608.14339 Clearing the Fog: Towards Installing and Refining Proactive Exploration Capabilities in LLM Agents
+ 10 2026-09-01 2608.30141 Balancing Privacy, Utility, and Safety in LLM Alignment through Preference Optimization
+ 10 2026-09-02 2609.01597 The Rise of Verbal Reinforcement Learning
+ 10 2026-09-02 2609.01345 Cheap Verifiers, Large Blind Spots: Measuring the Reliability Cost of Cost-Saving Cascades
+ 10 2026-09-09 2609.07379 Beyond Single-Negative Preference: Multi-Negative DPO for LLM-Centric Historical Entity Linking
+ 10 2026-08-19 2608.17795 TraceSQL: Traceable Answerability Estimation for Reference-Free Text-to-SQL Verification
+ 10 2026-08-21 2608.19802 Stopping and Routing LLM Judge Panels
+ 10 2026-09-18 2608.26585 VGAS: Variance-Reduced Guidance and Adaptive Selection for Training-Free Reward Alignment in Discrete Diffusion
+ 10 2026-09-18 2608.17209 Teach and Grow: An Agent-Centered Architecture for General Robot Learning
+ 10 2026-09-09 2609.07303 Long-Horizon Language Model Reinforcement Learning via Progressive Point Matching
+  9 2026-09-01 2608.30910 S3C-LLM: Skill-Code Guided Agentic Language Models for Spectrum-to-Structure Elucidation
+  9 2026-09-01 2608.30147 CAST: Critique-Aware Supervision for Training Reliable Long-Horizon Tool-Calling Agents
+  9 2026-09-23-补充 2609.24290 When and How Should an Agent Clarify? CIGAsk: Teaching LLMs to Clarify via Counterfactual Information Gain
+  9 2026-09-04 2609.03407 Caught in the Story: Narrative Captivity in Multi-turn LLMs Conversation
+  9 2026-09-01 2608.29841 SkillForge: Compositional Skill Synthesis with Verification-in-the-Loop for Generating Formally Verified Dafny Programs
+  9 2026-09-23-补充 2307.00852 VOLTA: Improving Generative Diversity by Variational Mutual Information Maximizing Autoencoder
+  9 2026-09-23 2609.25927 Informed Masking: Structure-Aware Perturbation for Reinforcement Learning in Diffusion Large Language Models
+  9 2026-08-27 2608.25452 VGA-BenchV2: An Expanded Unified Benchmark and Multi-Model Framework for Evaluating Video Aesthetics and Generation Quality
+  9 2026-09-04 2609.03955 Two-Stage Reinforcement Learning for Sound and Adversarial Test Generation in Code LLMs
+  9 2026-09-10 2609.09578 CityPlanner: A Sandbox Agent for Executable Urban Planning
+  9 2026-08-27 2608.26004 AsymSpec: Context-Asymmetric Speculative Decoding for Agentic LLMs
+  9 2026-09-23-补充 2511.16043 Agent0: Unleashing Self-Evolving Agents from Zero Data via Tool-Integrated Reasoning
+  9 2026-09-01 2608.30935 LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation
+  9 2026-09-04 2609.03414 StrixAE: An Intelligent Agent for Audio Enhancement under Complex Distortion Coupling in Real-World Scenarios
+  9 2026-09-10 2609.10441 ConvMem: Convolutional Memory for Long-Context Reasoning
+  9 2026-09-04 2609.03215 SWIM: Student Writing Simulation via Proficiency-Conditioned Generation
+  9 2026-08-28 2608.27142 GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL
+  9 2026-09-03 2609.02253 APEx: Distillation of Agent Procedural Experience for Adaptive Deep Research Question Answering
+  9 2026-09-15 2508.02312 Data Security in Large Language Models: Risks, Defense, and Directions
+  9 2026-09-15 2609.14248 ATTRICITE: Training an Open 4B Model for Citation Recovery toward Faithful Attribution
+  9 2026-09-18 2609.19526 Self Improvement via Fast Tree-search
+  9 2026-08-19 2608.17180 Task Specialization Fine-Tuning for Contextual Reinforcement Learning
+  9 2026-09-25 2609.29131 Tag-Aware Structured Text Translation: Towards a Systematic Understanding
+  9 2026-09-23-补充 2609.24480 Fathom-Vaidya: Advancing Medical Reasoning with Rubric-Based Rewards
+  9 2026-08-25 2608.23283 Apodex 1.1: Scaling Agentic Intelligence for Complex Work
+  9 2026-09-15 2609.15820 AlgoEvo: Self-Evolving Agentic Search for Automated Algorithm Discovery
+  9 2026-09-16 2609.16309 Agentic Search Spaces for Tabular Machine Learning
+  9 2026-09-24 2608.03952 TACT: Taxonomy-Aligned Post-Training for Pedagogically Adaptive English Tutoring
+  9 2026-09-23-补充 2609.12278 Amortized Low-Rank Adaptation for Model-Based Reinforcement Learning
+  9 2026-08-18 2608.15265 VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?
+  9 2026-08-25 2608.22229 Grounded Normative Rule Generation with Structured Search
+  9 2026-09-18 2510.09011 TripScore: Aligning LLMs for Real-World Travel Planning via Expert-Calibrated Reward
+  9 2026-09-18 2609.19465 Compositional Reasoning in Language Models under Reinforcement Learning Post-Training
+  9 2026-09-25 2609.29370 From Policy Documents to Structured Survey Responses: Evaluating Large Language Models for Policy Monitoring
+  9 2026-09-03 2609.02849 Post-Training Language Models for Gold-Medal Performance in Coding Competitions
+  9 2026-09-11 2609.11085 Beyond Solver Verdicts: Generative Reward Models for Autoformalization
+  9 2026-09-18 2609.19244 Characterizing Web Search by Conversational LLM Agents: From Search Decisions and Strategies to Results and Responses
+  9 2026-08-25 2608.22472 Small Reasoning Models are Instruction Followers in Function Calling
+  9 2026-08-25 2608.22762 Compositional Chain-of-Relations for Faithful Knowledge Graph Question Answering with Large Language Models
+  9 2026-09-02 2609.00734 Online Self-Weighted Fine-Tuning
+  9 2026-09-23 2609.24760 Construting Reverse Thinking: Developing Large Language Models' Reverse Thingking Ability
+  9 2026-09-24 2609.27262 Can One Adapted Model Do It All? Fine-Tuning Strategy Selection for Customer Support LLMs
+  9 2026-08-18 2608.16707 Semantic Bandits: In-Context Exploration-Exploitation is Biased by Semantic Priors
+  9 2026-08-18 2608.15432 Does the Proof Prove It That Way? Faithful Formalization of Elements Proofs
+  9 2026-08-21 2608.20314 MidTool: Mid-training Data Synthesis for Agentic Tool Use
+  9 2026-08-27 2608.25100 Towards Reliable, Generalizable, and Specific In-Context Knowledge Editing via Multi-Objective Reinforcement Learning
+  9 2026-09-02 2609.00264 The Answer Is Not the Argument
+  9 2026-09-09 2609.08248 Agentic ML Exploration (A-MLE) for Ads Ranking
+  9 2026-09-09 2609.07808 You Can't Prefer Emotions You Don't Sample: Intensity Undershoot in DPO-Tuned LLMs
+  9 2026-09-16 2609.16648 GrowMTP: Can RL Grow Its Own Draft Head?
+  9 2026-09-17 2609.17632 EvolveTrade: Experience-Driven Policy Refinement for Self-Evolving LLM Trading Agents
+  9 2026-09-18 2609.19801 DeliveryGym: An RL Environment for Long-Horizon Embodied Agent Planning with Adaptive Curriculum
+  9 2026-09-24 2609.27717 SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving
+  9 2026-09-01 2608.29610 Beyond Surface Alignment: Grounding the Dynamics of Situational Understanding and Generative Control in LLMs
+  9 2026-08-13 2608.11588 CoAdapt-GUI: Joint Workflow Context and Policy Adaptation for Unseen GUI Applications
+  9 2026-09-01 2608.30050 Spec2Twin-Chain: Orchestrating Bi-Level Optimization with LLMs for Blockchain Digital Twin Construction
+  9 2026-09-01 2608.29363 TRACER: Per-Tool Context Retention for LLM Agents via Consequence-Attributed Reinforcement Learning
+  9 2026-09-10 2609.10113 Data-Centric Post-Training for Financial Reasoning: Mining, Distillation, and Verifiable Learning
+  9 2026-09-23 2609.26682 From Alignment to Access Control: A Framework for GenAI Policy Enforcement
+  9 2026-09-23 2609.25755 Syndrome, Synergy, and Safety: Structured Reasoning and Knowledge-Driven Alignment for TCM Prescription Generation
+  9 2026-09-24 2609.27284 Hunyuan-A13B Technical Report
+  9 2026-09-24 2607.11433 Omni-Decision: Evidence-Ledger Planning for Omni-Modal Agents
+  9 2026-09-09 2609.08183 NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness
+  9 2026-09-18 2609.20807 Score Centering Stabilizes Off-policy Reinforcement Learning
+  9 2026-09-18 2607.14962 Multi-Axis Max@K Reinforcement Learning for Representative Diversity in Text-to-Image Generation
+  9 2026-08-31 2608.28402 VERA-8B: Evidence-Grounded Audit Risk Reasoning from SEC Filings
+  9 2026-09-15 2606.12852 WISE: A Long-Horizon Agent in Minecraft with Why-Which Reasoning
+  9 2026-09-16 2606.06114 ANCHOR: An External LLM-Driven Supervisory Module Facilitating Healthy Evolution in Self-Evolving Systems
+  9 2026-09-23 2609.25848 Optimizing the Score, Losing Sight of the Task: Reward Hacking Across Weights, Selection, and Prompts
+  9 2026-09-23 2609.25611 Qwen3.8-Omni: Towards Native Omni-Modal Agents
+  8 2026-09-03 2609.02273 CoMerge: Conflict-Driven Preference Optimization for Multi-Task Model Merging
+  8 2026-09-18 2609.20754 RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents
+  8 2026-09-03 2609.02089 IDEEA: training-free Input-Dependent stEEring via Activation cluster matching
+  8 2026-09-02 2609.01188 PersuaRL: Reinforcement Learning-Driven Multi-Expert Selection for Persuasive Dialogue Generation in Insurance
+  8 2026-08-14 2608.13345 Rules or Character? Scaling Laws for AI Safety Design
+  8 2026-08-14 2608.12571 Is this Citation on Point?
+  8 2026-09-23-补充 2506.07044 Lingshu: A Generalist Foundation Model for Unified Multimodal Medical Understanding and Reasoning
+  8 2026-09-03 2609.01867 Thinking effort aligns between humans and reasoning models in abductive reasoning
+  8 2026-09-16 2605.11906 YFPO: Yoked Feature Preference Optimization with Neuron-Guided Rewards
+  8 2026-08-27 2608.26053 $R^3$: Training Robots to Reason in Natural Language via Reinforcement Learning
+  8 2026-08-27 2608.25177 AudioLens: Multi-Perspective Speech Clustering with Reasoning Audio-Language Models
+  8 2026-09-17 2609.17847 Learning Heterogeneous Preferences
+  8 2026-09-23-补充 2609.24289 TTSE: A Two-Track Online Self-Evolution Framework
+  8 2026-08-19 2608.17162 OraclePhys: A Systematic Framework for LLM Fine-Tuning on Structural Mechanics
+  8 2026-09-23 2609.25186 From Pattern Recognizers to Personalized Companions: A Survey of Large Language Models in Mental Health
+  8 2026-08-21 2608.19891 EXIMO: VLM Guided Exploration of VLA Policies
+  8 2026-08-28 2608.26753 Beyond Execution: Auditing Experimental Fidelity in LLM-Driven Scientific Research
+  8 2026-09-03 2609.02366 NE-R1: Enhancing Named Entity Recognition Model via Reinforcement Learning
+  8 2026-09-03 2609.02292 SCX Router: Streaming Zero-Shot Model Selection with a Decoder-KV Classifier and a Real-World Task Ontology
+  8 2026-09-23-补充 2512.07419 Towards Training-free Automatic Proxy Discovery via Large Language Models for Mixed Precision Quantization
+  8 2026-09-25 2608.00932 Gaokerena: A Small Persian Medical Language Model Family
+  8 2026-08-13 2608.12290 Beyond Trial-and-Error: Agentic Optimization for Image-to-Video Adherence
+  8 2026-08-13 2608.11911 Hamilton-Zero: A Neural Tensor-Network Foundation Model for Ground States of Arbitrary Quadratic Qubit Hamiltonians
+  8 2026-08-18 2608.16889 Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory
+  8 2026-08-27 2608.25832 Skill Issue: Are Skills Language-Invariant in LLMs?
+  8 2026-09-09 2609.09038 Do Reasoning Representations Help Humans Evaluate LLM Outputs?
+  8 2026-09-11 2609.11864 RetroThinker: Enabling Retrospective Thinking in Speech LLMs
+  8 2026-08-18 2608.15592 When Entropy Is Not Enough: Reclaiming Lost Semantics in LLM Output Length Prediction
+  8 2026-08-18 2608.15424 ETHOS: Towards a Modular Ethics Framework for Clinical Multi-Agent Systems
+  8 2026-08-19 2608.17171 Polaris: Learning to Generate Table Descriptions from Retrieval Feedback
+  8 2026-09-09 2609.09076 ActReview: Rebuttal-Guided Training Data and Rubric Rewards for Actionable Peer Review Generation
+  8 2026-09-11 2609.11699 Negative Self-Distillation: Learning to Reason by Avoiding Flaws
+  8 2026-09-11 2609.11127 KuaiRP Series Role-playing Models Technical Report
+  8 2026-09-25 2609.29051 From Self-Distillation to Self-Practice: Privileged Information for Multi-Turn Agents
+  8 2026-08-25 2608.22126 Decoupled Physical Modeling and Execution for Physics Reasoning
+  8 2026-08-28 2608.26581 Activation Outliers Matter: Robust Recovery for Quantized Multimodal LLMs
+  8 2026-09-02 2609.00654 SciTrue: Reliable Scientific Claim Validation with Frontier and Open Language Models at the NTCIR SciClaimEval Task
+  8 2026-09-09 2609.08887 Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems
+  8 2026-09-11 2609.11878 Domain-Specific Hallucination Detection in Large Language Models
+  8 2026-09-23 2609.25833 ARAFA: An LLM-Generated Arabic Fact-Checking Dataset
+  8 2026-09-16 2609.17474 Coupled Calibration and Learning: Mitigating Teacher Bias in LLM Distillation without Target-Domain Reward Feedback
+  8 2026-09-21 2609.21899 ExpBoN: Exponential-Noise Best-of-$n$ for Efficient Test-Time LLM Alignment
+  8 2026-09-25 2603.11351 Novelty Adaptation Through Hybrid Large Language Model (LLM)-Symbolic Planning and LLM-guided Reinforcement Learning
+  8 2026-08-14 2608.13326 Beyond Local Accuracy: A Protocol-Level Identifiability Audit for Controlled LLM Reasoning Evaluation
+  8 2026-09-01 2608.29753 PAGE-RAG: Provenance-Aware Graph Evidence Promotion for Fixed-Budget Multi-hop Retrieval-Augmented Generation
+  8 2026-09-01 2608.29617 Memory-First Fact-Checking: A Knowledge-Graph-Grounded Multi-Agent System for Misinformation Detection
+  8 2026-09-02 2609.00796 SFAD: Speculative Factuality-Aware Decoding
+  8 2026-09-04 2609.03422 Inferred Generative-Process Diversity Predicts Correlated Failure Across Language Models
+  8 2026-09-09 2609.07160 In-Place Instruction Following in Diffusion Language Models
+  8 2026-09-16 2609.17128 FirmCORe: A Benchmark for Structured Reasoning about Inter-Firm Collaboration Opportunities
+  8 2026-09-18 2609.19827 F$^{2}$DR: A Fine-Grained Full-Pipeline Reward Framework for DeepSearch Workflows
+  8 2026-09-23 2609.04476 PerfReasoning: How Well Do LLMs Reason on Hardware Performance?
+  8 2026-09-25 2609.30054 SciWalker: Synthesizing Scientific Coding Problems with Operator Graphs and Execution Feedback
+  8 2026-08-19 2608.17834 AdaLens: Interactive Storyline for Monitoring and Steering Long-Running Agentic Data Analysis
+  8 2026-09-09 2609.06934 The Geometry of Refusal: Why Post-Hoc Safety Is Fragile and Pretraining-Time Safety Persists
+  8 2026-09-16 2609.16340 StalePO: Anchored Token-Level Preference Optimization using Legacy Post-Edits in Machine Translation
+  8 2026-09-23-补充 2609.24303 SupportCal: Label-Free Calibration of Post-Trained LLMs via Reference Support and Corroboration
+  8 2026-09-23 2506.02153 Small Language Models are the Future of Agentic AI
+  8 2026-09-23 2609.24799 When Quantization Preserves Accuracy but Not Evidence: Explanation-Aware Post-Training Quantization for Medical LLMs
+  8 2026-08-14 2608.13495 TraVEL: Trajectory-Guided Video Embedding Learning for Driving-Video Retrieval
+  8 2026-09-25 2607.24312 CONSISTRE: A Unified Consistency-Aware Framework for Document-Level Relation Extraction with Large Language Models
+  8 2026-08-14 2608.13069 Behavioral Reprogramming of Open-Weights Models: Cognitive Plasticity and Alignment Bounds
+  8 2026-09-01 2608.29352 Cross-Relational Preference Learning for Better LLM Instruction Following
+  8 2026-09-09 2609.08094 CIVI: A Framework for Diagnosing Search Agent Failures in Civic Information
+  8 2026-08-25 2608.22615 DeepSAGE: Stage-Aware Reinforcement Learning for Structured CBT Counseling Dialogue
+  8 2026-09-01 2608.29461 A Causal Model for Locating and Unlocking Sandbagging in Model Organisms
+  8 2026-09-11 2609.11739 LOCUS: Task-Aware Low-Rank Post-Training for Token-Efficient Language Generation
+  8 2026-08-18 2608.16259 Defake-o3: From Speculative Rationales to Verifiable Evidence for Explainable AIGI Detection
+  8 2026-08-20 2608.19115 Pretraining Reusable Inference Across Views with Synthetic Task Priors
+  8 2026-09-02 2609.00211 AI Should Not Only Be Helpful. It Should Be Contingent. Artificial Intimacy, Sycophancy, and the Future of Social Learning
+  8 2026-09-19 2604.00200 Offline Constrained RLHF with Multiple Preference Oracles
+  8 2026-08-25 2608.22772 SPOC-SQL: Stage-wise Preference Optimization for Controllable Text-to-SQL
+  8 2026-09-03 2609.01687 Learning Evidence Sufficiency Boundaries for Selective Answering in Grounded Multi-Hop QA
+  7 2026-08-25 2608.23029 Meta-Moderator: Empowering Multi-Agent Debate with Meta-Cognition
+  7 2026-09-11 2609.10934 Using Semantic Uncertainty to Estimate Transition Relevance in Turn-taking
+  7 2026-09-01 2608.31014 Evidence-Bounded Mental Health Reasoning from Heterogeneous Speech Protocols
+  7 2026-09-01 2608.29835 EVAR: Evidence-Validated Hypothesis Admission for Budget-Aware Narrative Reasoning
+  7 2026-09-10 2609.09887 When Does Defendant Statement Matter? A Study of Bias and Persuasion in LLM-Simulated Jurors
+  7 2026-09-10 2609.09664 PRAGMA: Evaluating Personalized Guidance with Memory Alignment in Lifelong Conversations
+  7 2026-08-31 2608.28407 A Unified Framework to Elicit Structured Feedback for Interpretable Multi-Trait Essay Scoring
+  7 2026-08-19 2608.17911 CABLE: Extending the Reach of Memory Retrieval via Complementary Antecedent-Based Linking and Expansion
+  7 2026-09-02 2609.00892 CARE: Contrastive Anchor-based Rubric Evolution for Large Language Model Post-Training
+  7 2026-09-23 2609.24972 RRSI: Regularized Recursive Self-Improvement of Agent Harnesses
+  7 2026-08-14 2608.12564 Scaling Automatic Research Agents via World Models
+  7 2026-08-28 2608.26291 Assessing mentalization in humans and large language models
+  7 2026-09-02 2609.00581 Enoki: Efficient Multi-Level Hallucination Detection
+  7 2026-09-24 2609.27376 Cross-Lingual Legal QA for Vietnamese Labour Law: Retrieval, Translation, and Verifier-Guided Correction
+  7 2026-08-13 2608.11434 Benchmarking LLM Judges for Mobile Agent Evaluation
+  7 2026-08-20 2608.18878 DentAgent: Evidence-Centric Multi-Agent Coordination for Multimodal Dental Reasoning
+  7 2026-08-28 2608.26295 MemToC: Benchmarking Memory-Tool Conflict Resolution in Large Language Models
+  7 2026-09-02 2609.01409 EdiTikZ: Scientific Figure Editing from Revision Trajectories
+  7 2026-09-11 2609.10939 Evaluating Scaffolding-Oriented Multi-Agent Large Language Model System for Clinical Interview Training
+  7 2026-09-24 2609.27710 FFM-CP: Cross-Backbone Fusion of Vision-Language Foundation Models for Few-Shot Computational Pathology
+  7 2026-09-17 2609.17983 Contiguity, Not Importance: Budgeted Repair of Stale KV Caches After Document Edits
+  7 2026-09-25 2608.18279 A Comprehensive Review of Large Language Models for Nanophotonics: From Surrogate Modeling to Autonomous Design
+  7 2026-08-21 2608.19760 Credit Without Ground Truth: Auditing Step-Level Credit Assignment in LLM Agents Against Executed Replay
+  7 2026-08-13 2608.11977 Retry, Switch, or Abstain? Learning Strategy-Aware Tool-Use Policies via Controlled Error Injection
+  7 2026-08-14 2608.12679 Beyond the Best Guess: Improving LLM Solution Coverage with Evolution Strategies
+  7 2026-08-20 2608.18579 MR-IQA-2: Faithful Image Quality Reflection via Fine-Grained Credit Assignment
+  7 2026-08-25 2608.23395 Right-Sizing LLM-Agent Decomposition in VAT Determination: A Pilot Controlled Sweep
+  7 2026-08-28 2608.26379 Assessing the Downstream Utility of Evidence-Aware Retrieval in RAG
+  7 2026-09-01 2608.31100 S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?
+  7 2026-09-01 2608.30263 Centering before Pruning: Lightweight Geometry Correction for Diversity-Based Visual Token Pruning in LVLMs
+  7 2026-09-09 2609.08402 Towards Embodied Air-Ground Cooperative Object Search: Benchmark, Dataset and Agentic Method
+  7 2026-09-16 2609.16887 QART: A Quantum-Classical Hybrid Architecture for Long-Horizon Reasoning -- Exploring a Conditional Path toward Quantum Scaling
+  7 2026-09-16 2603.08091 Toward Robust LLM-Based Judges: Taxonomic Bias Evaluation and Debiasing Optimization
+  7 2026-09-19 2605.13481 PersonalAI 2.0: Enhancing knowledge graph traversal/retrieval with planning mechanism for Personalized LLM Agents
+  7 2026-09-23 2609.25678 Toolcompass: Guiding Tool Trialing, Not Suppressing It
+  7 2026-09-23 2609.25192 FinFIRST: Benchmarking Search Agents for Financial Information Retrieval, Sourcing and Traceability
+  7 2026-08-28 2608.26332 Beyond Capability Benchmarks: Learning Operational Fingerprints of LLM Cloud Services from Production Incident Metadata
+  7 2026-09-01 2608.29953 SearchWiki: Learning to Build and Navigate Knowledge Wikis for Active Information Seeking
+  7 2026-09-02 2609.01596 Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation
+  7 2026-09-03 2609.02250 RideSkill: A Hierarchical Algorithm for Generalized Ride Sharing with LLM-Driven Automatic Evolution
+  7 2026-09-16 2609.17138 From Foundation Embeddings to Cropland Maps: Label Efficiency, Temporal Transferability and Independent Human Validation
+  7 2026-09-18 2609.19843 A Dual-Process Perspective on Nudge Susceptibility in LLM-Based GUI Agents
+  7 2026-09-18 2609.19569 Large Language Model Agents for Evidence Based Genetic Disease Severity Classification
+  7 2026-09-25 2609.29803 SEEK: Skill-Routed Evaluation with Evolvable Knowledge for Industrial Search
+  7 2026-09-16 2609.16991 Autoformalizing Argumentative Material Inferences
+  7 2026-08-18 2608.16402 A Policy Algebra for Trust-Preserving Agentic AI Execution
+  7 2026-08-28 2608.26743 Graph-Guided Selective Unlearning for Language Models: Controlling Support Routes Beyond Forget Seeds
+  7 2026-09-01 2608.30543 Designing an Auditable LLM-Supported Workflow for Qualitative Thematic Analysis
+  7 2026-09-01 2608.29880 Perceive to Hypothesize, Verify to Ground: An Agentic Reasoning Framework for Open-World Geo-Localization
+  7 2026-09-01 2608.29529 Argument-Aware Semantic Alignment of Normative Texts: A Toulmin-Based Neuro-Symbolic Approach
+  7 2026-09-11 2609.11636 MAPLE: Memory-Augmented Planning with Language and Evolution
+  7 2026-09-11 2609.11065 MOSAIC: Query-Aware Exploration Policy Adaptation for GraphRAG
+  7 2026-09-23-补充 2609.24092 DocMIDE: Learning Multi-Hop Implicit Derivation in Visually Rich Documents
+  7 2026-09-23-补充 2608.03600 Large language models for partial differential equation workflows
+  7 2026-09-23 2609.26029 CQ4OE: A benchmark for assessing LLM-assisted ontology generation from competency questions
+  7 2026-09-23 2609.25569 SambaGraph: Action-Reaction Spatio-Temporal Graphs for Soccer Tactical Response Modeling
+  7 2026-09-24 2608.29088 HANIA: Planner-Guided Multimodal Graph Evidence Selection for Grounded Question Answering
+  7 2026-09-25 2609.29341 SkinAgent AI: A Safety-Grounded Multimodal Agentic Framework for Non-Diagnostic Skincare Support
+  7 2026-08-13 2608.11624 Learning to Persuade Exposes How Easily LLMs Abandon Correct Beliefs
+  7 2026-08-14 2608.13156 Rethinking Normalization Placement for LLMs: Post-Norm under Curriculum Depth Growing
+  7 2026-08-18 2608.16181 MUSE: An Interactive Meta-Agent for Understanding and Steering LLM-powered Data Science Systems
+  7 2026-08-18 2608.15291 ReasonCast: Agentic Demand Forecasting with Selective Semantic Reasoning
+  7 2026-08-20 2608.18263 SIGMA: Symmetry-aware, Intelligent, Geometric, Multi-objective Adaptive Control for Robust, Dependable Traffic Management
+  7 2026-08-21 2608.19857 Inadvertent Context Leakage in Language Models
+  7 2026-09-02 2609.00191 Assessing Suicide Risk in Arabic Crisis Helpline Calls: A Comparison of Arabic and English Large Language Models
+  7 2026-09-16 2609.13083 ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC
+  7 2026-09-16 2507.21931 Post-Training Large Language Models via Reinforcement Learning from Self-Feedback
+  7 2026-09-18 2609.19538 Agentic AI Networking for Heterogeneous Unmanned Aerial Systems in Low-Altitude Wireless Networks
+  7 2026-09-18 2609.19413 From Rollout to Reset: A Graph-Based Harness for Autonomous Long-Horizon Manipulation Evaluation
+  7 2026-09-21 2607.09224 Git-Assistant: Planning-Based Support for Updating Git Repositories
+  7 2026-09-24 2609.22850 Same Outcome, Different Readout: What Does a Steerable Valence Direction in LLMs Represent?
+  7 2026-09-25 2609.30218 Minimally Invasive Steering of Language Models
+  7 2026-09-01 2608.30532 DiffPDE: Masked Diffusion Language Models as PDE Solver
+  7 2026-09-03 2609.02060 MineTRACE: An Evidence-Grounded Interactive Reasoning System for Mineral Prospectivity
+  7 2026-09-23-补充 2609.23512 AgentBetta: Verification-Driven Adaptive Configuration of an AI Nano-Agent through Selective Expansion and Verified Contraction
+  7 2026-09-25 2609.30250 Agentic Detection of Online Conspiracies
+  7 2026-08-13 2608.11381 From Numbers to Judgment: Specialist LLM Agents and Reinforcement Learning for European Listed Real Estate
+  7 2026-08-14 2608.13334 RippleMem: From Isolated Retrieval to Associative Recollection for Long-Term Agent Memory
+  7 2026-08-28 2608.26735 Preserving General Capabilities during Domain Specialization with Uncertainty-Calibrated MOPD
+  7 2026-09-02 2609.00967 CoBRA: Learning Tool-Use Boundaries via Counterfactual Margins
+  7 2026-09-03 2609.02246 LLM-as-a-Judge Is Not an Oracle: Why Self-Improving Agents Need Deterministic Guardrails
+  7 2026-09-04 2609.03920 Value-Preserving Architectures for Agentic AI Systems
+  7 2026-09-16 2609.17516 When Should LLMs Abstain? Chain-of-Self-Questioning for Selective Risk Control
+  7 2026-09-18 2609.19903 REARL: A Closed-loop Autonomous Driving Simulation Enhancement Framework with Real Traffic Data and Large Language Models
+  7 2026-09-24 2609.28177 How Sensitive Are LLM Leaderboard Claims to Hidden Model Selection?
+  7 2026-09-25 2604.14590 AgileLog: A Forkable Shared Log for Agents on Data Streams
+  7 2026-09-18 2609.20001 E-AVI: Evidence-Grounded Multimodal Assessment for Automated Video Interviews
+  7 2026-08-14 2608.13420 Enhancing Virtual Agents through SLMs and Edge-Computing: An Exploratory Evaluation of Think and Memory Processes
+  7 2026-08-14 2608.13237 When Should Multi-Round RAG Stop? Structured Stopping Judgments and Retrieval Reduction in Search-R1
+  7 2026-09-09 2609.07791 LLM Agents as Computational Typologists
+  7 2026-09-23-补充 2609.23966 From Tables to Quantified Statements: Evaluating LLM Inference Generation through Executable Verification
+  6 2026-09-09 2609.07093 Where to Look and What to Use: Retrieve-Localize-Generate for Long-Term Conversational Memory Question Answering
+  6 2026-08-28 2608.26788 Decoupling Planning and Control for Instructable Agents
+  6 2026-08-27 2608.25200 Learning Mixtures of Plackett-Luce Models for Multi-Objective Alignment
+  6 2026-09-16 2609.16800 Smarter by the Moment: Environment-Driven Dynamic Policies for Continual LLM Improvement
+  6 2026-08-24 2608.21170 Is Visual Prompting All You Need? Studying VLM Spatial Reasoning under Progressive Visual Scaffolds
+  6 2026-09-01 2608.30480 VisER: Visual Evidence and Reliance for Object Hallucination Detection in LVLMs
+  6 2026-09-01 2608.30429 EvoSkill Injection: Red-Teaming Autonomous Skill Generation and Evolution in Self-Evolving Agents
+  6 2026-09-10 2609.09657 RESCUE-BENCH: Towards Relation-Aware Multi-Party Emotional Support Conversation Systems
+  6 2026-09-21 2609.21554 MIRAGE: Multi-Perspective Creative Language Model Reasoning with Reinforcement Learning Guidance
+  6 2026-09-02 2609.01383 InSight: A Benchmark for Agentic Claim Verification in Interactive Visualizations
+  6 2026-09-03 2609.02131 C$^{3}$T: Counterfactual Causal Reasoning for Sentiment Shifts in Social-Media Conversation Trees
+  6 2026-09-07 2609.05395 Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe
+  6 2026-09-09 2609.08550 CreaMem: A Scene-Aware Memory Architecture for Personalized Agents
+  6 2026-09-11 2609.11315 Routing by Reasoning Need: Trajectory-Aware Decoding Control for Diffusion Vision-Language Models
+  6 2026-09-23-补充 2601.15322 Replayable Financial Agents: A Determinism-Faithfulness Assurance Harness for Tool-Using LLM Agents
+  6 2026-09-24 2609.26942 Recognized but Not Produced: A Generation Benchmark for Culturally Specific Kinship Terms
+  6 2026-08-27 2608.24966 Targeting the Attention Heads Behind Object Hallucination in LLaVA
+  6 2026-08-28 2608.26226 LLM Agents for Time-Series: A Survey
+  6 2026-08-28 2608.26511 Sycophancy Suppression Can Impair Rational Updating: Anti-Sycophancy Should Preserve the Ability to Update
+  6 2026-09-15 2609.15654 Empathy Is Steerable but Multi-Axial: Mechanism Geometry and Persona Effects in LLMs
+  6 2026-09-23 2609.24742 LLM-based Conversational AI Knowledge Assistant for MyBuddy Humanoid Robot
+  6 2026-09-04 2609.03816 When Vision Meets Graphs: A Survey on Graph Reasoning and Learning
+  6 2026-08-20 2608.18524 DART-SD: Diamond-topology Aware Retrieval and Tuning for Self-Distillation of Multi-Turn Tool-Calling Agents
+  6 2026-08-21 2608.19880 EnvHarness: Awakening Static Worlds for Agent Learning
+  6 2026-08-25 2608.23149 Language Chain in Alignment: Cross-Lingual Ranking Preference Optimization
+  6 2026-09-10 2609.09628 Who Are They to Each Other? Multi-Agent Reasoning for Speaker Relationship Inference
+  6 2026-09-11 2609.11274 Xiaomi-CocktailASR-1 Technical Report
+  6 2026-08-13 2608.12192 How to Spend Your Oracle Budget: Practical Guidance for Protein Structure Prediction Models
+  6 2026-08-14 2608.12921 Discovering Efficient and Explainable Communication Topologies for LLM-based Multi-Agent Systems via Causal Inference
+  6 2026-08-24 2608.21140 A Modular Agent for Reliable and Auditable Spatial Relation Verification in CT Scans
+  6 2026-09-01 2608.30109 COGTRL: Training LLMs for Scientific Discovery Assistance using Cognitive Traces via Reinforcement Learning
+  6 2026-09-02 2609.01422 From Rollouts to Recipes: Self-Contained Post-Training for LLMs
+  6 2026-09-04 2609.03391 Exploring the Potential of Contrastive Language-Image Pre-training for Multi-Source Remote Sensing Data
+  6 2026-09-18 2601.07315 VLM-CAD: VLM-Optimized Collaborative Agent Design Workflow for Analog Circuit Sizing
+  6 2026-09-19 2609.21257 Verify, Don't Trust: Agentic Model Development for Video Discovery Retrieval at Scale
+  6 2026-08-27 2608.25220 FLARE: Verifying MILP Reformulations with LLM-Based Theorem Proving
+  6 2026-09-03 2609.01736 Harness Engineering in LLM Tool Use via Agent-Native Reusable Tool Primitives
+  6 2026-09-23-补充 2605.11269 gwBenchmarks: Stress-Testing LLM Agents on High-Precision Gravitational Wave Astronomy
+  6 2026-09-23 2609.26780 SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue
+  6 2026-09-23 2609.23466 RPMem: Learning Long-Term Recurrent Parametric Memory Across Sessions for LLM Agents
+  6 2026-09-02 2609.01318 Reliability Challenges in Diffusion Vision-Language Models
+  6 2026-09-02 2609.01246 Ready to Speak: Aligning LLMs for TTS-Friendly Text Generation
+  6 2026-09-03 2609.02231 PhoenixNest-Video: Evidence-Grounded Multimodal Agent Framework for Automated Video Interview Assessment
+  6 2026-09-15 2609.14302 E2A-Bench: Benchmarking Evidence-to-Action Reliability in Financial Chart Reasoning
+  6 2026-08-17 2608.14375 Wrong but Useful: Trajectory Value Beyond Answer Correctness in Multi-Agent Messages
+  6 2026-08-28 2608.27176 When Text Misleads: Inconsistent-Aware Reasoning for Audio-Grounded Dialogue
+  6 2026-09-11 2609.11900 MindTopo: Can Foundation Models Reason in Topological Space?
+  6 2026-09-15 2609.15855 K-Bench: a clinically calibrated benchmark for evaluating large language models in high-risk mental health conversations
+  6 2026-09-23-补充 2609.24452 Do LiDAR Language Models Really Understand Spatio-temporal Relationships?
+  6 2026-08-25 2608.22068 Decision-Support and Modeling with Large Language Models for Geothermal Well Arrays
+  6 2026-09-04 2609.04010 Unlocking Lossless Speedups in LLMs via Discrete Diffusion
+  6 2026-09-07 2609.05258 Ask Before You Optimize: Dynamic Pre-Formulation Clarification for Interactive Optimization
+  6 2026-09-11 2609.11319 Magenta: Closing the Loop Between Mathematical Reasoning and Lean Verification
+  6 2026-09-15 2605.01278 Valley3: Scaling Omni Foundation Models for E-commerce
+  6 2026-09-17 2609.18736 Clueing up LLMs with Tool-Augmented Deductive Reasoning
+  6 2026-09-17 2609.18291 Relationally Guided Use Case Modeling with LLMs
+  6 2026-09-18 2609.20347 STR-Agent: An LLM-Driven Agent for QoS-Aware Routing in LEO Satellite Networks
+  6 2026-09-18 2609.20131 Think Thrice Before Reranking: Multi-perspective Evidence and Reasoning Integration for Text Reranking
+  6 2026-09-18 2609.19778 Learn Before You Judge: Progressive Knowledge-to-Decision Alignment for Explainable Hateful Meme Detection
+  6 2026-09-21 2609.21386 AgentVidBench: A Multi-Hop Video Question Answering Benchmark for Evaluating MLLM Agents
+  6 2026-09-23-补充 2511.17909 ChemVTS-Bench: Evaluating Visual-Textual-Symbolic Reasoning of Multimodal Large Language Models in Chemistry
+  6 2026-09-09 2609.08064 Risk-Conditioned Fine-Tuning of Large Language Models
+  6 2026-08-13 2608.12125 Do LLMs Take Care of Their Own? Similarity Signals Can Induce Cooperation
+  6 2026-08-18 2608.15282 Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference
+  6 2026-08-19 2608.17550 Code as Representation: A Compilable Parsing Paradigm for Academic Documents
+  6 2026-08-27 2608.25325 FinRiskAtlas: Decision-Aligned Evaluation of Large Language Models for Financial Risk Review
+  6 2026-09-01 2608.30672 HiRS-Agent: A Hierarchical Multi-Agent System for Reliable Long-Horizon Remote Sensing Task Solving
+  6 2026-09-11 2609.10762 Beyond Static Guarantees: Measuring the Static-Pass Dynamic-Fail Gap in Security-Sensitive and LLM-Generated Python Code
+  6 2026-09-11 2609.10728 Towards a Deterministic Math Solver for Clinical Language Models
+  6 2026-09-16 2609.17496 Verifiable Social Reasoning for LLM Assistants
+  6 2026-09-18 2603.21925 Guideline-grounded retrieval-augmented generation for ophthalmic clinical decision support
+  6 2026-09-23-补充 2609.23589 Listen Then Reason: Perception-Grounded Test-Time Reinforcement Learning for Large Audio-Language Models
+  6 2026-09-24 2609.27036 An open benchmark for machine learning-based polymer property prediction
+  6 2026-09-25 2607.22797 A Multi-level Information Integration Framework for Physically Verifiable Fault Diagnosis of Rotating Machinery
+  6 2026-09-25 2601.06676 IDRBench: Benchmarking the Interactive Capabilities of Deep Research Agents
+  6 2026-08-13 2608.11483 A Modular Agentic Framework for Synthetically Constrained Multi-Objective Hit-to-Lead Optimization
+  6 2026-08-17 2608.14420 More Correct Mass, Worse Answers: Why Power Sampling Can Fail and How to Fix It
+  6 2026-08-18 2608.16594 CACSurv: Concordance-Aligned Comparative Learning with Large Language Models for Cancer Survival Prediction
+  6 2026-08-18 2608.15817 RLCascadeRouter: Quality-Estimator-Free Cascade Routing via Reinforcement Learning
+  6 2026-08-20 2608.18504 UMER: Unifying Embedding and Ranking via Pair-Aware Discriminative Reasoning for Universal Multimodal Retrieval
+  6 2026-08-25 2608.23200 LongWoF-Bench: Evaluating EvoMap Genes for Verifiable Long-Workflow Tasks
+  6 2026-08-27 2608.25777 LocalLSTC: A Long Short-Term Control Architecture for Locally Deployed GUI Agents
+  6 2026-08-27 2608.25062 FLINT: Efficiently Leveraging High Bandwidth Flash for Capacity-Scalable LLM Inference Acceleration
+  6 2026-09-10 2609.09565 Multi-Agent Agentic Graph Learning via Structural Signatures
+  6 2026-09-10 2609.09356 Auditable Emergency Triage for Maternal and Newborn Care in India
+  6 2026-09-15 2609.12606 Beyond Generation and Accuracy: Diagnosing and Enhancing Visual Chain-of-Thought for Geometry Problem Solving
+  6 2026-09-17 2609.18128 Symbolic Temporal Supervision of LLM Agents Using Contracts
+  6 2026-09-24 2603.08166 RexDrug: Reliable Multi-Drug Combination Extraction through Reasoning-Enhanced LLMs
+  6 2026-08-13 2608.11420 Social Chain of Thought: A Multi-Agent Architecture Grounded in Medical Differential Diagnosis Methodology
+  6 2026-08-14 2608.12990 LycheeMemory V2: Efficient Long-Term Memory for LLM Agents via Semantic Segment-Level Consolidation
+  6 2026-08-21 2608.20054 What You Can't See Is What You Learn: Restricted Evidence Visibility Favors Compositional Generalization in Shared-Genome Language-Model Societies
+  6 2026-08-27 2608.25641 Leveraging Inter-object Affordances for Efficient Planning in Contact-rich Tasks
+  6 2026-08-28 2608.26582 J-Zero: Unified Challenger--Solver--Judge Co-Evolution from Zero Data
+  6 2026-09-16 2603.16365 FactorEngine: A Program-level Knowledge-Infused Factor Mining Framework for Quantitative Investment
+  6 2026-09-17 2609.18779 CERA-MoA: Co-Evolving Routing Mechanisms with Continually Learning LLM Agents
+  6 2026-09-17 2603.12808 A Multitask Large Reasoning Model for Molecular Science
+  6 2026-09-25 2609.29075 CRISS: A Retrieval-Augmented AI Chatbot for Assisting Cancer Registrars
+  6 2026-08-14 2608.12654 SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries
+  6 2026-08-21 2608.20331 G-CARL: Grounded Checklist-Aligned Reward Learning for Patient-Oriented Medical Report Interpretation
+  6 2026-08-21 2608.20210 Daedalus-150M: A Convolution-Attention Hybrid Designed for CPU Inference
+  6 2026-08-25 2608.23058 LLM-based Agents for Forecasting and Prediction: Methods, Training, Evaluation, and Applications
+  6 2026-08-25 2608.22963 Buried in Textual Debt: Context Pruning with Visual Evidence Preservation for MLLM Agents
+  6 2026-09-01 2608.30092 Arkios: An Open Bilingual English-Nepali Language Model Trained From Scratch, with a Devanagari-Aware Tokenizer
+  6 2026-09-04 2609.04022 Representational alignment yields generalizable safety in language models
+  6 2026-09-09 2609.06912 From Synthetic Priors to Model Behavior: Structural Coverage in Tabular Foundation Models
+  6 2026-09-09 2609.06815 Typed Federated Artifacts for the Agentic Web:Sharing Tool-Routing Knowledge Across Frozen,Heterogeneous LLM Agents
+  6 2026-09-10 2609.10321 On-Policy Distillation for Vision-Language Model Adaptation, an Effective Paradigm on Low-Quality Multimodal Data
+  6 2026-09-11 2609.11234 NovGauge: A Fine-Grained Benchmark for Diagnosing LLMs' Capability in Paper Novelty Assessment
+  6 2026-09-15 2609.15695 NoteVQA: Benchmarking VLMs on Real-Life Questions from Human Communities
+  6 2026-09-15 2609.14857 ModularRSI: Modular and Generalizable Recursive Harness Self-Improvement
+  6 2026-09-15 2608.27783 SURE-Voice: A Front-End Baseline for Speech-Evidence Filtering in Speech LLMs
+  6 2026-09-16 2609.16816 ImpossibleRubrics: Stress-Testing Generated Rubrics as Reward Signals
+  6 2026-09-16 2609.16145 Safe Error Correction for Language Models: Frozen-Base Adjustment with Capability Preservation
+  6 2026-09-17 2609.18274 I code or AI code: A comparative evaluation of AI-rated scores in classroom observations
+  6 2026-09-17 2609.18182 WFM: Wiki Foundation Model for Complex Agentic Reasoning
+  6 2026-09-18 2609.20620 A Simulation Platform for AUV Fault Recovery: Exploring LLM-Based Diagnostic Strategies
+  6 2026-09-18 2609.19617 DataCanvas-EDU: An Agentic Framework for Instructor-Guided Synthetic Data Generation in Business Analytics Education
+  6 2026-09-23-补充 2609.24369 DeceptionAnalyser: A Web-Based AI Tool for Performing Structured Deception Analysis with Argumentation Schemes and LLMs
+  6 2026-09-23-补充 2609.24328 A Distributional Optimisation Perspective on Combining Models in Deep Learning
+  6 2026-09-23-补充 2609.23979 AURA: Uncertainty-Routed Activation Editing for Acoustic Grounding in Speech Foundation Models
+  6 2026-09-24 2609.28208 Support-Compiled Feature Folding: More Evidence at Lower Memory Across Tabular Foundation Models
+  6 2026-09-24 2609.27679 What Do Tabular Foundation Models Compute In Context? In-Situ Representation Refinement through Attention-Gated Updates
+  6 2026-09-24 2609.27607 Can Jev Judge Radiology Reports? Evaluating a System One Model for Clinical Factuality
+  6 2026-09-25 2609.29973 Learning Better Reasoning for Generative Recommendation with Semantic IDs
+  6 2026-09-25 2609.28876 Forecast-Dojo: Replayable Environments for Benchmarking and Training LLM Forecasting Agents
+  6 2026-09-25 2608.04452 Q-CueGraph: Query-Conditioned Visual Evidence Graphs for Multimodal Reasoning
+  6 2026-08-13 2608.11878 ToolHazard: Scaling Adversarial Environments for Security Evaluation and Alignment of LLM-based Agents
+  6 2026-08-13 2608.11350 Self-Evolving Embodied Agents via Skill-Harness Evolution
+  6 2026-08-20 2608.18401 Multimodal Rapport Estimation in Real-World HRI
+  6 2026-08-25 2608.23244 Credal Large Language Models for Semantic Commitment under Uncertainty
+  6 2026-08-25 2608.22582 Hybrid Panels: Toward Human-AI Collaboration in Survey Research
+  6 2026-08-25 2608.22417 LLMs for Survey Text Analysis - A Performance Comparison Between Humans and GPT-5 on Inductive Content Analysis
+  6 2026-08-27 2608.25927 Code World Model: Coding Agent as World Brain
+  6 2026-08-28 2608.26882 PLCBench: Can Autonomous LLM Agents Turn PLC Access into Sustained Physical Impact?
+  6 2026-09-03 2609.02771 From Reweighting to Rewriting: Unlocking the Intervention Effects of Influential Samples in Training Data Attribution
+  6 2026-09-15 2512.10159 Enhancing Large Language Model-Based Systems for End-to-End Circuit Analysis Problem Solving
+  6 2026-09-18 2609.19385 Mammography Foundation Models for Opportunistic Prediction of Major Adverse Cardiovascular Events
+  6 2026-09-18 2609.19347 Kinematics-Grounded Agentic AI for Robotic Additive Manufacturing Process Planning
+  6 2026-09-23 2609.26480 FeatLens: Feature-Guided Dynamic Code Graph Construction and Retrieval for Repository-Level Code Generation
+  6 2026-09-25 2609.30137 Screen Before You Serve: Simulation for Production Customer Experience AI Agents at 140M Scale
+  6 2026-09-25 2609.29099 TraceGuard: Adaptive Multimodal Poison Filtering through Cross-Feature Rank Agreement
+  6 2026-08-18 2608.15703 HyMem: Hierarchical Context Management for Long-Horizon Agents via Information Isolation
+  6 2026-09-09 2609.07756 Decomposition-Guided Diffusion Language Models for Inertial Confinement Fusion Prediction
+  6 2026-09-15 2609.15054 BusMA: A Bus Communication Substrate for Multi-Agent Systems
+  6 2026-09-17 2609.12913 Parameter-Efficient Retrievers for Polish and European Languages
+  6 2026-09-23 2604.13706 Co-FactChecker: A Framework for Human-AI Collaborative Claim Verification Using Large Reasoning Models
+  6 2026-09-25 2609.29800 Adaptive Fisher-Whitened Cross-Covariance for Low-Resource Speech Recognition
+  6 2026-08-14 2608.13344 LongEarth-R1: Benchmarking and Aligning Vision-Language Models for Long-Horizon Earth Observation Reasoning
+  6 2026-08-19 2608.17288 Q-Interference: Memory-Efficient Phase-Aware Quantum-Inspired Attention
+  6 2026-08-20 2608.18884 Training-Free Inference-Time Self-Reflection and Cost-Bounded Early Stopping for Large Language Models
+  6 2026-08-21 2608.20116 When Text and Numbers Disagree: Evidence Arbitration in Large Language Models
+  6 2026-08-21 2608.19689 Rethinking the Evaluation and Optimization of LLM-Based Social Simulation
+  6 2026-08-25 2608.22802 SDoH-Aware Narrative Anchoring Bias in Medical LLMs for Trustworthy Clinical Decision Support
+  6 2026-08-27 2608.26036 Trace Integrity for LLM Data Agents: A Vision for Auditable Structured Reasoning in Real-World Systems
+  6 2026-09-03 2609.02217 SkillGLoW: Procedural-Family Skill Consolidation for Self-Improving Agents on Long-Horizon Task Streams
+  6 2026-09-04 2609.03467 When Users Don't Ask: Benchmarking Context-Driven Memory Retrieval in Conversational Agents
+  6 2026-09-09 2609.07785 What Does an LLM-Agent Leaderboard Rank Actually Compare?
+  6 2026-09-11 2609.11393 Beyond Confidence: Stability-Aware Test-Time Adaptation for LLM Reasoning
+  6 2026-09-11 2609.10961 When More Is Not Better: Component Anti-Synergy in a P300 Speller
+  6 2026-09-11 2609.10722 CMNIE: An Information Extraction Benchmark for Chinese Military News
+  6 2026-09-15 2609.14976 MemRiskBench: Trace-Aware Risk-Preserving Evaluation for Long-Horizon LLM Agents
+  6 2026-09-16 2609.16454 Fine-Tuning Fixes Mode Collapse and Over-Dispersion in LLMs
+  6 2026-09-16 2609.16213 Artificial intelligence and biosecurity: capabilities, threat pathways, and defense-in-depth governance
+  6 2026-09-18 2602.03128 Architectural Design, Not Only Model Intelligence, Governs Multi-Agent LLM Performance
+  6 2026-09-19 2609.22048 Available Guardrails: Certifying Selective Prediction across ML Systems
+  6 2026-09-23-补充 2609.24362 VLM-in-Sandbox: Visual Workspaces for Agentic Visual Reasoning
+  6 2026-09-23-补充 2609.24202 Opinion Leader Dynamics: How Sparse Attention Shapes Token Clustering
+  6 2026-09-24 2609.27373 Attention Routing Stabilizes Early: Working-Set Inference for Recurrent Language Models
+  6 2026-08-13 2608.12218 Information Abundance Paradox: Long-Context Training Undermines Parametric Knowledge
+  6 2026-08-13 2608.12025 From Safety Documentation to Safety Knowledge Support: An Evidence-Grounded LLM Framework for Medical Devices
+  6 2026-08-14 2608.13476 MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination
+  6 2026-08-17 2608.14352 ATLAS: Discovering Agent Strategies through LLM-Guided Abstraction and Automata Learning
+  6 2026-08-18 2608.16747 Would this change your answer? Evaluating Explanations of LLM Behavior In The Wild with Counterfactual Experiments
+  6 2026-08-18 2608.16276 PolyDebate: A Game-Orchestrated Multimodal System for Debate Skills Practice and Evaluation
+  6 2026-08-18 2608.15763 TaoLive Digital Avatar Agent Technical Report: Training Agents to Evolve with Their Harness
+  6 2026-08-18 2608.15382 Grounding Healthcare LLMs in a Causal Knowledge Graph: Framework, Metrics, and a Cardiovascular Pilot
+  6 2026-08-19 2608.17092 Structured Driving-State Narratives for Small Language Model-Based GNSS Spoofing Detection
+  6 2026-08-25 2608.22263 Training-Free VLM Personalization via Calibrated Residual Decoding
+  6 2026-08-27 2608.25936 One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation
+  6 2026-08-27 2608.25531 ClueWeaver: Reward-Guided Dual-Agent Evidence Reasoning for Compact LLMs on Literary Long Narratives
+  6 2026-09-01 2608.30424 Towards Cognitive Process-Aware Proactive Writing Support
+  6 2026-09-02 2609.00515 The Interlingua Hypothesis: LLMs Translate via a Latent Task-agnostic Feature Space
+  6 2026-09-04 2609.03201 MemoryLACE: Memory Lifecycle-Aware Consolidation and Evidence Retrieval
+  6 2026-09-09 2609.07174 PhysMAS: Physics-Grounded Multi-Agent Synthesis of Compositional 4D Gaussians
+  6 2026-09-10 2609.10036 Belief-State Engine: Augmenting LLMs for Principled Planning Under Partial Observability
+  6 2026-09-10 2609.09477 LeCor: Learning to Be Corrected by Meta-Learned Test-Time Training for Interactive 3D Lung-Tumour Segmentation
+  6 2026-09-15 2609.15277 Artificial entrepreneurial cognition: Locating and causally steering an opportunity recognition dial inside large language models (LLMs)
+  6 2026-09-17 2609.18520 AeroWeaver: An Embodied-Agent Harness for Weaving Aerial Skills into Distributed, Adaptive Swarm Execution
+  6 2026-09-18 2609.19947 Not All AI Agents Are Equal: Characterizing Resource and Performance Dynamics
+  6 2026-09-18 2609.19491 Efficiently Linking Unstructured Data for Multi-step Reasoning
+  6 2026-09-21 2609.21600 Reducing Barriers to Academic Support: Evaluating a Course-Specific RAG System for Addressing Help-Seeking Disparities in Higher Education
+  6 2026-09-24 2609.28247 Controlling Collectives of AI Agents in Reasoning Space with Spatial Transformers
+  6 2026-09-25 2609.29014 AlphaDiverse: Post-Training Local Quantitative Research Agents for Diverse Exploration in Alpha Factor Mining
+  6 2026-09-21 2608.17605 Multi-turn Conversational AI from Text to Multimodal Interaction: Data, Models, Evaluation, and Open Challenges
+  6 2026-08-19 2608.17153 Towards Safer RAG: Only Agents Capable of System 2 Thinking may Access Untrusted Documents
+  6 2026-09-04 2609.03261 MedQA-MM: Shortcuts Behind Medical Visual Reasoning
+  6 2026-09-10 2609.09692 CT-SAFR: Safe and Interpretable Chain-of-Thought Reasoning for Autonomous Robots: A Multi-Layered Verification Framework for Trustworthy AI-Driven Robotic Decision Making
+  6 2026-09-25 2601.18395 Do not be greedy, Think Twice: Sampling and Selection for Document-level Information Extraction
+  6 2026-08-14 2608.13482 Synthetic Persona Pretraining: Alignment from Token Zero
+  6 2026-08-25 2608.23261 A Scalable Cross-Domain Event Extraction System via a Unified Generative Training Framework
+  6 2026-08-27 2608.25775 ToST: A Tree-of-Thought Socratic Teaching Framework for Multi-Path Guidance and Parallel Thinking
+  6 2026-08-28 2608.27135 Said Aloud, Read Different: Cross-Modal Instability in Multimodal Models
+  6 2026-09-09 2609.08977 Omni Interaction Agent Technical Report
+  6 2026-09-23-补充 2606.05256 How Far Did They Go? The Persuasive Tactics of Covert LLM Agents in a Discontinued Field Experiment
+  6 2026-08-13 2608.11604 Learning from Online User Feedback for Shopping Agents
+  6 2026-08-14 2608.13304 Refusing Intent, Not Form: Wrapper-Based Intent-Group Supervision for LLM Safety
+  6 2026-08-19 2608.17501 SGHA: Evidence-Grounded Research Problem Discovery with Local Language Models
+  6 2026-08-25 2608.23370 Walking on the DARKSIDE
+  6 2026-08-25 2608.22566 From Diagnosis to Redesign: Using Quantitative Ethnography to Improve Multi-Agent LLM Reasoning
+  6 2026-08-25 2608.22137 MegaMem: A Retrieval Solution for Ultra-Large Context Windows
+  6 2026-08-28 2608.26899 Counterfactual Bias Testing for Application Tracking System
+  6 2026-08-28 2608.26730 Knowing When Not to Reuse: Conditional Experience Transfer in Autonomous LLM Post-Training
+  6 2026-09-01 2608.31128 DIASENTINEL: An Auditable Multi-Agent System for Guideline-Grounded Diabetes Risk Screening
+  6 2026-09-04 2609.04170 A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms
+  6 2026-09-11 2609.11063 The information geometry of large language models is shared, learned, and controllable
+  6 2026-09-15 2609.15973 Discovery Foundation Models: Toward Open-Ended Discovery Intelligence
+  6 2026-09-17 2609.18333 Look Less, Hear Better: Jointly Rewarded GRPO for Streaming ASR
+  6 2026-09-18 2609.20734 On-Demand Attention: Language Models Know When to Recall
+  6 2026-09-18 2609.19555 A Multi-Modal Generative Model for Tomato Disease Leaves Understanding
+  6 2026-09-23-补充 2609.24150 Acceptance-Aware Draft Model Training for Speculative Decoding
+  6 2026-09-23-补充 2609.23444 WaveletECO: A Closed-Loop Physical ECO Platform and a Specialized Local Language Model
+  6 2026-09-23 2609.25586 Deflecting the Value Compass: Interacting with Large Language Models Temporarily Shifts Human Value Priorities Toward Personal Focus
+  6 2026-08-14 2608.12743 Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence
+  6 2026-09-02 2609.00403 A Multi-Branch Feature Fusion Approach for Health Misinformation Detection and Propagation
+  6 2026-09-24 2609.27279 EnSIMem: Entity-Structured Indexing for Long-Term Agent Memory
+  6 2026-08-18 2608.15956 Navigation-Informed Embeddings: Dense-Retriever Adaptation from Agent Search Traces
+  6 2026-08-25 2608.22034 Align, Unify, Suppress, Route: A Coherentist View of Transformer Computation
+  6 2026-08-25 2608.21993 Gated Decoupled Compositional Bandits: A Unified Theory of Contextual Bandits with Supervised-Calibrated Action Scaling and Pre-Execution Gating
+  6 2026-08-27 2608.25460 Training Alignment Auditors via Reinforcement Learning
+  6 2026-09-01 2608.30461 From Final Artifacts to Trajectories: Retrospective Process Supervision for Evidence-Grounded Long-Form Generation
+  6 2026-09-03 2609.02480 PragAlign: Feedback-Guided Pragmatic Alignment for Controlled Synthetic Dialogue Generation
+  6 2026-09-09 2609.08341 TV-Regulated OPD: Direction Matters in On-Policy Distillation
+  6 2026-09-16 2606.06245 MPCoT: Reward-Guided Multi-Path Latent Reasoning for Test-Time Scalable Vision-Language-Action
+  6 2026-09-10 2609.09735 Can Artificial Intelligence Support Healthcare and Mental Health Through Early Cyberbullying Detection ? The Impact of Emotion-Aware AI on Proactive Online Safety
+  6 2026-09-15 2609.15422 Empirical Evaluation of Task-Based Permission Scoping Architecture for AI Agents
+  6 2026-09-23-补充 2609.25131 Entropy Can Flow, or It Can Guide. Be Entropy. LEDFlow: Introducing Entropy-guided Generation Order into Uniform Discrete Flow
+  6 2026-09-11 2609.10723 AcFlow: Controlling Text-to-Image Diffusion Transformers via Learned Conditional Activation Flow
+  6 2026-09-25 2609.30160 A Training Criterion with Token-Level Tolerance to Transcription Ambiguity for Automatic Speech Recognition
+  6 2026-09-16 2609.16635 EchoPath: Execution-Level Replayable Memory for GUI Agents
+  6 2026-09-23 2609.25853 MemoryAthena: Adaptive Routing over Latent and Generated Memories
+  5 2026-09-23-补充 2603.02266 When Scaling Fails: Mitigating Audio Perception Decay of LALMs via Multi-Step Perception-Aware Reasoning
+  5 2026-08-25 2608.22753 Beyond Factual Knowledge: Benchmarking and Learning Step-Level Procedural Rule Reasoning in Large Language Models
+  5 2026-08-28 2608.26848 MedFG-VQA: Low-Frequency Memory and Graph Attention for Lightweight Medical VQA
+  5 2026-09-02 2609.00948 From Terminology to Diagrams: Visual-Instruction Generation for Scientific Diagram Understanding
+  5 2026-09-16 2603.20957 Alignment Whack-a-Mole : Finetuning Activates Verbatim Recall of Copyrighted Books in Large Language Models
+  5 2026-09-15 2510.10774 ParsVoice: A Large-Scale Multi-Speaker Persian Speech Corpus for Text-to-Speech Synthesis
+  5 2026-09-25 2609.30227 To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech
+  5 2026-08-28 2608.26641 Information-Guided Frontier Decoding: Contextual Utility-Driven Commitment in dMLLMs
+  5 2026-09-03 2609.01971 NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis
+  5 2026-09-01 2608.29345 BIRD-History: A Benchmark for History-Driven Text-to-SQL with Fine-Grained Knowledge Annotations
+  5 2026-09-15 2609.15849 Before You Poll with LLMs: A Deliberative Diagnostic Framework
+  5 2026-09-19 2602.00279 Semantic Calibration Prevails Where Token Confidence Fails: Benchmarking Long-Form Scientific QA
+  5 2026-09-23-补充 2505.23713 SocialMaze: A Benchmark for Evaluating and Enhancing Social Reasoning in Large Language Models in Complex Social Environments
+  5 2026-08-25 2608.23338 The Emergence of Relevance Through Axiomatic Attention Patterns During LoRA Fine-Tuning
+  5 2026-08-25 2608.22274 Length-Adaptive Decoding for Masked Diffusion Machine Translation
+  5 2026-08-27 2608.24988 Does Fine-Tuning Undo Activation Steering? Behavioural Recovery Without Weight-Edit Reversal
+  5 2026-09-01 2608.31058 Improving Information Extraction with Learned Queries
+  5 2026-09-01 2608.30025 Interpreting and Steering for Safe and Correct Code Generation
+  5 2026-09-01 2608.29948 XQDT: eXplainable and Quantitative Data-Text Alignment Metric with Feedback Signals
+  5 2026-09-09 2609.07362 BlueprintAgent: Constraint-Triggered Targeted Revisits for Simulation-Ready Generation from Scanned Structural Blueprints
+  5 2026-09-19 2605.00271 REALM: An RGB- and Event-Aligned Latent Manifold for Cross-Modal Perception
+  5 2026-08-14 2608.12875 The Embedder's Dilemma: LLMs Are Better, but at What Cost?
+  5 2026-08-18 2608.16384 Self-Routed Tensor Adapters for Parameter-Efficient Universal Visual Adaptation
+  5 2026-08-27 2608.25398 OmniPhys: A Unified Multimodal Benchmark for Physics Understanding and Generation from Chinese Educational Corpora
+  5 2026-09-02 2609.00550 Same Semantics, Different Outcome: On the Modality Robustness of Multimodal LLMs under Knowledge Conflict
+  5 2026-09-09 2609.08686 CausalChapter: Improving Long-Video Chaptering with Interventional Dependency Modeling
+  5 2026-09-09 2609.07151 Vishing-Tactics-Bench: Forecasting Exploitation Trajectories in Voice Phishing Calls
+  5 2026-09-10 2609.09964 5-Dialects-BN: Unmasking the Impact of Transliteration on Bangla Dialectal LLMs
+  5 2026-09-15 2609.14565 TATK: Triple-Aware Top-K Learning with Knowledge-Grounded Verification for LLM-based Sequential Recommendation
+  5 2026-09-01 2608.30398 Beyond Polarization: The Generative Constraint of Chain-of-Thought in Pointwise Reranking
+  5 2026-09-23-补充 2607.04945 You Frame It: How Conceptual Representations Shape LLM Detection and Reasoning about Antisemitism
+  5 2026-09-23 2609.25602 Rewired or Gated? How Instruction Tuning Shapes Knowledge-Conflict Circuits in LLMs
+  5 2026-09-11 2609.11242 From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models
+  5 2026-09-17 2609.17688 CapMem: A Benchmark for Caption-Based Episodic Memory in Egocentric Video
+  5 2026-09-23 2609.25366 From Decorative to Load-Bearing: Task Difficulty Shapes the Causal Role of Chain-of-Thought
+  5 2026-08-28 2608.26832 RuleWeaver: Benchmarking Rule-Centered Scenario Reasoning for Large Language Models
+  5 2026-09-01 2608.30270 Read the Room, Read the Image: Understanding Indirect Speech Acts in Multimodal Visual Contexts
+  5 2026-09-09 2609.06963 TurEngMix: A Text Corpus and Benchmark for Turkish-English Code-Mixed Language Identification and Named Entity Recognition
+  5 2026-08-25 2608.22143 Evaluation of Small Vision-Language Models on Qualitative Mechanical Problems
+  5 2026-08-31 2608.28405 CultureConverse: A Multilingual Multi-turn Simulation Harness for Culturally Grounded Assistance in East and Southeast Asia
+  5 2026-09-01 2608.29934 Compression-Aware Abstention: Teaching LLMs to Refuse When KV-Compression Masks Remove Answer Evidence
+  5 2026-09-02 2609.01081 StateSwap: Probing Support-Elimination Hidden States in Multiple-Choice Questions
+  5 2026-09-02 2609.00709 Controllable Image Captioning with Prompt-Conditioned Scene Rewards
+  5 2026-09-04 2609.03887 Beyond Shallow Alignment: How Post-Training Methods Determine Refusal Circuits And Steering Robustness
+  5 2026-09-09 2609.07103 Revisiting Complete Reasoning Traces for Post-Training
+  5 2026-09-21 2609.21677 GUARD: Natural Forgetting in Large Reasoning Models via Guided Answer-Reasoning Distillation
+  5 2026-08-25 2608.22894 AraDetox: A Multi-Dialect Arabic Detoxification Dataset
+  5 2026-09-02 2609.00873 Membership Inference in Fine-tuned Diffusion Language Models via Token-level Memorization Asymmetry
+  5 2026-09-16 2609.17081 EviScope: Paired Counterfactual Evidence Diagnostics for Faithful and Efficient Grounded Language Models
+  5 2026-09-17 2409.09253 Unleash LLMs Potential for Sequential Recommendation by Coordinating Dual Dynamic Index Mechanism
+  5 2026-09-23 2608.03079 CorePath: A Breast-Specialized Pathology Foundation Model for Core Needle Biopsy Diagnosis and Risk-Controlled Report Generation
+  5 2026-08-25 2608.22312 Text-Anchored Semantic Perturbations for Transferable Jailbreak Attacks on Multimodal Large Language Models
+  5 2026-08-25 2608.22279 OVIBench: Benchmarking Online Video Question Answering under Interruption
+  5 2026-09-03 2609.01788 VakyArth: Evaluating Pragmatic Competence in LLMs across Indic Languages
+  5 2026-09-09 2609.08602 CLAMP: Constrained Decoding for Vision-Language Embodied Planning
+  5 2026-09-15 2609.15740 A Language-Guided Multimodal Foundation Model for Zero-Shot and Multi-Task Brain Signal Analysis
+  5 2026-09-23-补充 2607.02755 Out-of-Distribution Generalization of Risk Aversion in Language Models
+  5 2026-09-23-补充 2605.08992 When More Parameters Hurt: Foundation Model Priors Amplify Worst-Client Disparity Under Extreme Federated Heterogeneity
+  5 2026-09-04 2609.04061 When Models Edit Too Much: On the Fidelity of Minimal Code Edits
+  5 2026-08-25 2608.22622 Teaching LLMs How ICU Physicians Approach Clinical Reasoning Through OMOP-Aligned Retrieval Improves Reasoning Across Clinical Domains
+  5 2026-09-07 2609.05415 UniMate: One Unified Model to Animate Diverse Skeletons
+  5 2026-09-09 2609.08943 Evaluating and Improving Evidence-Grounded Fact-Checking in LLMs via Multi-Round Evidence Ablation
+  5 2026-09-09 2609.07258 MV-STRIDE: Enabling MLLMs to Master Multi-View Spatial Reasoning via Hierarchical Capability Modeling
+  5 2026-09-19 2605.09384 LiteMedCoT-VL: Parameter-Efficient Adaptation for Medical Visual Question Answering
+  5 2026-09-23-补充 2609.23435 Tool-Augmented On-Policy Distillation for LLM Domain Adaptation in Sequence-Based Omics Tasks
+  5 2026-09-25 2410.14948 MultiViewDx: Evidence-Linked Multi-View Clinical Diagnosis
+  5 2026-08-18 2608.16763 LAVA: Logic-Aware Validation and Augmentation Framework for Large-Scale Financial Document Auditing
+  5 2026-08-27 2608.26070 Prefix Sliding for efficient test-time scaling
+  5 2026-08-14 2608.13136 LigBench: A Unified and Human-Aligned Benchmark for LLM-based Research Idea Generation
+  5 2026-08-28 2608.26357 Cross-lingual Representation Learning via Centroid Intervention Fusion
+  5 2026-09-04 2609.03454 When Retrieval Helps: Selective Retrieval for Single-Turn Mental-Health QA
+  5 2026-09-24 2609.23065 From Concept Alignment to Causal Grounding: An Intervention Test of Chain-of-Thought Faithfulness
+  5 2026-08-13 2608.11741 JieZi: A Large-Scale Expert-Audited Dataset and Benchmark for Ancient Chinese Character Exegesis
+  5 2026-08-13 2608.11692 HUGIN: Enhancing Vision-Language Planning for Autonomous Logistics Sorting
+  5 2026-08-18 2608.16224 STAIR: Semantic-Temporal Automaton for Interpretable Reasoning in Temporal Question Answering
+  5 2026-08-19 2608.17534 ArborMem: Navigating Interaction States with Memory Forests
+  5 2026-08-25 2608.23373 Modalities Should Talk to Each Other: Dual-Stream Multimodal Learning for Long-Horizon Influenza Forecasting
+  5 2026-08-27 2608.25934 How Robust Are Automated Fact-Checking Systems? A Cross-Benchmark Evaluation
+  5 2026-08-28 2608.27161 STAR : Sentence Translation Alignment Rate for Document-to-Document Machine Translation
+  5 2026-09-02 2609.00282 Lightweight Adaptation of EEG Foundation Models for Stroke Motor Imagery Decoding: Domain Shift and Subject-Level Robustness
+  5 2026-09-03 2609.02106 Git4Data: Database-Native Version Control for AI Agents
+  5 2026-09-15 2609.15603 A Unified Vision-Language Model for PSMA PET/CT Report Generation, Visual Question Answering, and Lesion Segmentation
+  5 2026-09-18 2609.20441 Cross-Architecture Foundation-Model Distillation for Edge Flood Segmentation
+  5 2026-09-18 2601.11729 SpaRRTa: A Synthetic Benchmark for Evaluating Spatial Intelligence in Visual Foundation Models
+  5 2026-09-24 2609.26853 COPE: Continual Personalization of LLMs under Sparse User Feedback via User Embeddings and Self-Evaluation
+  5 2026-09-25 2609.30205 A Living Benchmark for Information Retrieval from Electronic Health Records
+  5 2026-09-25 2511.05841 Cross-Task Generalization in Handwriting-Based Alzheimer's Screening via Vision Language Adaptation
+  5 2026-08-13 2608.11829 Towards Understanding On-Policy Distillation through the Lens of Test-Time Scaling
+  5 2026-09-04 2609.03871 Bioinfoysis Technical Report
+  5 2026-08-27 2608.25114 Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment
+  5 2026-08-28 2608.26237 How Do LLM Agents Actually Get the Flag? Trace-Level Provenance for Agentic Offensive Security Evaluation
+  5 2026-09-01 2608.30322 Ignorance or Incompetence? Constructing Knowledge-Gated, Verifiable Tasks for LLM Agents
+  5 2026-09-03 2609.02111 Disease Burden over Skin Tone: Decomposing the Dermatology-AI Generalization Gap
+  5 2026-09-03 2609.02083 XMerge: Cross-Axis Selection and Reconstructive Layer Merging for LLM Depth Compression
+  5 2026-09-04 2609.03806 SVG-Score: Human-Aligned Evaluation of Text-to-SVG Generation
+  5 2026-09-15 2609.15972 Mind2Dialogue: Training Human-Aware Language Models by Simulating User Mental States
+  5 2026-09-17 2609.19088 MUSE: Benchmarking Large Vision-Language Models on Multi-Modal Understanding in Situated Education
+  5 2026-09-17 2603.23069 AuthorMix: Modular Authorship Style Transfer via Layer-wise Adapter Mixing
+  5 2026-08-14 2608.12585 Reasoning Jury: Multi-Model Consensus for Evaluating Reasoning Traces
+  5 2026-08-18 2608.16201 Multi-Granularity Sentiment Integration for LLM-Based Multimodal Sentiment Analysis
+  5 2026-08-18 2608.15762 Global Simulation-Guided Dynamic Operator Scheduling for Efficient Multi-Tenant Model Serving
+  5 2026-08-19 2608.17443 Structure-Internalized Rule Language Model for Faithful Knowledge Graph Reasoning
+  5 2026-08-20 2608.18689 Aslema at NADI 2026: Augmentation through Fewshot for SLU
+  5 2026-08-27 2608.25893 A General-Purpose Molecular Foundation Model Transfers Across Diverse Olfactory Tasks
+  5 2026-08-28 2608.26836 SymbolLKG: Towards Verifiable Logical Reasoning via Logical Knowledge Graph and Symbolic Solvers
+  5 2026-09-01 2608.31137 OntoAligner-Ensemble: Voting-Based Fusion across Heterogeneous Ontology Alignment Techniques
+  5 2026-09-01 2608.31076 Learning to Evaluate Before Improving: Automatic Rubric Induction for Automatic Research Agents
+  5 2026-09-09 2609.08226 TTGBench: Benchmarking Topological Evolution and Semantic Drift in Text-attributed Temporal Graphs
+  5 2026-09-09 2609.06960 iBrain: A Unified Foundation Model Reading the Brain from Surface to Spikes
+  5 2026-09-10 2609.09984 Multi-Functional Embedding Models for Funder Name Disambiguation in Scientific Publication Records
+  5 2026-09-23-补充 2609.23924 Matched-Input Estimates Differ in Sign Across Architectures: Auditing EEG Foundation Models on Motor Imagery
+  5 2026-09-23 2609.26034 Domain-Adaptive Pretraining Enhances Water Treatment Semantic Representation for Large-Scale Structured Literature Mining
+  5 2026-09-24 2609.28026 Evaluating Feedback Focus and Pedagogical Adaptivity in LLM-Generated Feedback on Student Writing
+  5 2026-08-18 2608.16461 A Human-LLM Teaming Framework for Privacy Risk Analysis: An Illustration with CBDC-Based Welfare Schemes
+  5 2026-08-18 2608.15381 FedPA-LoRA: Product-Aligned Framework for Mitigating Aggregation and Initialization Errors in Heterogeneous Federated LoRA
+  5 2026-08-25 2608.23241 Retrieval-Augmented Classification of Environmental Mitigations in Hydropower Licensing Documents
+  5 2026-08-25 2608.23124 LITERARYBIGFIVE: Author-Personalized Text Generation in a Unified Interpretable Space
+  5 2026-09-09 2609.07185 SIFTING: A Novel LLM-Based Framework for Structured and Transparent Information Extraction from Clinical Free-Text Reports, with Application to Tumor Staging in Lung Cancer
+  5 2026-09-11 2609.11860 Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models
+  5 2026-09-11 2609.11163 LILA: Calibration-Free Structured Pruning of Large Language Models via Latent Spectral Geometry
+  5 2026-09-15 2609.15618 IROH: Insightful Ranking Of Humor using Multi-Stage Hybrid Retrieval with Rationale-Distilled LLM Judges for JOKER 2026 Track Task 1 English
+  5 2026-09-25 2609.29102 ELF-REG: Scaling Continuous Diffusion Language Models to Reasoning Tasks
+  5 2026-09-25 2409.18486 Evaluation of OpenAI o1: Opportunities and Challenges of AGI
+  5 2026-08-14 2608.13315 Keep, Customize, or Exit: Default Design and Token Pricing in LLM Reasoning Services
+  5 2026-08-20 2608.18586 OmniHandwritingOCR: A Diagnostic Benchmark for Evaluating Multimodal LLMs in Handwritten OCR Scenarios
+  5 2026-08-21 2608.19875 A knowledge-guided agentic framework for mitigating patient-context ambiguity in health queries
+  5 2026-08-25 2608.22634 GeoRisk-RAG: A Hierarchy-Aware Risk Framework for Improving RAG Reliability through Selective Answering
+  5 2026-08-27 2608.25251 What Do Medical Vision-Language Models Learn in Radiology? Transfer, Alignment, and Source-Proxy Leakage Under Distribution Shift
+  5 2026-08-28 2608.26235 The Reasoning Tax: Token Economics of LLM Reasoning Across Task Types and Deployment Contexts
+  5 2026-09-01 2608.29889 VibeJam: A User Study Platform for Web Development with Agents
+  5 2026-09-02 2609.01572 From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix
+  5 2026-09-03 2609.02162 GenCAR: Generative Counterfactual Alignment with Risk-Controlled Selection for Out-of-Distribution Recommendation
+  5 2026-09-04 2609.03992 Alignment-Free Text-Audiobox for Voice Dubbing and Full-Duplex Dialogue Synthesis
+  5 2026-09-04 2609.03330 Less Is Moral: A CHARMing Framework for Moral Foundations Detection in Endorsement Behaviour
+  5 2026-09-09 2609.09090 Measuring LLM Sycophancy under Sustained Multi-Turn Pressure
+  5 2026-09-09 2609.08755 Kairos: A Dataset for Fine-Grained Video-Language Modeling over Space, Time, and Dynamics
+  5 2026-09-09 2609.08515 Same Values, Different Languages? From Multilingual Probing to Steering LLMs Toward Chinese Social Values
+  5 2026-09-09 2609.08164 Dual-Layer Semantic-Spatial Belief Mapping for Aerial Object Goal Navigation
+  5 2026-09-10 2609.10445 Building Multilingual Bridges: Data Mixing as the Pillar of Generalization for In-Language Reasoning
+  5 2026-09-10 2609.10016 MetroLLM-Bench: Evaluating Language Models as Transit Kiosk Runtimes
+  5 2026-09-16 2609.16841 StackTok: Accelerating VLMs Inference with Budget-Adaptive Visual Token Selection
+  5 2026-09-16 2609.16710 Continuous-Time Machine Learning: A Unified Mathematical Perspective
+  5 2026-09-17 2606.17702 SegTME-UNI2: A Foundation Model-Based Framework for Generalisable Multiclass Cell Segmentation and LLM-Driven Tumour Microenvironment Characterisation in Histopathology
+  5 2026-09-17 2609.17686 The Missing "I Don't Know": Why Three Reasoning-Reliability Findings Converge on Calibrated Abstention
+  5 2026-09-18 2609.19878 Uni-LaDiR: Latent Diffusion Unifies Multimodal Reasoning
+  5 2026-09-23-补充 2609.24094 WidgetVA: A Widget-Centric Framework and Benchmark for Agentic Visual Analytics
+  5 2026-09-23-补充 2607.09786 Length Penalties Make Chain-of-Thought Less Monitorable
+  5 2026-09-23-补充 2609.23726 GRACE: Grounded Adversarial Reasoning over Canadian Law
+  5 2026-09-23-补充 2609.23416 MuLA-Bench: A Multilingual Long-Form Audio Understanding Benchmark via Multi-Tier Auditing
+  5 2026-09-23-补充 2609.23307 Semantic Candidate-Job Matching: A Comparative Evaluation of Dense Embedding Models in Hybrid Retrieval
+  5 2026-09-23 2609.24801 Decoding Guardrails: XAI-Guided Perturbation Analysis of Prompt Injection Detection
+  5 2026-09-23 2609.24657 Circuit Hypernetworks for Quantum-Augmented Diffusion Language Models
+  5 2026-09-24 2609.28344 Mizar: A 159M-Parameter Audio-Language Model for Audio Understanding
+  5 2026-09-24 2503.09020 Enhancing the Non-Functional Quality Compliance of LLM-Generated Code through Quality-Aware Preference Learning
+  5 2026-09-25 2609.29410 Large Language Models for Programming: Actually Fixing or Reimplementing Incorrect Code?
+  5 2026-08-13 2608.11510 Conflict and Congruency Effects in Large Language Models: In-Weight and In-Context Competition in a Verbal Conflict Task
+  5 2026-08-14 2608.12677 The Role of Natural Language Understanding in Multimodal Video-Based Dengue Diagnosis
+  5 2026-08-24 2608.21252 EnSI-RAG: Entity-Structure-Indexed Retrieval-Augmented Generation for Long-Document Question Answering
+  5 2026-08-27 2608.25425 RotDroid: Cross-Orientation State Equivalence Testing for Detecting GUI Rotation Bugs in Android Apps
+  5 2026-08-27 2608.25382 Q&A or Document-Based? The Effects of Interface Type on How Screen Reader Users Access Interconnected Documents
+  5 2026-08-28 2608.26386 Co-Evolving Structured Knowledge and Reasoning in Language Models
+  5 2026-09-09 2609.08663 MoEMB: Scaling Universal Multimodal Embeddings with Efficient Mixture-of-Experts Models
+  5 2026-09-09 2609.08634 Suan: Rectifying Direct Preference Safety Alignment in Large Language Models
+  5 2026-09-15 2606.10581 ParaBridge: Bridging Paralinguistic Perception and Dialogue Behavior in Speech Language Models
+  5 2026-09-16 2609.17111 Finding Common Mistakes In Modelling With Mathematical Formalisms Using LLMs
+  5 2026-09-16 2609.16372 Register Tokens for Bounded-State Reasoning in Diffusion Language Models
+  5 2026-09-17 2609.19144 A Zeroth-Order Paradigm for LLM Preference Alignment
+  5 2026-09-17 2503.12018 CompArt: Operationalizing Aesthetic Alignment in Text-to-Image Generation via Principles of Art
+  5 2026-09-18 2609.19924 The Life of a Token: from Words to Bits on the Wire
+  5 2026-09-21 2609.21651 Configurable Multi-Stage Vision Pipeline for Crop Disease and Pest Diagnosis
+  5 2026-09-21 2609.21461 AtomEgo: Exploring Ego-Robot Integration for Embodied Foundation Model Pretraining
+  5 2026-09-23-补充 2512.09443 A Human-AI Collaborative Workflow for Mathematical Discovery: A Case Study in Grover-Compatible Riemannian Optimization
+  5 2026-09-23-补充 2411.02455 A Course Intelligence Platform for Higher Education: Lessons from AI-Assisted Course Evaluation
+  5 2026-09-23-补充 2609.23640 Are Human-Aligned Models Models of Humans? A Turing-Test Gap in Preference Alignment
+  5 2026-09-23-补充 2609.23573 Error-Supervised Synthetic Learner Writing for Automated Essay Scoring
+  5 2026-09-25 2609.29001 Polite but Misaligned: Evaluating LLM Politeness Judgments Against Human Pragmatic Norms
+  5 2026-09-25 2609.28609 Adversarial Closed-Loop Curriculum for Evolving Role-Playing Agents
+  5 2026-08-25 2608.22839 Hierarchy-Aware Supervised Uncertainty Estimation for Black-box LLM Taxonomic Reasoning
+  5 2026-09-01 2608.30022 Automatic Conversion of NICE Guidelines to an Executable Computational Model Using Large Language Models
+  5 2026-09-02 2609.01117 Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs
+  5 2026-09-04 2609.03229 Language-encoded network topology enables large language models to reason about complex networks
+  5 2026-09-15 2609.15886 Inoculation Midtraining with Learned Neologisms
+  5 2026-09-15 2605.27115 Counteraction-Aware Multi-Teacher On-Policy Distillation for General Capability Recovery with Domain Preservation
+  5 2026-09-16 2609.16793 Available but Unclaimed: An Empirical Study of Human-AI Synergy
+  5 2026-09-19 2609.21755 ECG Mirage: Revealing and Mitigating the Underutilisation of ECGs in Vision-Language Models for Clinical Prediction
+  5 2026-09-24 2609.27087 Policy-as-Skill: Governed LLM Decision Support with Evidence, Deterministic Control, and Audit
+  5 2026-09-25 2403.10771 A Probabilistic Approach for Model Alignment with Human Comparisons
+  5 2026-08-14 2608.12894 BavGround: A Benchmark for Regional Cultural Grounding and Dialect Competence in Bavarian
+  5 2026-08-14 2608.12821 HiRoute: Hierarchical Routed Prompt Tuning for Safety Alignment of Large Language Models
+  5 2026-08-18 2608.15736 Toward AI-Friendly Cartography: Understanding How Color Design Influences Foundation Model Spatial Reasoning on Sequential Choropleth Maps
+  5 2026-08-18 2608.15600 VARM-Bench: Benchmarking Verifiable Structured Reasoning in Chinese Abusive Speech Moderation
+  5 2026-09-25 2608.15594 TRACE: Trajectory Aware Reasoning for Multi-Turn Adversarial Conversation Evaluation
+  5 2026-08-18 2608.15459 Not All Attention Is Equal: A Quantitative Survey of the EEI Trade-off
+  5 2026-08-20 2608.18534 FinRCA-Bench: Benchmarking Evidence Retrieval and Reasoning for Financial AI Systems
+  5 2026-08-25 2608.23235 A Multi-Domain and Multi-Task Generative Framework with Explicit Task and Domain Conditioning for Cross-Domain Event Extraction
+  5 2026-08-25 2608.23205 Cognitive Profiling of LRMs' Reasoning Traces Using Bloom's Taxonomy
+  5 2026-08-25 2608.22817 Industrial-Instruction: An End-to-End Framework for Building Instruction-Tuning and Benchmark Datasets from Industrial Technical Reports
+  5 2026-08-27 2608.25741 Why Does Graph Learning Fail to Fully Benefit from a Text Teacher?
+  5 2026-08-27 2608.25050 ARISMA: Guidelines for AI- and LLM-Assisted Systematic Reviews, Scoping Reviews, and Mapping Studies
+  5 2026-08-28 2608.27394 RATIO: A Benchmark for Retrieval Across Typed Ideation Operations in Scientific Literature
+  5 2026-08-28 2608.27110 DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali
+  5 2026-08-31 2608.28478 Blind Men and the Elephant: Probing the Epistemic Myopia of LLMs under Long-Tail Divergent Knowledge
+  5 2026-09-03 2609.01896 OutageDiT: A Generative Foundation Model for Power Outage Forecasting and Scenario Simulation
+  5 2026-09-04 2609.03662 Extracting Forgotten Prompts from Targeted Unlearned Models
+  5 2026-09-07 2609.05284 GUT: Quantifying and Optimizing the Reasoning Uncertainty of LLMs via Graph Complexity
+  5 2026-09-09 2609.07937 TDDN: Text-aligned Diffused DINO Network for Puzzle Understanding
+  5 2026-09-10 2609.10539 IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications
+  5 2026-09-15 2609.15215 Augmenting Large Audio-Language Models with Frame-Level Grounding for Fine-Grained Temporal Perception
+  5 2026-09-16 2511.02831 GeoCrossBench: Cross-Band Generalization for Remote Sensing
+  5 2026-09-16 2609.16247 The Pain Axis: LLMs Represent Self-Directed Harm and Act to Relieve It
+  5 2026-09-17 2609.18905 Structured Claim-Level Discourse Representations for Dense Health Narratives
+  5 2026-09-17 2609.18496 MiST: Mid-Training LLMs for Cybersecurity
+  5 2026-09-17 2603.03884 CzechTopic: A Benchmark for Zero-Shot Topic Localization in Historical Czech Documents
+  5 2026-09-19 2609.21879 Benchmarking the Explanatory Quality of Open-Weight Vision-Language Models in Face Recognition
+  5 2026-09-21 2609.21673 PRISM-BN: A Controlled Corpus and Benchmark for Text-to-Parameterized Bayesian Network Extraction
+  5 2026-09-21 2609.21296 FairLMs: A Turnkey Library for Fairness in Language Models
+  5 2026-09-23-补充 2609.24177 Efficient LLM Distillation for Bangladesh Legal Context: A Smartphone-Compatible Retrieval-Augmented Generation Model
+  5 2026-09-23-补充 2602.01161 The Role of Dataset Linguistic Structure in the Cultural Awareness of Large Language Models
+  5 2026-09-23-补充 2609.23825 Federated Multilingual Speech-LLMs: Architecture and Aggregation Strategy Benchmarking
+  5 2026-09-23 2607.02118 Enhancing Fitness Intelligence through Domain-Specific LLM Post-Training
+  5 2026-09-25 2609.29948 ENDOPROMPT: Victim-Side Pseudo-References for Utility Degradation
+  5 2026-08-13 2608.12123 Ready Cohorts: Bounding GPU Opportunity and Avoiding Host Round Trips in LLM-Agent Control
+  5 2026-08-18 2608.16467 Computational KJ-Ho: An Analyst-Bias-Free Insight Extraction Framework from Large-Scale Qualitative Data Using Domain-Specialized LLMs
+  5 2026-08-19 2608.17843 Encoded but Not Actionable: Auditing the Decode-Generate-Steer Gap in Frozen LLMs for Geometric Constraints
+  5 2026-08-19 2608.17715 Communicating Credit Risk with Large Language Models: Evaluation of Explanations from Standard and Alternative Data-Based Models
+  5 2026-08-20 2608.18733 Flama: a Python framework for development and deployment of production-ready APIs, machine learning, and LLM services
+  5 2026-08-25 2608.23264 Hidden in the Request: Explaining Unethical LLM Compliance through Token Relevance
+  5 2026-08-25 2608.23047 Beyond Verdicts: A Graph-Based Analysis of Human and LLM Reasoning in Scientific Fact-Checking
+  5 2026-08-27 2608.25379 Adaptive Triggering for Bias Correction in LLM Reasoning
+  5 2026-08-28 2608.26849 LiveSim: Simulating Environment-Shaped Users in Multi-Agent Live-Stream Ecosystems
+  5 2026-08-31 2608.28382 When Linguistic and Internal Confidence Diverge in Large Language Models
+  5 2026-09-01 2608.29530 The Emergent Symbolic Structure of Artificial Neural Networks
+  5 2026-09-01 2608.29459 Toward Latent Language Model Skills Steering and Optimization: An Empirical Study
+  5 2026-09-02 2609.00099 Generative artificial intelligence for reliable mechanistic reasoning for corrosion
+  5 2026-09-02 2609.00092 Safin-1: Safety from Within through Memory-Native State Evolution
+  5 2026-09-03 2609.02797 Dutch Books for Language Models
+  5 2026-09-03 2609.01730 HEAT: Faster Fully Homomorphic Inference via Approximations-Weights Co-Adaptation
+  5 2026-09-09 2609.09054 Training-Free Task Vectors for LLM Behavioral Control
+  5 2026-09-09 2609.06951 Steering Interference Reflects the Model's Defaults, Not the Behavior Directions
+  5 2026-09-10 2609.09999 SalamandraTA at WMT 2026 Terminology Shared Task: Hard Examples Are Better Teachers
+  5 2026-09-15 2609.14572 AlgoRAG: Retrieval-Augmented Generation for Theoretical Computer Science Education -- A Comprehensive Evaluation Framework for Algorithm Analysis and Complexity Theory
+  5 2026-09-16 2609.16679 AI for Games in the Foundation Model Era
+  5 2026-09-17 2606.15121 When Cognitive Graphs Meet LLMs: BDEI Cognitive Pathways for Panic Emotional Arousal Prediction
+  5 2026-09-17 2602.02377 ProofVerifier: A Scalable, Diversity-Driven Framework for Natural-Language Proof Verification
+  5 2026-09-18 2609.19717 Learn Your Own Thoughts: Abstract Token Curriculum
+  5 2026-09-21 2609.21390 Offline Multimodal Large Language Models for Decision Support in Air Operations
+  5 2026-09-19 2507.16199 LLM Abstention Can Be a Prompt Artifact, in Addition to Genuine Uncertainty
+  5 2026-09-23-补充 2606.06256 RedKnot: Efficient Long-Context LLM Serving with Head-Aware KV Reuse and SegPagedAttention
+  5 2026-09-23-补充 2609.25118 Rachel: A general-purpose language model directs and revises retrosynthetic routes
+  5 2026-09-23-补充 2607.04733 LP-SFT: Local-Preserving Supervised Fine-Tuning via Multimodal Entropy Structure
+  5 2026-09-23 2609.26781 Agensh: Scaling Organizational Intelligence to 1,024 Agents
+  5 2026-09-23 2609.26704 Beyond Repeated Sampling: Learning Search Policies for LLM Reasoning
+  5 2026-09-23 2509.00961 Ultra Strong Machine Learning: LLM-Generated Explanations Do Not Yet Suffice for Teaching Humans Active Learning Strategy
+  5 2026-09-23 2609.24859 Small-world Networks of Agents Brainstorm AI Risks to Support Ideation
+  5 2026-09-24 2609.27337 Evolving Inspectable O-RAN Slicing xApps with LLMs
+  5 2026-09-25 2609.29995 Guardrails or Roadblocks? Effects of Pedagogical Style and Context Awareness in AI Teaching Assistants for Programming
+  5 2026-09-25 2609.29106 WildHSR: Metric Feed-Forward 4D People-Scene Reconstruction from a 3D Foundation Model
+  5 2026-08-21 2608.19920 Learning how to Forget: Fine-tuning for Long-Context Sparse Attention
+  5 2026-09-11 2609.11498 ActMap: Single-Pass Uncertainty Quantification from Generation-Time Activation Maps
+  5 2026-09-19 2601.11719 jBOT: Semantic Jet Representation Clustering Emerges from Self-Distillation
+  5 2026-08-24 2608.21223 Event-triggered Implicit Perturbation for Zeroth-Order Fine-Tuning of Spiking Transformers
+  5 2026-08-27 2608.25579 Cross-Dataset Stability of Expert-Informed Skill Prompting and Fine-Tuning for Chinese Metaphor Identification
+  5 2026-09-01 2608.30679 LCoT-GV: Graph Attention Networks for Verifying Long Reasoning Chains in Large Language Models
+  5 2026-09-04 2609.02954 LexIssue: Benchmarking Legal Issue Identification in Chinese Civil Litigation
+  5 2026-09-09 2609.08330 EMBLEM: Enhancing Multi-script Table Detection through Masking
+  5 2026-09-10 2609.09860 Exact Degeneracy Under Balanced k-Shot Sampling:Consequences for Small-Sample Discriminant Analysis on LLM Embeddings
+  5 2026-09-15 2609.15794 KnowBench: Effort Reduction as a Unified, Deployment-Grounded Benchmark for Clinical AI
+  5 2026-09-15 2609.15219 From Ideas to Actions: A Public-Data Decision-Support Toolchain Across the Venture Lifecycle
+  5 2026-09-16 2609.17019 SKIP: a Self-knowledge-guided Step-wise Preference Learning Framework for Concise Reasoning
+  5 2026-09-17 2609.17886 Dataset-Dependent Effects of Cross-Depth Aggregation and Soft-Routed Experts in EEG Foundation Model Fine-Tuning
+  5 2026-09-24 2512.04457 RapidUn: Influence-Driven Parameter Reweighting for Efficient Large Language Model Unlearning
+  5 2026-08-13 2608.12304 Constructing Dynamic Master Logic Models as Knowledge Graphs for Complex System Diagnostics Using Retrieval-Augmented Large Language Models
+  5 2026-08-13 2608.11716 Chain-of-Thought Shows the Path to a Tree: Realizing Branching Complexity
+  5 2026-08-13 2608.11493 From Prompting to Behavioral Alignment: Personalized LLM Judges for Recommendation Evaluation
+  5 2026-08-13 2608.11426 Is Convergence Inevitable? Tracing Output Homogeneity Back to Base Models
+  5 2026-08-19 2608.17638 Beyond the Trace: Coupling an Interpretable Reasoning-State Readout to Native MoE Routing
+  5 2026-08-20 2608.18398 LEDGER: Claim-to-Evidence Trace Graphs for Auditing LLM Agents
+  5 2026-08-21 2608.20026 From Street View Imagery to Street Quality Indicators: Vision Language Inference for the Suburban 15-minute City
+  5 2026-08-24 2608.21325 Move by Move: Measuring and Steering How LLMs Conduct Psychotherapy
+  5 2026-08-25 2608.22483 Claim-Level Confidence Calibration for Reliable Decision Making with Large Language Models
+  5 2026-08-25 2608.22332 Mechanistic Interpretability of Chain-of-Thought Reasoning via Sequential Activation Patching
+  5 2026-09-01 2608.30393 Quantitative Evidence Mining for Plausibility-Aware Biomedical AI
+  5 2026-09-01 2608.29605 Hindsight Memory-PRM: Supervising Memory Management with Auditable Hindsight Credit
+  5 2026-09-03 2609.02244 Task-Level Natural Language Priors as Learning Signals for Low-Resource LLM Training
+  5 2026-09-03 2609.01976 Knowing Is Not Enough: Information Retrievability as a Precondition to Effective LLM Oversight
+  5 2026-09-03 2609.01833 Candidate Generation and Definition-Guided Verification for Sentence-Level Depression Symptom Recognition
+  5 2026-09-03 2609.01815 Induction and Inquiry via Probabilistic Reasoning over Language and Code
+  5 2026-09-04 2609.03721 Can LLMs Extract Architectural Design Decisions from Source Code Commits? - A Preliminary Exploratory Study
+  5 2026-09-04 2609.03402 A Prompt-Engineering Approach to Develop Scalable, Flexible, and Real-Time Hybrid Micro-Level Personalization in a General Purpose AI Teaching Assistant
+  5 2026-09-09 2609.08599 Graph-Based Personalized Memory for LLM Agents: Representation, Evolution, Retrieval, and Evaluation
+  5 2026-09-09 2609.07986 Automated Chest CT Protocol Selection via Large Language Model Derived Text Embeddings from Imaging Request Text
+  5 2026-09-09 2609.07050 Beyond One-Shot Expansion: Contrastive Evidence Exploration for Multi-Hop Retrieval
+  5 2026-09-10 2609.09856 With a Thermomix You Lose the Ability to Cook: A Kitchen Machine Analogy for Applications of Generative AI in Education
+  5 2026-09-15 2605.27864 FundaPod: A Multi-Persona Agent Pod Architecture with Knowledge Graph Memory for AI-Assisted Fundamental Investment Research
+  5 2026-09-17 2609.17987 Multimodal Conditioning of Fine-Tuned Stable Diffusion XL for Controllable and Culturally Faithful Ulos Motif Generation
+  5 2026-09-21 2605.11986 On the Limitations of Large Language Models for Conceptual Database Modeling
+  5 2026-09-21 2503.16094 Cultural Alignment in Large Language Models Using Soft Prompt Tuning
+  5 2026-09-23-补充 2609.23916 Time-Incremental Continued Pretraining of LLMs: Knowledge Updates Without Catastrophic Forgetting
+  5 2026-09-23 2609.22455 Apollo Restore: A Foundation LLM for Historical Greek Optimized for Fill-in-the-Middle Restoration of Ancient Greek Texts
+  5 2026-09-23 2607.15957 From Plausible to Actionable: A Position on LLM Self-Explanations
+  5 2026-09-23 2609.24885 The Copy Ceiling: An Input-Exposure Control for Ontology-Grounded Generation over Curated Corpora
+  5 2026-09-24 2609.27982 Riemannian Structure and Optimization for a Class of Low-Parametric Orthogonal Matrices
+  5 2026-09-24 2609.27014 ContraVis: Evidence-Grounded Visual Analytics for Contradiction Review in Legal Contracts
+  5 2026-09-25 2607.21424 An Evaluation Framework for Structured Audio Captions Validated by Controlled Perturbations
+  5 2026-09-25 2609.28576 Time-Series Foundation Models That Understand Data Revisions
+  5 2026-08-21 2608.19719 Scale-Separated Conditioning for Style-Encoder-Free Diffusion Stylization
+  5 2026-08-27 2608.25028 Behind the [MASK]: Disentangling Representation and Faithfulness in DAPF-Based Dementia Detection
+  5 2026-09-19 2608.30378 PAVE: Predictive Alignment and Value-Guided Evolution for World-Action Policies
+  5 2026-09-24 2602.17510 LORA-CRAFT: Cross-layer Rank Adaptation via Frozen Tucker Decomposition of Pre-trained Attention Weights
+  5 2026-08-25 2608.22857 SAVER: Selective Auditing of Verbal Evidence for Error Recovery in VLM Change Reasoning
+  5 2026-08-25 2608.22388 ProBel: Propaganda Detection with Techniques, Spans, and Explanations
+  5 2026-09-01 2608.30912 Responsible Integration of AI in Cancer Genomics: Barriers, Risks, and Pathways to Trustworthy Clinical Translation
+  5 2026-09-01 2608.29431 Evaluating the Semantic Specificity of Representation Steering in Language Models
+  5 2026-08-28 2608.27397 Making Clinical Language Models Auditable: Concept-Guided Fine-Tuning for Robust Prediction
+  5 2026-09-04 2609.04127 Epistemic Warrant for LLM Recommendations: Characterizing the Basis for Reliance When Ground Truth Is Unavailable
+  5 2026-09-11 2609.11620 A Training-Free, Alignment-Free Approach to Corporate Intelligence: Application to SEC Filings
+  5 2026-09-15 2609.15015 Four Ledgers, Not One Score: Responsible Communication of LLM-Judge Calibration in Biomedical ML
+  5 2026-09-16 2609.17475 JustFit: 200K-Token LLM Serving on a 24 GiB Laptop with Just-in-Time State Management
+  5 2026-09-16 2609.16427 ReMova: Fine-tuning LLMs for English to Belarusian translation
+  5 2026-09-21 2609.21662 When Steering Fails in Latent Reasoning: A Latent-to-Language Transition Gap
+  5 2026-09-23-补充 2609.24209 Displacement Geometry Captures Platonic Shared Reality Across Models and Modalities
+  5 2026-09-23 2609.26527 A Semiotics-Aware Framework for Evaluating Fidelity and Coverage in Natural Language Generation
+  5 2026-09-24 2607.10128 Energy-guided Recursive Model
+  5 2026-08-18 2608.16303 FTA-Mem: Fact-Time-Affect Anchored Memory for Low-Density Long-Term Dialogue
+  5 2026-08-20 2608.18474 OmniAlign: A Unified Multilingual Aligner for Word and Sentence Alignment
+  5 2026-09-09 2609.07022 CIPHER: Benchmarking Cross-record Inference over Privacy-Hardened Evidence Records
+  5 2026-08-27 2608.25275 PhaseShift: Topology-Aware Data Harmonization and Model Consolidation Across Signalized Intersections
+  5 2026-09-23 2609.24625 Custom Named Entity Recognition and Topic Classification for Global Health Publications
+  5 2026-09-25 2508.07520 Conversational DNA: A Visual Language and Interactive Atlas of Human and AI Dialogue
+  5 2026-09-11 2609.10712 An Open Recipe for IMO Gold: Training Nemotron for Olympiad Mathematics
+  5 2026-08-18 2608.15820 QuantumPhaseNet: A Gauge-Covariant Geometric and Quantum-Spectral Theory of Semantic Concept Hierarchies with Prototype Validation of a Classical Quantum-Inspired Model
+  5 2026-09-02 2609.00361 Detoxifying Toxic Communication: A Design Science Approach to Responsible AI
+  5 2026-09-04 2609.03586 The Attention Triangle in Audio-Video Models
+  5 2026-09-15 2606.28876 MMLA: Memory-Mediated Learning Architecture for Predictive Dual-State Adaptation
+  5 2026-09-16 2609.17109 Shared-Prefix KV Reuse Across Standard LoRA Adapters: Quality and Serving Tradeoffs
+  5 2026-09-21 2609.21811 MIST: Multimodal Survival Prediction with Genomic-Guided Histology Attention
+  5 2026-09-23-补充 2609.24440 Comparing Latent Concept Formation in State Space Models and Transformers via Sparse Autoencoders
+  5 2026-09-25 2609.29812 FlashLoop: Fast and Memory-Efficient Looped Transformers via Lazy Updates
+  5 2026-09-24 2609.28080 Reference-Based Analysis of Coherence and Diversity in Open-Ended Text Generation

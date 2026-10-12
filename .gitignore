@@ -1,0 +1,32 @@
+# ---- 训练/实验产物：不进版本库（体积大、可复现） ----
+runs/
+data/
+data_rl/
+data_rl2/
+data_rl3/
+data_rl4/
+data_q/
+data_all/
+logs/
+corpus_big/
+*.pt
+*.bin
+
+# ---- 缓存 ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# ---- 编辑器/系统 ----
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# 例外：这几份语料是「手工整理的输入数据」，值得进库（体积都在几 MB）
+!rl_corpus.md
+!rl_corpus.json
+!rl_titles.txt

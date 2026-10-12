@@ -1,0 +1,24 @@
+知识点图谱 C
+
+[方法论（K-METHOD）]
+  - c_pre: 预注册与判决判据  全部
+  - c_ctrl: 负对照与鉴别力  全部
+  - c_iso: 等算力对比  全部
+  - c_seed: 多种子与配对随机数  P9
+  - c_curve: 可监控性曲线  全部
+
+[跨域迁移源（K-XFER）]
+  - c_x_cql: 离线 RL 悲观价值（CQL/IQL）  →P2
+  - c_x_stop: 最优停止与运筹调度  →P1 P8
+  - c_x_tmle: 因果推断双重稳健估计  →P1 P7
+  - c_x_dp: 差分隐私与噪声会计  →P4
+  - c_x_audit: 审计抽样与 materiality  →P4
+  - c_x_vcg: 机制设计与拍卖（VCG）  →P5
+  - c_x_orth: 持续学习正交梯度（PCGrad/OGD）  →P10
+  - c_x_queue: 排队论与物化视图  →P8
+
+[关系]  depend=基于/细化（实线）  oppose=对立（红虚线）  transfer=跨域迁移（绿点线）
+  c_pre --depend--> c_iso
+  c_pre --depend--> c_ctrl
+  c_seed --depend--> c_iso
+  c_ctrl --depend--> c_curve

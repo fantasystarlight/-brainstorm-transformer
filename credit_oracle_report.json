@@ -1,0 +1,250 @@
+{
+  "env": {
+    "K": 6,
+    "A": 3
+  },
+  "seed": 20260928,
+  "normalize_credit": true,
+  "results": {
+    "TOL=0": {
+      "true_advantage(oracle)": {
+        "spearman_vs_oracle": 1.0,
+        "sign_accuracy": 1.0,
+        "mean_abs_error": 0.0,
+        "n_pairs": 4008,
+        "success_mean": 0.9896,
+        "success_sd": 0.0033,
+        "success_runs": [
+          0.9863,
+          0.9883,
+          0.9941
+        ]
+      },
+      "trajectory_broadcast": {
+        "spearman_vs_oracle": 0.2431,
+        "sign_accuracy": 0.7046,
+        "mean_abs_error": 0.0126,
+        "n_pairs": 4008,
+        "success_mean": 0.0052,
+        "success_sd": 0.0033,
+        "success_runs": [
+          0.0039,
+          0.002,
+          0.0098
+        ]
+      },
+      "mc_value_diff(GRAFT-like)": {
+        "spearman_vs_oracle": 0.2964,
+        "sign_accuracy": 0.7269,
+        "mean_abs_error": 0.0044,
+        "n_pairs": 4021,
+        "success_mean": 0.4154,
+        "success_sd": 0.2519,
+        "success_runs": [
+          0.2324,
+          0.7715,
+          0.2422
+        ]
+      },
+      "first_mistake(Cliff-like)": {
+        "spearman_vs_oracle": 0.4687,
+        "sign_accuracy": 1.0,
+        "mean_abs_error": 0.9479,
+        "n_pairs": 4008,
+        "success_mean": 0.987,
+        "success_sd": 0.0018,
+        "success_runs": [
+          0.9844,
+          0.9883,
+          0.9883
+        ]
+      },
+      "position_only": {
+        "spearman_vs_oracle": -0.1464,
+        "sign_accuracy": 0.8049,
+        "mean_abs_error": 0.4778,
+        "n_pairs": 4008,
+        "success_mean": 0.0,
+        "success_sd": 0.0,
+        "success_runs": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "shuffled(negative control)": {
+        "spearman_vs_oracle": -0.1457,
+        "sign_accuracy": 0.7434,
+        "mean_abs_error": 0.0055,
+        "n_pairs": 4014,
+        "success_mean": 0.0117,
+        "success_sd": 0.0105,
+        "success_runs": [
+          0.0254,
+          0.0098,
+          0.0
+        ]
+      }
+    },
+    "TOL=1": {
+      "true_advantage(oracle)": {
+        "spearman_vs_oracle": 1.0,
+        "sign_accuracy": 1.0,
+        "mean_abs_error": 0.0,
+        "n_pairs": 4725,
+        "success_mean": 1.0,
+        "success_sd": 0.0,
+        "success_runs": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "trajectory_broadcast": {
+        "spearman_vs_oracle": 0.1246,
+        "sign_accuracy": 0.5158,
+        "mean_abs_error": 0.1319,
+        "n_pairs": 4725,
+        "success_mean": 0.9837,
+        "success_sd": 0.0024,
+        "success_runs": [
+          0.9863,
+          0.9805,
+          0.9844
+        ]
+      },
+      "mc_value_diff(GRAFT-like)": {
+        "spearman_vs_oracle": 0.5249,
+        "sign_accuracy": 0.7147,
+        "mean_abs_error": 0.0324,
+        "n_pairs": 4791,
+        "success_mean": 0.9909,
+        "success_sd": 0.006,
+        "success_runs": [
+          0.9824,
+          0.9961,
+          0.9941
+        ]
+      },
+      "first_mistake(Cliff-like)": {
+        "spearman_vs_oracle": 0.2632,
+        "sign_accuracy": 0.9001,
+        "mean_abs_error": 0.9462,
+        "n_pairs": 4725,
+        "success_mean": 0.9902,
+        "success_sd": 0.0027,
+        "success_runs": [
+          0.9883,
+          0.9941,
+          0.9883
+        ]
+      },
+      "position_only": {
+        "spearman_vs_oracle": -0.1491,
+        "sign_accuracy": 0.735,
+        "mean_abs_error": 0.4967,
+        "n_pairs": 4725,
+        "success_mean": 0.0117,
+        "success_sd": 0.0166,
+        "success_runs": [
+          0.0,
+          0.0,
+          0.0352
+        ]
+      },
+      "shuffled(negative control)": {
+        "spearman_vs_oracle": 0.0371,
+        "sign_accuracy": 0.599,
+        "mean_abs_error": 0.0437,
+        "n_pairs": 4775,
+        "success_mean": 0.0176,
+        "success_sd": 0.0235,
+        "success_runs": [
+          0.002,
+          0.0508,
+          0.0
+        ]
+      }
+    },
+    "TOL=2": {
+      "true_advantage(oracle)": {
+        "spearman_vs_oracle": 1.0,
+        "sign_accuracy": 1.0,
+        "mean_abs_error": 0.0,
+        "n_pairs": 5410,
+        "success_mean": 1.0,
+        "success_sd": 0.0,
+        "success_runs": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "trajectory_broadcast": {
+        "spearman_vs_oracle": 0.1931,
+        "sign_accuracy": 0.619,
+        "mean_abs_error": 0.4973,
+        "n_pairs": 5410,
+        "success_mean": 0.9961,
+        "success_sd": 0.0016,
+        "success_runs": [
+          0.998,
+          0.9941,
+          0.9961
+        ]
+      },
+      "mc_value_diff(GRAFT-like)": {
+        "spearman_vs_oracle": 0.7396,
+        "sign_accuracy": 0.8688,
+        "mean_abs_error": 0.0734,
+        "n_pairs": 5534,
+        "success_mean": 0.9961,
+        "success_sd": 0.0016,
+        "success_runs": [
+          0.9961,
+          0.998,
+          0.9941
+        ]
+      },
+      "first_mistake(Cliff-like)": {
+        "spearman_vs_oracle": 0.1786,
+        "sign_accuracy": 0.829,
+        "mean_abs_error": 0.9407,
+        "n_pairs": 5410,
+        "success_mean": 0.9922,
+        "success_sd": 0.0016,
+        "success_runs": [
+          0.9922,
+          0.9941,
+          0.9902
+        ]
+      },
+      "position_only": {
+        "spearman_vs_oracle": -0.0842,
+        "sign_accuracy": 0.6863,
+        "mean_abs_error": 0.541,
+        "n_pairs": 5410,
+        "success_mean": 0.1647,
+        "success_sd": 0.0578,
+        "success_runs": [
+          0.2422,
+          0.1035,
+          0.1484
+        ]
+      },
+      "shuffled(negative control)": {
+        "spearman_vs_oracle": -0.0025,
+        "sign_accuracy": 0.5583,
+        "mean_abs_error": 0.1266,
+        "n_pairs": 5443,
+        "success_mean": 0.0833,
+        "success_sd": 0.0542,
+        "success_runs": [
+          0.1426,
+          0.0957,
+          0.0117
+        ]
+      }
+    }
+  }
+}

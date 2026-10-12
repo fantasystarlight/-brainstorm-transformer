@@ -22,42 +22,45 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.10"
-          cache: pip
+      # 刻意不用 actions/setup-python：它要额外下载一份 Python 工具链，
+      # 在受限网络下会随机失败（本仓库的 CI 就先后失败过两次）。
+      # ubuntu-latest 自带 Python 3.10+，够用了。
+      - name: 确认自带的 Python
+        run: |
+          python3 --version
+          python3 -c "import sys; assert sys.version_info >= (3, 10), sys.version"
 
       - name: 安装依赖
         run: |
-          python -m pip install --upgrade pip
-          pip install torch --index-url https://download.pytorch.org/whl/cpu
-          pip install numpy pytest matplotlib
+          python3 -m pip install --upgrade pip
+          python3 -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          python3 -m pip install numpy pytest matplotlib
           if [ "${{ matrix.variant }}" = "full" ]; then
-            pip install tokenizers regex
+            python3 -m pip install tokenizers regex
           else
             echo "minimal 线：故意不装 tokenizers / regex"
           fi
 
       - name: 核心不变量测试（模型/分词/因果性/cache/GQA）
         run: |
-          pytest transformer/test_mini_transformer.py -q --no-header 2>&1 | tee /tmp/t1.log
+          python3 -m pytest transformer/test_mini_transformer.py -q --no-header 2>&1 | tee /tmp/t1.log
           exit ${PIPESTATUS[0]}
 
       - name: 流程图守卫测试（transformer 侧）
         run: |
-          pytest transformer/test_flowchart.py -q --no-header 2>&1 | tee /tmp/t2.log
+          python3 -m pytest transformer/test_flowchart.py -q --no-header 2>&1 | tee /tmp/t2.log
           exit ${PIPESTATUS[0]}
 
       - name: 流程图守卫测试（工作区根目录）
         run: |
-          pytest test_flowchart.py -q --no-header 2>&1 | tee /tmp/t3.log
+          python3 -m pytest test_flowchart.py -q --no-header 2>&1 | tee /tmp/t3.log
           exit ${PIPESTATUS[0]}
 
       - name: 端到端冒烟（只有 full 线跑，需要 torch + tokenizers）
         if: matrix.variant == 'full'
         run: |
-          python -m transformer.train --quick --tag ci 2>&1 | tail -20
-          python -m transformer.generate --tag ci -n 32 --temperature 0.8 2>&1 | tail -12
+          python3 -m transformer.train --quick --tag ci 2>&1 | tail -20
+          python3 -m transformer.generate --tag ci -n 32 --temperature 0.8 2>&1 | tail -12
 
       - name: 失败时把 pytest 输出写进 Actions 摘要（不登录也能看到原因）
         if: failure()
@@ -69,7 +72,7 @@ jobs:
               echo "<details><summary>$f</summary>"
               echo ""
               echo '```'
-              tail -60 "$f"
+              tail -80 "$f"
               echo '```'
               echo "</details>"
             done
@@ -77,9 +80,10 @@ jobs:
 
       - name: 环境信息
         if: always()
+        continue-on-error: true
         run: |
-          python -c "import sys; print(sys.version)"
-          python -c "import numpy; print('numpy', numpy.__version__)"
-          python -c "import torch; print('torch', torch.__version__)"
-          python -c "import tokenizers; print('tokenizers', tokenizers.__version__)" 2>/dev/null || echo "tokenizers: 未安装（minimal 线，符合预期）"
-          python -c "import regex; print('regex', regex.__version__)" 2>/dev/null || echo "regex: 未安装（minimal 线，符合预期）"
+          python3 -c "import sys; print(sys.version)"
+          python3 -c "import numpy; print('numpy', numpy.__version__)"
+          python3 -c "import torch; print('torch', torch.__version__)"
+          python3 -c "import tokenizers; print('tokenizers', tokenizers.__version__)" 2>/dev/null || echo "tokenizers: 未安装（minimal 线，符合预期）"
+          python3 -c "import regex; print('regex', regex.__version__)" 2>/dev/null || echo "regex: 未安装（minimal 线，符合预期）"

@@ -59,8 +59,9 @@ FLOW_PIPELINE = {
          "en": "8 eval val loss, keep best ckpt", "anchor": "最佳 val"},
     ],
     "edges": [("C1", "C2"), ("C2", "B1"), ("B1", "D1"), ("D1", "D2"), ("D2", "T1"),
-              ("T1", "T2"), ("T2", "T1", "每个 step 重复"), ("T2", "T3", "每 log_every 步"),
-              ("T3", "T2", "继续训练")],
+              ("T1", "T2"), ("T2", "T1", "每个 step 重复", "every step"),
+              ("T2", "T3", "每 log_every 步", "every log_every steps"),
+              ("T3", "T2", "继续训练", "keep training")],
     "note": "关键顺序：BPE 只喂 train 文本 → val loss 才是诚实的「没见过」的困惑度。",
     "en_note": "Order matters: BPE sees train only, so val loss is honest.",
     "check_anchor": lambda: _anchors_in(FLOW_PIPELINE, {"C1": "corpus", "C2": "corpus",
@@ -231,8 +232,19 @@ def _grid_layout(nodes: list[dict]):
     return {k: (x, y * 0.86) for k, (x, y) in pos.items()}, n_layers
 
 
+def _localized(spec: dict, cn: bool) -> dict:
+    """按语言裁一份 spec：英文模式下**连脚注和边标签都必须是 ASCII**。"""
+    out = dict(spec)
+    if not cn:
+        out["edges"] = [tuple(ed[:2]) + (ed[3],) if len(ed) > 3 else tuple(ed) for ed in spec["edges"]]
+        out["note"] = spec.get("en_note", spec["note"])
+        out["title"] = spec.get("en_title", spec["title"])
+    return out
+
+
 def _render_png(spec: dict, out_png: str, cn: bool, font) -> list[str]:
     """渲染 PNG：优先把自定义位置传给通用渲染器；它不认这些参数就退回默认布局。"""
+    spec = _localized(spec, cn)
     pos, n_layers = _grid_layout(spec["nodes"])
     try:
         return fc.render_png(spec, out_png, cn, font, positions=pos, n_layers=n_layers)
@@ -253,6 +265,14 @@ def _setup() -> None:
         spec.setdefault("en_title", spec["title"])
         spec.setdefault("en_layers", [f"layer {i}" for i in range(len(spec["layers"]))])
         spec.setdefault("en_note", spec["note"])
+        for node in spec["nodes"]:
+            node.setdefault("en", node["label"])
+        # 边也统一成 4 元组 (src, dst, 中文标签, 英文标签)。
+        # 为什么必须补英文：没有中文字体的机器（如 CI runner）会走「英文降级」，
+        # 但**脚注和边标签此前仍是硬编码中文** → 渲染出来是豆腐块。
+        # 这个 bug 是本仓库 CI 抓出来的（本地有微软雅黑，一直绿）。
+        spec["edges"] = [tuple(ed) + (ed[3] if len(ed) > 3 else "",) if len(ed) > 2
+                         else (ed[0], ed[1], "", "") for ed in spec["edges"]]
 
 
 def check_anchors() -> list[str]:

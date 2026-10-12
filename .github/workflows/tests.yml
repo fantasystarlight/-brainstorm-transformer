@@ -1,0 +1,59 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 一条线装全部可选依赖，一条线**故意不装** torch/tokenizers，
+        # 用来证明「手写 BPE 后备路径」在裸环境里也能跑通（这是本仓库的设计承诺之一）。
+        variant: [full, minimal]
+    env:
+      PYTHONPATH: .
+      MPLCONFIGDIR: /tmp/mplconfig-dsh   # matplotlib 默认缓存目录在 CI 上不可写
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: pip
+
+      - name: 安装依赖（full）
+        if: matrix.variant == 'full'
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install numpy pytest matplotlib tokenizers regex
+
+      - name: 安装依赖（minimal：只留 numpy/pytest/matplotlib）
+        if: matrix.variant == 'minimal'
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy pytest matplotlib
+
+      - name: 核心不变量测试（不需要 GPU / 不需要 data/）
+        run: pytest transformer/test_mini_transformer.py -q
+
+      - name: 流程图守卫测试（锚点必须仍存在于源码）
+        run: pytest transformer/test_flowchart.py test_flowchart.py -q
+
+      - name: 只有 full 才做端到端冒烟（要 torch）
+        if: matrix.variant == 'full'
+        run: |
+          python -m transformer.train --quick --tag ci
+          python -m transformer.generate --tag ci -n 32 --temperature 0.8
+
+      - name: 环境信息（出问题时好排查）
+        if: always()
+        run: |
+          python -c "import sys; print(sys.version)"
+          python -c "import numpy; print('numpy', numpy.__version__)"
+          python -c "import torch; print('torch', torch.__version__)" 2>/dev/null || echo "torch 未安装（minimal 线，符合预期）"

@@ -112,12 +112,13 @@ def test_rebuild_is_idempotent():
 def test_dep_graph_matches_imports():
     """依赖图的边必须等于从源码解析出来的 import 边（手写边会漂移）。"""
     mt._setup()
-    parsed = mt._parse_import_edges()
-    assert mt.FLOW_DEPS["edges"] == parsed
-    pairs = {(a, b) for a, b, _ in parsed}
-    assert ("bpe", "data") in pairs and ("corpus", "data") in pairs
+    # 只比 (src, dst)：图里的边带中英双语标签，解析器只给 (src, dst, "")，比整元组没意义
+    parsed_pairs = {(e[0], e[1]) for e in mt._parse_import_edges()}
+    graph_pairs = {(e[0], e[1]) for e in mt.FLOW_DEPS["edges"]}
+    assert graph_pairs == parsed_pairs, (graph_pairs ^ parsed_pairs)
+    assert ("bpe", "data") in parsed_pairs and ("corpus", "data") in parsed_pairs
     # 负对照：源码里不存在 bpe -> train 的 import
-    assert ("bpe", "train") not in pairs
+    assert ("bpe", "train") not in parsed_pairs
 
 
 def test_mermaid_and_png_share_same_edges():

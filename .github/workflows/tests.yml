@@ -22,7 +22,6 @@ jobs:
     env:
       PYTHONPATH: .
       MPLCONFIGDIR: /tmp/mplconfig-dsh   # matplotlib 默认缓存目录在 CI 上不可写
-      # CI runner 没有中文字体 → 渲染器会降级成英文标签，测试按降级模式断言（见 test_flowchart.py）
     steps:
       - uses: actions/checkout@v4
 
@@ -60,15 +59,6 @@ jobs:
           # --datadir 指到被 gitignore 的目录：不污染仓库
           python3 -m transformer.train --quick --datadir data_ci --tag ci
           python3 -m transformer.generate --datadir data_ci --tag ci -n 32 --temperature 0.8
-
-      - name: 失败时把 pytest 输出写进日志尾部（方便不登录也能看到摘要）
-        if: failure()
-        run: |
-          echo "::group::常见原因速查"
-          echo "1) 缺中文字体 → 只有 test_flowchart 的字形断言会失败；测试已按降级模式处理"
-          echo "2) minimal 线没装 tokenizers → 应走 transformer/bpe.py 手写后备，属预期"
-          echo "3) 端到端冒烟需要 torch + tokenizers"
-          echo "::endgroup::"
 
       - name: 环境信息
         if: always()

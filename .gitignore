@@ -12,6 +12,9 @@ corpus_big/
 *.pt
 *.bin
 
+# corpus/ 是**语料来源**（corpus.py 会扫它），所以入库；
+# corpus_big/ 是 fetch_corpus.py 下载下来的，可再生产，排除。
+
 # ---- 缓存 ----
 __pycache__/
 *.py[cod]

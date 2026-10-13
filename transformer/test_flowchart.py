@@ -23,7 +23,11 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 sys.path.insert(0, ROOT)
 
-import flowchart as fc  # noqa: E402  根目录通用渲染器
+import importlib.util as _ilu  # noqa: E402
+_spec = _ilu.spec_from_file_location("root_flowchart_test", os.path.join(ROOT, "flowchart.py"))
+fc = _ilu.module_from_spec(_spec)
+sys.modules["root_flowchart_test"] = fc
+_spec.loader.exec_module(fc)
 import importlib.util  # noqa: E402
 
 _spec = importlib.util.spec_from_file_location("mt_flowchart", os.path.join(HERE, "flowchart.py"))

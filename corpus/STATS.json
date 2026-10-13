@@ -1,0 +1,193 @@
+{
+  "generated_by": "transformer/build_corpus.py",
+  "root": "/home/yjrrk1989/头脑风暴",
+  "archive_policy": "只复制不删除：根目录原件保留；归档内容按文档结构切分进 corpus/；corpus.py 通过 ARCHIVED_ROOT_FILES 把这 4 份排除出内置教程语料，corpus/ 目录本身也在排除清单里（不会悄悄回流）。",
+  "components": [
+    {
+      "path": "corpus/rl_notes/00_从_1166_篇_RL_论文里找还没被占的坑.md",
+      "group": "rl_notes",
+      "source": "RL新策略头脑风暴.md",
+      "heading": "从 1166 篇 RL 论文里找还没被占的坑",
+      "chars": 750,
+      "lines": 15,
+      "sha256": "062b73efd7ddfc87e6d92b9109fe75243fdd5501e2672deddff0068fbfa104b0"
+    },
+    {
+      "path": "corpus/rl_notes/01_我读了什么，以及你该怎么给这份文档打折.md",
+      "group": "rl_notes",
+      "source": "RL新策略头脑风暴.md",
+      "heading": "0. 我读了什么，以及你该怎么给这份文档打折",
+      "chars": 842,
+      "lines": 21,
+      "sha256": "1b62c5d3c5fbe110c52956b04f9532f56b9aa42a63847f21c2d35ae2bd637fb9"
+    },
+    {
+      "path": "corpus/rl_notes/02_体检报告：这个领域现在长什么样.md",
+      "group": "rl_notes",
+      "source": "RL新策略头脑风暴.md",
+      "heading": "1. 体检报告：这个领域现在长什么样",
+      "chars": 2570,
+      "lines": 60,
+      "sha256": "698c42b09920861410164132687ca0f7179c795b032e3515803e7e8ac5949601"
+    },
+    {
+      "path": "corpus/rl_notes/03_从冲突到杠杆：六个可攻击的缺口.md",
+      "group": "rl_notes",
+      "source": "RL新策略头脑风暴.md",
+      "heading": "2. 从冲突到杠杆：六个可攻击的缺口",
+      "chars": 596,
+      "lines": 13,
+      "sha256": "e63f777f58202312674ca9343f273fa8aa9ab29f6e099b2f92ad81616918b61b"
+    },
+    {
+      "path": "corpus/rl_notes/04_十一个提案.md",
+      "group": "rl_notes",
+      "source": "RL新策略头脑风暴.md",
+      "heading": "3. 十一个提案",
+      "chars": 13009,
+      "lines": 289,
+      "sha256": "ad0843675de22ac2372528ed6cc8503a3f73c3922c12fad21986488107abfafe"
+    },
+    {
+      "path": "corpus/rl_notes/05_优先级：先做哪一个.md",
+      "group": "rl_notes",
+      "source": "RL新策略头脑风暴.md",
+      "heading": "4. 优先级：先做哪一个",
+      "chars": 1783,
+      "lines": 36,
+      "sha256": "9243110157a6199c97659fe9b69ee0754805f7e1f4851b71354acf169fd76d2c"
+    },
+    {
+      "path": "corpus/rl_notes/06_反例清单：看着新、但已被这段语料否掉或做过的.md",
+      "group": "rl_notes",
+      "source": "RL新策略头脑风暴.md",
+      "heading": "5. 反例清单：看着新、但已被这段语料否掉或做过的",
+      "chars": 759,
+      "lines": 16,
+      "sha256": "57b42d66ec934feea3b0043735a52034f7c73b0deac457fbdd876f9539766859"
+    },
+    {
+      "path": "corpus/rl_notes/07_一句话总结.md",
+      "group": "rl_notes",
+      "source": "RL新策略头脑风暴.md",
+      "heading": "6. 一句话总结",
+      "chars": 258,
+      "lines": 8,
+      "sha256": "2b91fbb283dfbf2fa3183da87fb5a3a394034aa0dcb38a11db3e046839ad3402"
+    },
+    {
+      "path": "corpus/rl_notes/08_附录_A_主要引用索引.md",
+      "group": "rl_notes",
+      "source": "RL新策略头脑风暴.md",
+      "heading": "附录 A　主要引用索引",
+      "chars": 1091,
+      "lines": 19,
+      "sha256": "74e646c68e62c22134b77d10d8991ccbdb4e9af8ca250d8d332f9508863cc562"
+    },
+    {
+      "path": "corpus/rl_notes/09_附录_B_本文生成物清单.md",
+      "group": "rl_notes",
+      "source": "RL新策略头脑风暴.md",
+      "heading": "附录 B　本文生成物清单",
+      "chars": 1659,
+      "lines": 30,
+      "sha256": "d4730e964fff188f7128097328f5509c0251e41fa390043100f044aa0b19bd08"
+    },
+    {
+      "path": "corpus/rl_notes/10_附录_C_知识点表（图谱的文字版）.md",
+      "group": "rl_notes",
+      "source": "RL新策略头脑风暴.md",
+      "heading": "附录 C　知识点表（图谱的文字版）",
+      "chars": 4789,
+      "lines": 99,
+      "sha256": "635a68ec4143405a65a332d922f2d9b1fdce401e1a415800e37539d8d151b98d"
+    },
+    {
+      "path": "corpus/src/flowchart_root.py",
+      "group": "src",
+      "source": "flowchart.py",
+      "heading": "",
+      "chars": 19342,
+      "lines": 428,
+      "sha256": "684f22f59c0ca80f8094d196b06ca5858b1d1b1307734a1975b2de158c2dcb05"
+    },
+    {
+      "path": "corpus/src/knowledge_graph.py",
+      "group": "src",
+      "source": "knowledge_graph.py",
+      "heading": "",
+      "chars": 36437,
+      "lines": 764,
+      "sha256": "9a5acf96a7e9e88ceeab0c5431540b74d24efee9afb929c2b9bb9d34d48ad922"
+    },
+    {
+      "path": "corpus/src/probe_compression_as_retrieval.py",
+      "group": "src",
+      "source": "probe_compression_as_retrieval.py",
+      "heading": "",
+      "chars": 10270,
+      "lines": 242,
+      "sha256": "1d644e4ed9e610cb2b16707666755584853be4ef023b7883ba1b02d3151dbaf7"
+    }
+  ],
+  "groups": {
+    "rl_notes": {
+      "n_files": 11,
+      "chars": 28106
+    },
+    "src": {
+      "n_files": 3,
+      "chars": 66049
+    }
+  },
+  "corpus_total_chars": 94155,
+  "corpus_total_files": 14,
+  "root_corpus": {
+    "before": {
+      "rule": "只看根目录 *.py/*.md，排除 rl_corpus.{md,json}/rl_titles.txt（含这 4 份大文件）",
+      "n_files": 15,
+      "sum_file_chars": 182269,
+      "total_chars": 182794,
+      "files": {
+        "RL新策略头脑风暴.md": 28106,
+        "attention_budget_core.py": 4956,
+        "attention_budget_figs.py": 15626,
+        "attention_budget_probe.py": 12658,
+        "bucket.py": 5224,
+        "credit_oracle.py": 13285,
+        "extract_rl.py": 4497,
+        "flowchart.py": 19342,
+        "knowledge_graph.py": 36437,
+        "probe_compression_as_retrieval.py": 10270,
+        "probe_token_compression.py": 8995,
+        "test_attention_budget_core.py": 7428,
+        "test_credit_oracle.py": 5709,
+        "test_flowchart.py": 4393,
+        "test_knowledge_graph.py": 5343
+      }
+    },
+    "after": {
+      "rule": "corpus.collect_texts()：递归（含子目录） + 排除目录/自指/已归档 4 份",
+      "n_files": 11,
+      "sum_file_chars": 88114,
+      "total_chars": 88504,
+      "files": {
+        "attention_budget_core.py": 4956,
+        "attention_budget_figs.py": 15626,
+        "attention_budget_probe.py": 12658,
+        "bucket.py": 5224,
+        "credit_oracle.py": 13285,
+        "extract_rl.py": 4497,
+        "probe_token_compression.py": 8995,
+        "test_attention_budget_core.py": 7428,
+        "test_credit_oracle.py": 5709,
+        "test_flowchart.py": 4393,
+        "test_knowledge_graph.py": 5343
+      }
+    },
+    "delta_total_chars": -94290,
+    "delta_pct": -51.58
+  },
+  "note": "corpus/ 是归档区、不在内置教程语料里；想把它当语料用要显式喂文件，例如 PYTHONPATH=. python -m transformer.data --files corpus/src/knowledge_graph.py。",
+  "stale_rl_notes_removed": []
+}

@@ -16,12 +16,12 @@ flowchart LR
     T2["⑦ 反向传播 → 梯度裁剪 → AdamW<br/>warmup + 余弦衰减"]
     T3["⑧ 定期估 val loss<br/>只存最佳权重 ckpt.pt"]
   end
-  C1 --> C2
-  C2 --> B1
-  B1 --> D1
-  D1 --> D2
-  D2 --> T1
-  T1 --> T2
+  C1 -->|| C2
+  C2 -->|| B1
+  B1 -->|| D1
+  D1 -->|| D2
+  D2 -->|| T1
+  T1 -->|| T2
   T2 -->|每个 step 重复| T1
   T2 -->|每 log_every 步| T3
   T3 -->|继续训练| T2

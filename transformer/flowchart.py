@@ -21,7 +21,18 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 OUTDIR = os.path.join(ROOT, "docs")
 sys.path.insert(0, ROOT)
-import flowchart as fc  # noqa: E402  工作区根目录的通用渲染器
+# ⚠️ 这里必须用**别名**导入：本文件自己就叫 transformer/flowchart.py，
+# 直接 `import flowchart` 在有 `python -m transformer.*` 参与时可能解析到包内同名模块，
+# 于是 `fc.setup_font` 之类的属性就找不到了（真踩过）。
+import flowchart as _root_renderer  # noqa: E402
+import importlib as _importlib
+fc = _importlib.import_module("flowchart")   # 保持原有名字不变，下面全部沿用
+if not hasattr(fc, "setup_font"):            # 万一解析到包内自己，按文件路径兜底加载
+    import importlib.util as _ilu
+    _spec = _ilu.spec_from_file_location("root_flowchart", os.path.join(ROOT, "flowchart.py"))
+    fc = _ilu.module_from_spec(_spec)
+    sys.modules["root_flowchart"] = fc
+    _spec.loader.exec_module(fc)
 
 PKG = "transformer"
 SRC = {name: os.path.join(HERE, f"{name}.py")
@@ -42,7 +53,7 @@ FLOW_PIPELINE = {
     "en_layers": ["corpus", "BPE", "data", "train"],
     "nodes": [
         {"id": "C1", "layer": 0, "label": "① 收集本地文本\n*.py / *.md（约 19 万字符）",
-         "en": "1 collect local .py/.md texts", "anchor": "显式排除：语料库自身（自指）、以及超大文件"},
+         "en": "1 collect local .py/.md texts", "anchor": "显式排除：语料库自身（自指）"},
         {"id": "C2", "layer": 0, "label": "② 先切 train/val\n再训 BPE（否则打分不诚实）",
          "en": "2 split train/val BEFORE BPE", "anchor": "尽量切在换行处，避免把一行代码劈成两半影响验证集统计"},
         {"id": "B1", "layer": 1, "label": "③ 字节级 BPE\n反复合并最高频相邻对",
@@ -284,6 +295,34 @@ def check_anchors() -> list[str]:
     return out
 
 
+def normalize_svg(data: bytes) -> bytes:
+    """把 SVG 规范化，让同一张图两次渲染**逐字节相同**（PNG 本来就没这个问题）。
+
+    三处非确定性（都是渲染两次 diff 出来的，不是猜的）：
+    1. ``<dc:date>`` 里写着渲染时刻的时间戳 —— 删掉；
+    2. matplotlib 给图元生成**随机** id（``id="p018c86822e"``）；
+    3. ``figure_1`` / ``patch_7`` 这类 id 是**进程内递增**的，同一进程渲染的第二张图会变成 ``figure_2``。
+
+    做法：id 按出现顺序统一重编号为 ``x0, x1, …``，``url(#…)`` 等引用同步替换。
+    顺序确定 → 结果确定 → `docs/` 里已打开的图不会因为重跑而失效。
+    """
+    import re
+    text = data.decode("utf-8")
+    text = re.sub(r"\s*<dc:date>[^<]*</dc:date>", "", text)
+    seen: dict[str, str] = {}
+
+    def _canon(m):
+        raw = m.group(1)
+        if raw not in seen:
+            seen[raw] = f"x{len(seen)}"
+        return m.group(0).replace(raw, seen[raw])
+
+    text = re.sub(r'id="([^"]+)"', _canon, text)
+    text = re.sub(r"url\(#([^)]+)\)", _canon, text)
+    text = re.sub(r'(?:xlink:)?href="#([^"]+)"', _canon, text)
+    return text.encode("utf-8")
+
+
 def build(outdir: str = OUTDIR, force_cn: bool | None = None) -> dict:
     _setup()
     font, cn = fc.setup_font()
@@ -298,10 +337,17 @@ def build(outdir: str = OUTDIR, force_cn: bool | None = None) -> dict:
         with open(tmp_png, "rb") as fh:
             data = fh.read()
         os.remove(tmp_png)
+        # SVG：矢量格式，与 PNG 同源（同一份 spec + 同一份 positions）
+        tmp_svg = os.path.join(outdir, f".{name}.tmp.svg")
+        _render_png(spec, tmp_svg, cn, font)
+        with open(tmp_svg, "rb") as fh:
+            svg = normalize_svg(fh.read())
+        os.remove(tmp_svg)
         # 注意：三个 write_if_changed 必须都执行，所以用位运算 | 而不是 or——
         # 用 or 的话 PNG 一变 True 就会短路掉 MMD/TXT（我第一次就踩了这个坑，
         # 结果 docs/ 里只有 PNG，没有 Mermaid 源码和文本大纲）。
         changed = (fc.write_if_changed(png, data)
+                   | fc.write_if_changed(os.path.join(outdir, f"{name}.svg"), svg)
                    | fc.write_if_changed(os.path.join(outdir, f"{name}.mmd"),
                                          fc.render_mermaid(spec))
                    | fc.write_if_changed(os.path.join(outdir, f"{name}.txt"),

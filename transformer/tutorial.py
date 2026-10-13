@@ -41,7 +41,15 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch  # noqa: E402
 
-from .flowchart import normalize_svg as _normalize_svg  # 同一套规范化实现，避免两处漂移
+try:                                                     # 正常包导入
+    from .flowchart import normalize_svg as _normalize_svg
+except ImportError:                                      # 按文件路径加载时（测试/脚本）的兜底
+    import importlib.util as _ilu2
+    _s2 = _ilu2.spec_from_file_location("pkg_flowchart", os.path.join(HERE, "flowchart.py"))
+    _m2 = _ilu2.module_from_spec(_s2)
+    sys.modules["pkg_flowchart"] = _m2
+    _s2.loader.exec_module(_m2)
+    _normalize_svg = _m2.normalize_svg
 
 RUNS = os.path.join(ROOT, "runs")
 

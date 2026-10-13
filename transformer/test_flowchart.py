@@ -56,6 +56,39 @@ def test_anchors_exist_in_src():
     assert mt.check_anchors() == []
 
 
+def _load_tutorial():
+    """按文件路径加载 transformer/tutorial.py（它内部有相对导入的兜底）。"""
+    spec = importlib.util.spec_from_file_location("tut_flowchart",
+                                                  os.path.join(HERE, "tutorial.py"))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def test_tutorial_captions_are_in_readme():
+    """教程配图的图注必须逐字出现在 README 里。
+
+    删掉正文图注 → 这里失败，而不是留下一张没人引用的图。
+    （这是 README 重写后最容易悄悄发生的事：改了正文措辞，图注锚点就漂了。）
+    """
+    tut = _load_tutorial()
+    missing = tut.check_anchors()
+    assert missing == [], missing
+    assert len(tut.CAPTIONS) >= 8, f"教程图少于预期：{sorted(tut.CAPTIONS)}"
+
+
+def test_tutorial_caption_checker_has_discriminating_power():
+    """负对照：把一个图注改坏，检查器必须报出来。"""
+    tut = _load_tutorial()
+    original = tut.CAPTIONS["tut_hero"]
+    tut.CAPTIONS["tut_hero"] = "这句话绝不会出现在 README 里-7c1d"
+    try:
+        missing = tut.check_anchors()
+    finally:
+        tut.CAPTIONS["tut_hero"] = original
+    assert any("tut_hero" in m for m in missing), missing
+
+
 def test_anchor_checker_has_discriminating_power():
     """负对照：塞一个源码里绝不存在的 anchor，检查器必须报出来。"""
     spec = mt.FLOW_MODEL

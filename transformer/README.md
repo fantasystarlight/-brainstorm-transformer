@@ -22,7 +22,7 @@ PYTHONPATH=. python -m transformer.train --quick          # 有 GPU 加 --device
 # ② 让它写 200 个字
 PYTHONPATH=. python -m transformer.generate --tag quick -n 200
 
-# ③ 跑 23 条不变量测试（证明搭对了，而不是「看着像」）
+# ③ 跑 30 条不变量测试（证明搭对了，而不是「看着像」）
 PYTHONPATH=. python -m pytest transformer/ -q
 ```
 
@@ -40,7 +40,7 @@ PYTHONPATH=. python -m pytest transformer/ -q
 | [`generate.py`](generate.py) | 采样生成（含 KV cache） | §6 |
 | [`ladder.py`](ladder.py) / [`bench.py`](bench.py) | 缩放实验 / 性能基准 | 附录 A |
 | [`tutorial.py`](tutorial.py) / [`flowchart.py`](flowchart.py) | 本文所有配图的生成脚本 | 附录 C |
-| `test_*.py` | 23 条不变量测试 | §7 |
+| `test_*.py` | 30 条不变量测试 | §7 |
 
 ---
 
@@ -296,7 +296,7 @@ PYTHONPATH=. python -m transformer.generate --tag quick --time -n 200   # cache 
 ## 7. 怎么证明「我搭对了」（`test_*.py`）
 
 ```bash
-PYTHONPATH=. python -m pytest transformer/ -q      # 23 passed
+PYTHONPATH=. python -m pytest transformer/ -q      # 30 passed
 ```
 
 关键性质都写成了**硬断言**，最有用的几条：
@@ -310,6 +310,7 @@ PYTHONPATH=. python -m pytest transformer/ -q      # 23 passed
 | `test_gqa_includes_mha_as_special_case` | `n_kv_heads=n_heads` 时与 MHA **逐位等价** |
 | `test_overfit_tiny_sequence` | 400 步背下 64 个 token；**换一条序列损失必须 >1** |
 | `test_param_count_scales_as_expected` | 参数量公式（防止「以为建了个大模型」） |
+| `test_tutorial_captions_are_in_readme` | 8 张教程图的图注仍在正文里（+ 负对照） |
 
 **「过拟合一条小数据」是搭模型时最有用的调试手段**：连 64 个 token 都背不下来，
 问题一定在代码里（掩码、标签错位、初始化、学习率），不在数据上。

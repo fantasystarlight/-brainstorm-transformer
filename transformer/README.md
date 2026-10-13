@@ -427,6 +427,7 @@ val 一路下降不反弹 → 数据还没喂饱，继续加；早早反弹 → 
 ```bash
 PYTHONPATH=. python -m transformer.tutorial     # 重画本文的图
 PYTHONPATH=. python -m transformer.flowchart    # 重画工程流程图
+PYTHONPATH=. python -m transformer.make_pdf     # 重新生成 README.pdf
 ```
 
 ---

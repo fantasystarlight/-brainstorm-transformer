@@ -681,91 +681,24 @@ def _flat_rgb(src: Path):
     return im.convert("RGB")
 
 
-def _strip_baked_caption(src: Path, dst: Path) -> int:
-    """裁掉图片**内部**顶部那一行图注，返回裁掉的行数（0 = 没裁）。
-
-    ``tutorial.py`` 把 ``图 N　……`` 直接画进了 PNG 顶部，而正文里还有一条同样的图注行；
-    两处并存时 PDF 中每张图会出现两次图注。这里只处理**构建目录里的副本**（``docs/`` 不动）：
-    在确认「顶部是一条居中、很薄、下方有明显空白」的文字带之后，从它下面裁掉。
-
-    保守起见：任何一条判据不满足就原样复制（不裁），绝不猜着裁。
-    """
-    try:
-        import numpy as np
-
-        im = _flat_rgb(src)
-        a = np.asarray(im)
-        h, w = a.shape[:2]
-        rows = (a.min(axis=2) < 170).sum(axis=1)
-
-        # 第一条文字带 = 图注
-        y = 0
-        while y < h and rows[y] == 0:
-            y += 1
-        if y >= h:
-            raise ValueError("empty")
-        start = y
-        blank = 0
-        while y < h:
-            if rows[y] == 0:
-                blank += 1
-                if blank >= 3:
-                    break
-            else:
-                blank = 0
-            y += 1
-        end = y - blank + 1  # 半开区间：文字带 = [start, end)
-        # 下一条文字带 = 真正的图内容起点
-        nxt = end
-        while nxt < h and rows[nxt] == 0:
-            nxt += 1
-
-        band = a.min(axis=2)[start:end] < 170
-        cols = np.where(band.any(axis=0))[0]
-        if not len(cols):
-            shutil.copyfile(src, dst)
-            return 0
-        x_span = int(cols.max() - cols.min())
-        x_mid = float(cols.max() + cols.min()) / 2
-        # 文字有字距 -> 带内"有墨水的列"占比明显小于 1；实线/边框会接近 1
-        ink_ratio = float(band.any(axis=0)[cols.min(): cols.max() + 1].mean())
-        ok = (
-            start <= int(h * 0.12)                        # 靠顶部
-            and (end - start) <= max(6, int(h * 0.10))     # 很薄的一行
-            and x_span >= 0.12 * w                         # 是一行铺开的文字
-            and abs(x_mid - w / 2) <= 0.15 * w             # 居中
-            and ink_ratio < 0.93                           # 有字距（不是一条实线/边框）
-            and (nxt - end) >= 4                           # 下方有空白，切不到内容
-        )
-        if not ok:
-            shutil.copyfile(src, dst)
-            return 0
-        crop = max(end + 3, nxt - 6)
-        if crop <= 0 or crop >= h - 10:
-            shutil.copyfile(src, dst)
-            return 0
-        im.crop((0, crop, w, h)).save(dst)
-        return crop
-    except Exception:
-        shutil.copyfile(src, dst)
-        return 0
-
-
 def stage_images(
     blocks: list[dict],
     base_dir: Path,
     build_dir: Path,
-    strip_captions: bool = True,
-) -> tuple[dict[str, str], list[str], list[tuple[str, int]]]:
+) -> tuple[dict[str, str], list[str]]:
     """把正文引用的本地图片复制进构建目录。
 
-    返回 ``(原始src -> HTML相对src, 缺图列表, 裁掉图内图注的记录)``。
+    返回 ``(原始src -> HTML相对src, 缺图列表)``。
+
+    注意：这里**不做任何裁剪**。曾经为了消掉「图注重复」而在这里裁掉图片顶部那行字，
+    但根因在 `tutorial.py`（它把图注画进了 PNG）。根因已在那里修掉，
+    所以这个启发式补丁也一并删除——补丁留着只会成为下一个读代码的人的陷阱。
+    
     """
     img_dir = build_dir / "img"
     img_dir.mkdir(parents=True, exist_ok=True)
     mapping: dict[str, str] = {}
     missing: list[str] = []
-    cropped: list[tuple[str, int]] = []
     used: set[str] = set()
 
     for b in blocks:
@@ -787,15 +720,9 @@ def stage_images(
                 name = f"{path.parent.name}{k}_{path.name}"
                 k += 1
         used.add(name)
-        dst = img_dir / name
-        if strip_captions:
-            n = _strip_baked_caption(path, dst)
-            if n:
-                cropped.append((name, n))
-        else:
-            shutil.copyfile(path, dst)
+        shutil.copyfile(path, img_dir / name)
         mapping[src] = f"img/{name}"
-    return mapping, missing, cropped
+    return mapping, missing
 
 
 def pdf_stats(path: Path) -> dict:
@@ -839,6 +766,7 @@ def run_browser(browser: str, html_path: Path, pdf_path: Path) -> tuple[int, str
         "--no-first-run",
         "--disable-extensions",
         "--hide-scrollbars",
+        "--no-pdf-header-footer",  # 否则每页顶部/底部会印日期、标题和 file:// 网址
         "--run-all-compositor-stages-before-draw",
         "--virtual-time-budget=10000",
         f"--print-to-pdf={wsl_to_windows(pdf_path)}",
@@ -867,8 +795,6 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--dump-blocks", action="store_true", help="只打印解析出的块序列（JSON），不生成 PDF")
     ap.add_argument("--toc-depth", type=int, default=2, choices=(2, 3),
                     help="目录收录到几级标题（默认 2 = 只列 h2；3 = h2+h3）")
-    ap.add_argument("--keep-baked-captions", action="store_true",
-                    help="不裁掉图片内部顶部那行图注（tutorial.py 把它画进了 PNG）")
     ap.add_argument("--keep-build", action="store_true", help="结束时保留构建目录（默认也保留，供排查用）")
     ap.add_argument("--no-normalize", action="store_true", help="不做时间戳/ID 归一化（输出将逐字节不稳定）")
     args = ap.parse_args(argv)
@@ -888,9 +814,7 @@ def main(argv: list[str] | None = None) -> int:
     build_dir = Path(args.build_dir).resolve() if args.build_dir else (windows_temp_root() / BUILD_DIRNAME)
     build_dir.mkdir(parents=True, exist_ok=True)
 
-    image_map, missing, cropped = stage_images(
-        blocks, src.parent, build_dir, strip_captions=not args.keep_baked_captions
-    )
+    image_map, missing = stage_images(blocks, src.parent, build_dir)
     body_html, meta = render_blocks(blocks, image_map, toc_depth=args.toc_depth)
 
     # 副标题：用 README H1 括号里的标签 + 一句**不与正文重复**的定位语
@@ -948,11 +872,6 @@ def main(argv: list[str] | None = None) -> int:
     print(f"[make_pdf] 构建目录    : {build_dir}")
     print(f"[make_pdf] 配图        : {meta['n_img'] - len(missing)}/{meta['n_img']} 张已映射"
           + (f"，缺图 {missing}" if missing else ""))
-    if cropped:
-        print(f"[make_pdf] 图内图注    : 裁掉 {len(cropped)} 张图内部顶部那行图注 "
-              f"（{min(n for _, n in cropped)}~{max(n for _, n in cropped)} px；tutorial.py 已把它画进 PNG，"
-              f"不裁就会与正文图注重复）")
-    print(f"[make_pdf] Edge        : {Path(browser).name}（返回码 {rc}，{time.time() - t0:.1f}s）")
     print(f"[make_pdf] PDF         : {out}")
     print(f"[make_pdf] 自检        : {final['bytes']:,} 字节 · {final['pages']} 页 · "
           f"内嵌字体 {final['font_files']} 个 FontFile · 头部 {data[:5].decode('latin1')}")

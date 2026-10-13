@@ -53,7 +53,9 @@ except ImportError:                                      # 按文件路径加载
 
 RUNS = os.path.join(ROOT, "runs")
 
-# 图注：必须逐字出现在 README 里（锚点守卫用）
+# 图注：**只作为锚点**（必须逐字出现在 README 里），不再画进图里。
+# 为什么：曾经画在图里 → 在 PDF 里与 <figcaption> 重复成两条；
+# 而 README 里图片下方本来就有斜体图注。图内不留文字，只有一个来源。
 CAPTIONS = {
     "tut_hero": "图 1　一张图看懂：Transformer 只做一件事——看着前文猜下一个 token",
     "tut_forward": "图 2　一次前向的形状变化：从 [B,T] 到 [B,T,V]",
@@ -94,13 +96,17 @@ def _label(ax, x, y, text, fs=9.5, color="#a0522d", ha="center"):
             bbox=dict(boxstyle="round,pad=0.18", fc="white", ec="none", alpha=0.9))
 
 
-def _canvas(w=12.5, h=8.6, title="", xlim=(0, 1), ylim=(0, 1)):
+def _canvas(w=12.5, h=8.6, xlim=(0, 1), ylim=(0, 1)):
+    """建一张空白画布。
+
+    **不再把图注画进图里**：图注由正文提供（README 的斜体行 / PDF 的 <figcaption>）。
+    曾经画在图里，结果在 PDF 里和 figcaption 重复出现一整条（要么靠裁图绕开、
+    要么读者看到两遍）。根因在图这边，所以在这里去掉。
+    """
     fig, ax = plt.subplots(figsize=(w, h))
     ax.axis("off")
     ax.set_xlim(*xlim)
     ax.set_ylim(*ylim)
-    if title:
-        ax.set_title(title, fontsize=15, fontproperties=FONT, pad=14)
     return fig, ax
 
 
@@ -141,7 +147,7 @@ def _text(cn: str, en: str) -> str:
 # 图 1：一张图看懂
 # ======================================================================================
 def fig_hero(outdir: str) -> list[str]:
-    fig, ax = _canvas(12.5, 9.0, _text(CAPTIONS["tut_hero"], "How a Transformer works"))
+    fig, ax = _canvas(12.5, 9.0)
     stages = [
         ("tokens", ["一句话", "→ token ids", "[B, T]"], "#e8f0fb"),
         ("embedding", ["Embedding", "id → 向量", "[B, T, C]"], "#eef4fb"),
@@ -177,7 +183,7 @@ def fig_hero(outdir: str) -> list[str]:
 # 图 2：一次前向的形状
 # ======================================================================================
 def fig_forward(outdir: str) -> list[str]:
-    fig, ax = _canvas(13.0, 9.2, _text(CAPTIONS["tut_forward"], "One forward pass: shapes"))
+    fig, ax = _canvas(13.0, 9.2)
     steps = [
         ("ids [B, T]", _text("一句话变成一串整数（分词）", "text -> token ids"), "#e8f0fb"),
         ("emb [B, T, C]", _text("查表：每个 id 换成一个向量", "lookup: each id -> vector"), "#eef4fb"),
@@ -242,8 +248,7 @@ def fig_attention(outdir: str) -> list[str]:
                  ha="center", va="center", color="#333333", fontsize=10, fontproperties=FONT)
     axes[2].text(T / 2, T * 0.72, _text("每行加起来 = 1\n(上三角恰好为 0)", "each row sums to 1"),
                  ha="center", va="center", color="white", fontsize=9.5, fontproperties=FONT)
-    fig.suptitle(_text(CAPTIONS["tut_attention"], "Attention: score, mask, normalize, average"),
-                 fontsize=14, fontproperties=FONT, y=1.03)
+
     fig.tight_layout()
     return _save(fig, "tut_attention", outdir)
 
@@ -279,8 +284,7 @@ def fig_sample(outdir: str) -> list[str]:
                   fontproperties=FONT)
     ax.set_ylabel(_text("被抽中的概率（对数轴）", "sampling probability (log)"), fontsize=10,
                   fontproperties=FONT)
-    ax.set_title(_text(CAPTIONS["tut_sample"], "From logits to one token: temperature & top-k"),
-                 fontsize=14, fontproperties=FONT)
+
     ax.legend(fontsize=10, prop=FONT)
     ax.grid(alpha=0.3)
     ax.annotate(_text("温度低 → 几乎只选最高分\n（greedy，稳但无聊）",
@@ -298,7 +302,7 @@ def fig_sample(outdir: str) -> list[str]:
 # 图 5：训练循环
 # ======================================================================================
 def fig_loop(outdir: str) -> list[str]:
-    fig, ax = _canvas(13.0, 9.2, _text(CAPTIONS["tut_loop"], "Six lines per training step"))
+    fig, ax = _canvas(13.0, 9.2)
     steps = [
         (_text("① 采样一批", "1) sample a batch"), "x, y = stream.batch(B)",
          _text("y 就是 x 右移一位", "y is x shifted by one"), "#e8f0fb"),
@@ -408,8 +412,7 @@ def fig_loss_curves(outdir: str) -> list[str]:
               transform=ax_r.transAxes, fontsize=8.8, fontproperties=FONT,
               color="#444444",
               bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="#dddddd", alpha=0.9))
-    fig.suptitle(_text(CAPTIONS["tut_loss_curves"], "Measured training curves"),
-                 fontsize=14, fontproperties=FONT, y=1.01)
+
     fig.tight_layout()
     return _save(fig, "tut_loss_curves", outdir)
 
@@ -454,8 +457,7 @@ def fig_scaling(outdir: str) -> list[str]:
                      xytext=(3.0, 2.005), fontsize=9.5, fontproperties=FONT, ha="center",
                      arrowprops=dict(arrowstyle="->", color="#333333", lw=0.9,
                                      connectionstyle="arc3,rad=0.25"))
-    fig.suptitle(_text(CAPTIONS["tut_scaling"], "Measured scaling: params alone do not help"),
-                 fontsize=14, fontproperties=FONT, y=1.02)
+
     fig.text(0.5, -0.02, _text(
         "两个面板的纵轴各自独立、数值不可互比（bpb 的分母由 val 文本决定）：只在本面板内看趋势",
         "Panels are independently scaled and NOT comparable to each other"), ha="center",
@@ -490,8 +492,7 @@ def fig_bench(outdir: str) -> list[str]:
     ax2.plot(x, mem, "k--o", lw=1.6, ms=5, label=_text("峰值显存", "peak memory"))
     ax2.set_ylabel(_text("峰值显存（MiB）", "peak memory (MiB)"), fontproperties=FONT)
     ax2.legend(fontsize=9.5, prop=FONT, loc="upper right")
-    ax1.set_title(_text(CAPTIONS["tut_bench"], "Measured benchmarks: GQA and KV cache"),
-                  fontsize=14, fontproperties=FONT)
+
     ax1.grid(alpha=0.3, axis="y")
     ax1.set_ylim(0, max(speed) * 1.32)
     ax1.annotate(_text("GQA 比 MHA 快 11%、省 35% 显存；\n关掉 cache 反而最慢（prompt 1024 + 生成 128）",

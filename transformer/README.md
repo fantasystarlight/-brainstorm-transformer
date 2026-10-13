@@ -5,7 +5,7 @@
 >
 > 全部代码在 `transformer/`，**CPU 就能跑**（8 线程约 19 秒；有 GPU 约 3 秒）。
 
-![一张图看懂](docs/tut_hero.png)
+![一张图看懂](../docs/tut_hero.png)
 
 *图 1　一张图看懂：Transformer 只做一件事——看着前文猜下一个 token*
 
@@ -22,7 +22,7 @@ PYTHONPATH=. python -m transformer.train --quick          # 有 GPU 加 --device
 # ② 让它写 200 个字
 PYTHONPATH=. python -m transformer.generate --tag quick -n 200
 
-# ③ 跑 30 条不变量测试（证明搭对了，而不是「看着像」）
+# ③ 跑 31 条不变量测试（证明搭对了，而不是「看着像」）
 PYTHONPATH=. python -m pytest transformer/ -q
 ```
 
@@ -40,7 +40,7 @@ PYTHONPATH=. python -m pytest transformer/ -q
 | [`generate.py`](generate.py) | 采样生成（含 KV cache） | §6 |
 | [`ladder.py`](ladder.py) / [`bench.py`](bench.py) | 缩放实验 / 性能基准 | 附录 A |
 | [`tutorial.py`](tutorial.py) / [`flowchart.py`](flowchart.py) | 本文所有配图的生成脚本 | 附录 C |
-| `test_*.py` | 30 条不变量测试 | §7 |
+| `test_*.py` | 31 条不变量测试 | §7 |
 
 ---
 
@@ -143,7 +143,7 @@ class Block(nn.Module):
         return x, kv
 ```
 
-![一次前向的形状](docs/tut_forward.png)
+![一次前向的形状](../docs/tut_forward.png)
 
 *图 2　一次前向的形状变化：从 [B,T] 到 [B,T,V]*
 
@@ -187,7 +187,7 @@ return torch.stack([x1*cos - x2*sin, x1*sin + x2*cos], dim=-1).flatten(-2)
 
 ### 4.3 注意力：先打分，再按分数取平均
 
-![注意力](docs/tut_attention.png)
+![注意力](../docs/tut_attention.png)
 
 *图 3　注意力到底在算什么：先打分，再按分数取平均*
 
@@ -225,7 +225,7 @@ self.down(F.silu(self.gate(x)) * self.up(x))
 
 ## 5. 第四步：训练循环（[`train.py`](train.py)）
 
-![训练循环](docs/tut_loop.png)
+![训练循环](../docs/tut_loop.png)
 
 *图 5　训练一个 step 的六行代码*
 
@@ -242,7 +242,7 @@ optimizer.zero_grad(set_to_none=True)              # ⑥ 清梯度（不清会�
 
 ### 训练曲线怎么读
 
-![训练曲线](docs/tut_loss_curves.png)
+![训练曲线](../docs/tut_loss_curves.png)
 
 *图 6　实测训练曲线：val 先降后升——过拟合长什么样*
 
@@ -266,7 +266,7 @@ optimizer.zero_grad(set_to_none=True)              # ⑥ 清梯度（不清会�
 
 ## 6. 第五步：生成与 KV cache（[`generate.py`](generate.py)）
 
-![采样](docs/tut_sample.png)
+![采样](../docs/tut_sample.png)
 
 *图 4　怎么从 logits 变出一个字：温度与 top-k*
 
@@ -296,7 +296,7 @@ PYTHONPATH=. python -m transformer.generate --tag quick --time -n 200   # cache 
 ## 7. 怎么证明「我搭对了」（`test_*.py`）
 
 ```bash
-PYTHONPATH=. python -m pytest transformer/ -q      # 30 passed
+PYTHONPATH=. python -m pytest transformer/ -q      # 31 passed
 ```
 
 关键性质都写成了**硬断言**，最有用的几条：
@@ -339,7 +339,7 @@ PYTHONPATH=. python -m pytest transformer/ -q      # 30 passed
 
 ### A.1 缩放阶梯：模型变大，指标不动
 
-![缩放](docs/tut_scaling.png)
+![缩放](../docs/tut_scaling.png)
 
 *图 7　实测缩放：同一份数据下，增大模型并不带来改善*
 
@@ -357,7 +357,7 @@ bpb 在各自数据集内部几乎不动（**注意两个面板的纵轴不可�
 
 ### A.2 性能基准：GQA 与 KV cache
 
-![基准](docs/tut_bench.png)
+![基准](../docs/tut_bench.png)
 
 *图 8　实测基准：GQA 与 KV cache 在生成时值多少*
 

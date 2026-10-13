@@ -185,3 +185,23 @@ def test_chinese_mode_has_no_missing_glyphs_when_font_available():
     assert bad == {}, bad
     import shutil
     shutil.rmtree(outdir)
+
+
+def test_readme_image_links_resolve():
+    """README 里 `![](…)` 指向的图必须真的存在。
+
+    这条是补的：README 重写时我把图片路径写成 `docs/tut_hero.png`，
+    但 README 在 `transformer/` 里、图在 `../docs/` —— **8 张图全是死链**，
+    本地编辑器不报错、GitHub 上也只显示破图，靠肉眼完全看不出来。
+    """
+    readme = os.path.join(HERE, "README.md")
+    with open(readme, encoding="utf-8") as fh:
+        text = fh.read()
+    links = re.findall(r"!\[[^\]]*\]\(([^)]+)\)", text)
+    assert links, "README 里一张图都没有？"
+    missing = [u for u in links
+               if not os.path.exists(os.path.normpath(os.path.join(HERE, u)))]
+    assert missing == [], f"README 引用了不存在的图：{missing}"
+    # 负对照：一个显然不存在的路径必须被这条检查抓出来
+    bogus = os.path.normpath(os.path.join(HERE, "docs/绝不存在-4f2a.png"))
+    assert not os.path.exists(bogus), "负对照本身失效了"
